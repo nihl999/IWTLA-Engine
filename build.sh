@@ -1,0 +1,1 @@
+g++  src/Camera.cpp src/Shader.cpp src/utils/File/File.cpp src/main.cpp -o bin/main.exe -Iinclude -Llib -lglfw3 -lglad -luser32 -lgdi32 -lopengl32 -limguiglgl -limgui
