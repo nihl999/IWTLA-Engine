@@ -1,3 +1,6 @@
+#ifndef CAMERA_CLASS
+#define CAMERA_CLASS
+
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include "utils/Types.h"
@@ -33,3 +36,5 @@ public:
     void DrawCameraPropertiesDebug();
     glm::mat4 getViewMatrix();
 };
+
+#endif
