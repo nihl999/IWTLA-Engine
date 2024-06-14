@@ -73,5 +73,6 @@
         "text_encoding": "cpp",
         "cinttypes": "cpp",
         "variant": "cpp"
-    }
+    },
+    "cmake.ignoreCMakeListsMissing": true
 }

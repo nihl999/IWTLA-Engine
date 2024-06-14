@@ -96,13 +96,23 @@ Application::Application() : currentScene(Scene())
     //     }
     // }
     glEnableVertexAttribArray(0);
-    glBindBuffer(GL_ARRAY_BUFFER, vertexBufferId);
     glVertexAttribPointer(
         0,
         3,
         GL_FLOAT,
         GL_FALSE,
         3 * sizeof(float),
+        (void *)0);
+    GLuint uvBufferId;
+    glGenBuffers(1, &uvBufferId);
+    glBindBuffer(GL_ARRAY_BUFFER, uvBufferId);
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(
+        1,
+        2,
+        GL_FLOAT,
+        GL_FALSE,
+        2 * sizeof(float),
         (void *)0);
 
     char *vertexShader = FileUtils::readFile("vertex.shader");
@@ -117,7 +127,26 @@ Application::Application() : currentScene(Scene())
     glUseProgram(programId);
 
     //--
+    glBindBuffer(GL_ARRAY_BUFFER, vertexBufferId);
     glBufferData(GL_ARRAY_BUFFER, sizeof(currentScene.entities[0].mesh.vertices), &currentScene.entities[0].mesh.vertices[0], GL_STATIC_DRAW);
+    glBindBuffer(GL_ARRAY_BUFFER, uvBufferId);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(currentScene.entities[0].mesh.uvs), &currentScene.entities[0].mesh.uvs[0], GL_STATIC_DRAW);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+
+    u32 texture;
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    printf("%d %d %d \n", CubeMesh::width, CubeMesh::height, CubeMesh::nrChannels);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, CubeMesh::width, CubeMesh::height, 0, GL_RGB, GL_UNSIGNED_BYTE, CubeMesh::tex);
+    glGenerateMipmap(GL_TEXTURE_2D);
 }
 
 void Application::WindowSizeCallback(GLFWwindow *window, int width, int height)
