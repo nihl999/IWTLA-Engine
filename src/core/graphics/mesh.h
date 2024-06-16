@@ -1,28 +1,34 @@
 #pragma once
 #include <glm/glm.hpp>
 #include <memory>
-#include "../defines.h"
+#include <string>
+#include <core/defines.h>
 
-struct MeshVertex
+namespace Graphics
 {
-    glm::vec3 position;
-    glm::vec3 normal;
-    glm::vec3 texCoord;
-};
+    struct MeshVertex
+    {
+        glm::vec3 position;
+        glm::vec3 normal;
+        glm::vec3 texCoord;
+    };
 
-struct Texture
-{
-    u32 id;
-    u32 width;
-    u32 height;
-    u8 nrChannels;
-    std::shared_ptr<byte> data;
-};
+    struct Texture
+    {
+        u32 id;
+        i32 width;
+        i32 height;
+        i8 nrChannels;
+        std::shared_ptr<byte *> data;
+    };
 
-struct Mesh
-{
-public:
-    MeshVertex *vertices;
-    // todo implement texture and material resources ---
-    u32 texId;
-};
+    struct Mesh
+    {
+    public:
+        // todo im dumb
+        MeshVertex *vertices;
+        u32 verticeCount = 0;
+        // todo implement texture and material resources ---
+        std::string textureName;
+    };
+}

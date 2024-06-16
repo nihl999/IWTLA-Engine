@@ -6,10 +6,12 @@
 #include <imgui/backends/imgui_impl_glfw.h>
 #include <imgui/backends/imgui_impl_opengl3.h>
 #include "Input.h"
-#include "Scene.h"
-#include "utils/File/File.h"
+#include <core/world/scene.h>
 #include "Shader.h"
+#include <common/File/File.h>
+#include <core/resources/resource_manager.h>
 
+float lightForce = 0.5f;
 void Application::DrawApplicationPropertiesDebug()
 {
     ImGui::Begin("Application Properties");
@@ -20,6 +22,7 @@ void Application::DrawApplicationPropertiesDebug()
     ImGui::Text("Mouse Y: %.2f", Input::mousePositionY);
     ImGui::Text("Mouse X Offset: %.3f", Input::mouseDeltaX);
     ImGui::Text("Mouse Y Offset: %.3f", Input::mouseDeltaY);
+    ImGui::SliderFloat("Ambient Light force", &lightForce, 0.01f, 1.0f, "%.2f");
     ImGui::End();
     ImGui::Begin("Entities Properties");
     ImGui::Text("Entities Count %d", currentScene.entities.size());
@@ -42,7 +45,7 @@ void Application::DrawApplicationPropertiesDebug()
     ImGui::End();
 }
 
-Application::Application() : currentScene(Scene())
+Application::Application() : currentScene(Scene(Camera(), {CubeModel(glm::vec3(0, 0, -5))}))
 {
     if (!glfwInit())
     {
@@ -87,33 +90,34 @@ Application::Application() : currentScene(Scene())
     GLuint vertexBufferId;
     glGenBuffers(1, &vertexBufferId);
     glBindBuffer(GL_ARRAY_BUFFER, vertexBufferId);
-    // // todo horrible
-    // for (CubeModel model : models)
-    // {
-    //     for (float vert : model.mesh.vertices)
-    //     {
-    //         vertices.push_back(vert);
-    //     }
-    // }
+
     glEnableVertexAttribArray(0);
+    glEnableVertexAttribArray(1);
+    glEnableVertexAttribArray(2);
     glVertexAttribPointer(
         0,
         3,
         GL_FLOAT,
         GL_FALSE,
-        3 * sizeof(float),
-        (void *)0);
-    GLuint uvBufferId;
-    glGenBuffers(1, &uvBufferId);
-    glBindBuffer(GL_ARRAY_BUFFER, uvBufferId);
-    glEnableVertexAttribArray(1);
+        sizeof(Graphics::MeshVertex),
+        (void *)offsetof(Graphics::MeshVertex, position));
+    printf("pos offsetof: %d", offsetof(Graphics::MeshVertex, position));
     glVertexAttribPointer(
         1,
-        2,
+        3,
         GL_FLOAT,
         GL_FALSE,
-        2 * sizeof(float),
-        (void *)0);
+        sizeof(Graphics::MeshVertex),
+        (void *)offsetof(Graphics::MeshVertex, normal));
+    printf("normal offsetof: %d", offsetof(Graphics::MeshVertex, normal));
+    glVertexAttribPointer(
+        2,
+        3,
+        GL_FLOAT,
+        GL_FALSE,
+        sizeof(Graphics::MeshVertex),
+        (void *)offsetof(Graphics::MeshVertex, texCoord));
+    printf("texCoord offsetof: %d", offsetof(Graphics::MeshVertex, texCoord));
 
     char *vertexShader = FileUtils::readFile("vertex.shader");
     char *fragmentShader = FileUtils::readFile("fragment.shader");
@@ -128,9 +132,8 @@ Application::Application() : currentScene(Scene())
 
     //--
     glBindBuffer(GL_ARRAY_BUFFER, vertexBufferId);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(currentScene.entities[0].mesh.vertices), &currentScene.entities[0].mesh.vertices[0], GL_STATIC_DRAW);
-    glBindBuffer(GL_ARRAY_BUFFER, uvBufferId);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(currentScene.entities[0].mesh.uvs), &currentScene.entities[0].mesh.uvs[0], GL_STATIC_DRAW);
+    // todo for -> GONNA HAVE FOR
+    glBufferData(GL_ARRAY_BUFFER, sizeof(Graphics::MeshVertex) * CubeModel::mesh->verticeCount, &CubeModel::mesh.vertices[0], GL_STATIC_DRAW);
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -144,9 +147,22 @@ Application::Application() : currentScene(Scene())
     u32 texture;
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
-    printf("%d %d %d \n", CubeMesh::width, CubeMesh::height, CubeMesh::nrChannels);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, CubeMesh::width, CubeMesh::height, 0, GL_RGB, GL_UNSIGNED_BYTE, CubeMesh::tex);
+    Graphics::Texture tex;
+    try
+    {
+        tex = ResourceManager::textures.at(CubeModel::mesh.textureName);
+    }
+    catch (const std::out_of_range &oor)
+    {
+        // todo hate try catches, find a way
+        printf("\ntexture doesnt exist on resource manager, exploding\n");
+        exit(1);
+    }
+    tex.id = texture;
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, tex.width, tex.height, 0, GL_RGB, GL_UNSIGNED_BYTE, tex.data.get()[0]);
     glGenerateMipmap(GL_TEXTURE_2D);
+
+    glUniform1f(2, lightForce);
 }
 
 void Application::WindowSizeCallback(GLFWwindow *window, int width, int height)
@@ -176,21 +192,25 @@ void Application::Update()
     currentScene.camera.update();
     glm::mat4 viewProj = currentScene.camera.getViewMatrix();
 
-    glUniformMatrix4fv(2,
+    glUniformMatrix4fv(0,
                        1,
                        false,
                        &viewProj[0][0]);
     // todo horrible
 
-    glClearColor(0, 0.5f, 0.5f, 1);
+    glClearColor(0.2f, 0.2f, 0.2f, 1);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    for (CubeModel model : currentScene.entities)
+    glUniform1f(2, lightForce);
+    for (Entity entity : currentScene.entities)
     {
-        glUniformMatrix4fv(3,
+        HasMesh *meshInfo = dynamic_cast<HasMesh *>(&entity);
+        if (meshInfo == nullptr)
+            continue;
+        glUniformMatrix4fv(1,
                            1,
                            GL_FALSE,
-                           &model.GetModelMatrix()[0][0]);
-        glDrawArrays(GL_TRIANGLES, 0, (sizeof(model.mesh.vertices) * 3));
+                           &entity.modelMatrix[0][0]);
+        glDrawArrays(GL_TRIANGLES, 0, sizeof(Graphics::MeshVertex) * meshInfo->mesh->verticeCount);
     }
     /* Render here */
 

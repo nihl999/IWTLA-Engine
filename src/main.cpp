@@ -3,7 +3,6 @@
 int main(void)
 {
     Application application = Application();
-    printf("\n%d %d %d \n", CubeMesh::width, CubeMesh::height, CubeMesh::nrChannels);
 
     while (application.shouldRun)
     {

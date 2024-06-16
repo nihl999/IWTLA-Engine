@@ -4,7 +4,7 @@
 // todo untie app - renderer - window
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
-#include "Scene.h"
+#include <core/world/scene.h>
 
 class Application
 {
