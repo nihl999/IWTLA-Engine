@@ -4,6 +4,7 @@
 namespace ResourceManager
 {
     std::unordered_map<std::string, Graphics::Texture> textures = std::unordered_map<std::string, Graphics::Texture>();
+    std::unordered_map<std::string, Graphics::Mesh> meshes = std::unordered_map<std::string, Graphics::Mesh>();
 
     std::string getResourceFolderPath()
     {

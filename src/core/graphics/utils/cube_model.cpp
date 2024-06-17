@@ -148,7 +148,7 @@ void initCubeMesh()
     cubeMesh->textureName = file;
 
     // todo refactor - pretty manager
-    ResourceManager::meshes.emplace("CubeMesh", cubeMesh);
+    ResourceManager::meshes.emplace(std::string("CubeMesh"), *cubeMesh);
 }
 
 // todo this is dumb, could do with 1 method and without last position
@@ -169,6 +169,11 @@ CubeModel::CubeModel(glm::vec3 _position)
     if (meshIt == ResourceManager::meshes.end())
     {
         initCubeMesh();
-        mesh = &ResourceManager::meshes.at("CubeMesh");
     }
-}
+        mesh = &ResourceManager::meshes.at("CubeMesh");
+};
+
+void CubeModel::Update()
+{
+    HasTransform::Update();
+};

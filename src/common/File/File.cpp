@@ -19,11 +19,11 @@ namespace FileUtils
         strcat(filepath, FileUtils::getResourceFolderPath().c_str());
         printf("file: %s\n", filename);
         strcat(filepath, filename);
-        printf(filepath);
+        printf("%s\n", filepath);
         file = fopen(filepath, "rb");
         if (file == NULL)
         {
-            printf("file: %s on %s don't exist!", filename, filepath);
+            printf("file: %s on %s don't exist!\n", filename, filepath);
             exit(1);
         }
         fseek(file, 0, SEEK_END);
@@ -32,7 +32,7 @@ namespace FileUtils
         char *fileContent = (char *)calloc(1, (fileSize * sizeof(char)) + 1);
         if (fileContent == NULL)
         {
-            printf("memory allocation for file failed");
+            printf("memory allocation for file failed\n");
             exit(1);
         }
         int freadResult = fread(fileContent, fileSize, 1, file);
@@ -50,7 +50,7 @@ namespace FileUtils
             }
             fclose(file);
             free(fileContent);
-            printf("failed reading file content");
+            printf("failed reading file content\n");
             exit(1);
         }
         fclose(file);

@@ -6,6 +6,7 @@
 
 namespace Graphics
 {
+    const i32 invalidTexId = -999;
     struct MeshVertex
     {
         glm::vec3 position;
@@ -15,7 +16,7 @@ namespace Graphics
 
     struct Texture
     {
-        u32 id;
+        u32 id = invalidTexId;
         i32 width;
         i32 height;
         i8 nrChannels;

@@ -11,7 +11,6 @@
 #include <common/File/File.h>
 #include <core/resources/resource_manager.h>
 
-float lightForce = 0.5f;
 void Application::DrawApplicationPropertiesDebug()
 {
     ImGui::Begin("Application Properties");
@@ -22,30 +21,11 @@ void Application::DrawApplicationPropertiesDebug()
     ImGui::Text("Mouse Y: %.2f", Input::mousePositionY);
     ImGui::Text("Mouse X Offset: %.3f", Input::mouseDeltaX);
     ImGui::Text("Mouse Y Offset: %.3f", Input::mouseDeltaY);
-    ImGui::SliderFloat("Ambient Light force", &lightForce, 0.01f, 1.0f, "%.2f");
     ImGui::End();
-    ImGui::Begin("Entities Properties");
-    ImGui::Text("Entities Count %d", currentScene.entities.size());
-    if (ImGui::TreeNode("Entity List: "))
-    {
-        for (int n = 0; n < currentScene.entities.size(); n++)
-        {
-            ImGui::PushID(&currentScene.entities[n]);
-            if (ImGui::TreeNode(&currentScene.entities[n], "Entity %d", n))
-            {
-                ImGui::Text("Position");
-                ImGui::DragFloat3("", &currentScene.entities[n].position[0], 0.5f, 0.0f, 0.0f, "%.2f");
-                ImGui::TreePop();
-            }
-            ImGui::PopID();
-        }
-        ImGui::TreePop();
-    }
-
-    ImGui::End();
+    currentScene.DrawScenePropertiesDebug();
 }
 
-Application::Application() : currentScene(Scene(Camera(), {CubeModel(glm::vec3(0, 0, -5))}))
+Application::Application() : currentScene(Scene(Camera(), {new CubeModel(glm::vec3(0, 0, -5)), new CubeModel()}))
 {
     if (!glfwInit())
     {
@@ -132,8 +112,6 @@ Application::Application() : currentScene(Scene(Camera(), {CubeModel(glm::vec3(0
 
     //--
     glBindBuffer(GL_ARRAY_BUFFER, vertexBufferId);
-    // todo for -> GONNA HAVE FOR
-    glBufferData(GL_ARRAY_BUFFER, sizeof(Graphics::MeshVertex) * CubeModel::mesh->verticeCount, &CubeModel::mesh.vertices[0], GL_STATIC_DRAW);
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -144,25 +122,34 @@ Application::Application() : currentScene(Scene(Camera(), {CubeModel(glm::vec3(0
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
 
-    u32 texture;
-    glGenTextures(1, &texture);
-    glBindTexture(GL_TEXTURE_2D, texture);
-    Graphics::Texture tex;
-    try
+    // todo refactor - When renderer class, ResourceManager call renderer to generate tex in GPU and dont do it here...
+    for (Entity *entity : currentScene.entities)
     {
-        tex = ResourceManager::textures.at(CubeModel::mesh.textureName);
-    }
-    catch (const std::out_of_range &oor)
-    {
-        // todo hate try catches, find a way
-        printf("\ntexture doesnt exist on resource manager, exploding\n");
-        exit(1);
-    }
-    tex.id = texture;
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, tex.width, tex.height, 0, GL_RGB, GL_UNSIGNED_BYTE, tex.data.get()[0]);
-    glGenerateMipmap(GL_TEXTURE_2D);
+        HasMesh *meshInfo = dynamic_cast<HasMesh *>(entity);
+        if (meshInfo == nullptr)
+            continue;
+        Graphics::Texture tex;
+        try
+        {
+            tex = ResourceManager::textures.at(meshInfo->mesh->textureName);
+        }
+        catch (const std::out_of_range &oor)
+        {
+            // todo hate try catches, find a way
+            printf("\ntexture doesnt exist on resource manager, exploding\n");
+            exit(1);
+        }
+        if (tex.id != Graphics::invalidTexId)
+            continue;
+        u32 texture;
+        glGenTextures(1, &texture);
+        glBindTexture(GL_TEXTURE_2D, texture);
 
-    glUniform1f(2, lightForce);
+        tex.id = texture;
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, tex.width, tex.height, 0, GL_RGB, GL_UNSIGNED_BYTE, tex.data.get()[0]);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    glUniform1f(2, currentScene.ambientLight.intensity);
 }
 
 void Application::WindowSizeCallback(GLFWwindow *window, int width, int height)
@@ -190,26 +177,50 @@ void Application::Update()
     currentScene.camera.updateYawPitch(Input::mouseDeltaX, Input::mouseDeltaY);
 
     currentScene.camera.update();
+    currentScene.Update();
     glm::mat4 viewProj = currentScene.camera.getViewMatrix();
 
     glUniformMatrix4fv(0,
                        1,
                        false,
                        &viewProj[0][0]);
-    // todo horrible
 
     glClearColor(0.2f, 0.2f, 0.2f, 1);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glUniform1f(2, lightForce);
-    for (Entity entity : currentScene.entities)
+    // todo better shader uniform handling
+    glUniform1f(2, currentScene.ambientLight.intensity);
+    glUniform3fv(3,
+                 1,
+                 &currentScene.pointLights[0].position[0]);
+    glUniform3fv(4,
+                 1,
+                 &currentScene.pointLights[0].color[0]);
+    for (Entity *entity : currentScene.entities)
     {
-        HasMesh *meshInfo = dynamic_cast<HasMesh *>(&entity);
+        HasMesh *meshInfo = dynamic_cast<HasMesh *>(entity);
         if (meshInfo == nullptr)
             continue;
         glUniformMatrix4fv(1,
                            1,
                            GL_FALSE,
-                           &entity.modelMatrix[0][0]);
+                           &entity->modelMatrix[0][0]);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(Graphics::MeshVertex) * meshInfo->mesh->verticeCount, &meshInfo->mesh->vertices[0], GL_STATIC_DRAW);
+        // todo for the love of god, create a method for getting map itens
+        Graphics::Texture tex;
+        try
+        {
+            tex = ResourceManager::textures.at(meshInfo->mesh->textureName);
+        }
+        catch (const std::out_of_range &oor)
+        {
+            // todo hate try catches, find a way
+            printf("\ntexture doesnt exist on resource manager, exploding\n");
+            exit(1);
+        }
+        if (tex.id != Graphics::invalidTexId)
+        {
+            glBindTexture(GL_TEXTURE_2D, tex.id);
+        }
         glDrawArrays(GL_TRIANGLES, 0, sizeof(Graphics::MeshVertex) * meshInfo->mesh->verticeCount);
     }
     /* Render here */

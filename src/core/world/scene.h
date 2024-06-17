@@ -10,11 +10,13 @@
 class Scene
 {
 public:
-    std::vector<Entity> entities;
+    std::vector<Entity *> entities;
     std::vector<World::PointLight> pointLights;
     std::vector<World::DirectionalLight> directionalLights;
     World::AmbientLight ambientLight;
     Camera camera;
     Scene();
-    Scene(Camera cam, const std::vector<Entity> &ents);
+    Scene(Camera cam, const std::vector<Entity *> &ents);
+    void Update();
+    void DrawScenePropertiesDebug();
 };

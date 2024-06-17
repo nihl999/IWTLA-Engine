@@ -11,4 +11,7 @@ class CubeModel : public Entity, public HasMesh
 public:
     CubeModel();
     CubeModel(glm::vec3 _position);
+
+private:
+    void Update();
 };

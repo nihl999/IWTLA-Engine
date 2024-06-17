@@ -7,4 +7,5 @@ class Entity : public HasTransform
 
 public:
     virtual ~Entity() {}
+    virtual void Update() {}
 };
