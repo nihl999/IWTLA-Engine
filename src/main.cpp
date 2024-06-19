@@ -1,4 +1,4 @@
-#include "Application.h"
+#include <core/application/application.h>
 
 int main(void)
 {
@@ -9,6 +9,5 @@ int main(void)
         application.Update();
     }
 
-    application.CleanUp();
     return 0;
 }

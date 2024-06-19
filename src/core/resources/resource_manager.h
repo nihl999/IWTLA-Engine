@@ -1,17 +1,27 @@
 #pragma once
 #include <core/graphics/mesh.h>
+#include <core/renderer/shader.h>
+#include <core/renderer/renderer.h>
 #include <string>
 #include <unordered_map>
 
-namespace ResourceManager
+class ResourceManager
 {
-    extern std::unordered_map<std::string, Graphics::Texture> textures;
-    extern std::unordered_map<std::string, Graphics::Mesh> meshes;
+private:
+    static ResourceManager *instance;
 
-    void init();
-    void shutdown();
+public:
+    std::unordered_map<std::string, Texture> textures = std::unordered_map<std::string, Texture>();
+    std::unordered_map<std::string, Mesh> meshes = std::unordered_map<std::string, Mesh>();
 
-    std::string getResourceFolderPath();
+private:
+    ResourceManager();
 
-    Graphics::Texture loadTextureFromFile(std::string filepath);
-}
+public:
+    static ResourceManager &GetInstance();
+    ~ResourceManager();
+
+    std::string GetResourceFolderPath();
+    Texture LoadTextureFromFile(std::string filepath);
+    ShaderProgram LoadShadersFromFile(std::string vertexFile, std::string fragmentFile);
+};

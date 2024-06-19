@@ -4,5 +4,5 @@
 class HasMesh
 {
 public:
-    Graphics::Mesh *mesh;
+    Mesh *mesh;
 };

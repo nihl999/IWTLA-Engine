@@ -122,10 +122,10 @@ const float cube_vert_normals[108] = {
 
 void initCubeMesh()
 {
-    Graphics::Mesh *cubeMesh = (Graphics::Mesh *)calloc(1, sizeof(Graphics::Mesh));
-    Graphics::Texture cubeTexture;
-    // Graphics::MeshVertex vertices[36];
-    Graphics::MeshVertex *vertices = (Graphics::MeshVertex *)calloc(1, sizeof(Graphics::MeshVertex) * 36);
+    Mesh *cubeMesh = (Mesh *)calloc(1, sizeof(Mesh));
+    Texture cubeTexture;
+    // MeshVertex vertices[36];
+    MeshVertex *vertices = (MeshVertex *)calloc(1, sizeof(MeshVertex) * 36);
     if (!vertices)
     {
         // todo logging
@@ -134,7 +134,7 @@ void initCubeMesh()
     }
     for (u32 i = 0; i < 36; i++)
     {
-        Graphics::MeshVertex vert;
+        MeshVertex vert;
         vert.position = glm::vec3(cube_vert_pos[i * 3], cube_vert_pos[i * 3 + 1], cube_vert_pos[i * 3 + 2]);
         vert.normal = glm::vec3(cube_vert_normals[i * 3], cube_vert_normals[i * 3 + 1], cube_vert_normals[i * 3 + 2]);
         vert.texCoord = glm::vec3(cube_vert_uvs[i * 2], cube_vert_uvs[i * 2 + 1], 1);
@@ -144,11 +144,11 @@ void initCubeMesh()
     cubeMesh->vertices = vertices;
     cubeMesh->verticeCount = 36;
     std::string file = "container.jpg";
-    cubeTexture = ResourceManager::loadTextureFromFile(file);
+    cubeTexture = ResourceManager::GetInstance().LoadTextureFromFile(file);
     cubeMesh->textureName = file;
 
     // todo refactor - pretty manager
-    ResourceManager::meshes.emplace(std::string("CubeMesh"), *cubeMesh);
+    ResourceManager::GetInstance().meshes.emplace(std::string("CubeMesh"), *cubeMesh);
 }
 
 // todo this is dumb, could do with 1 method and without last position
@@ -164,13 +164,13 @@ CubeModel::CubeModel(glm::vec3 _position)
     printf("Called Position Setter CubeModel constructor\n");
     printf("x=%f y=%f z=%f\n", position.x, position.y, position.z);
     position = _position;
-    auto meshIt = ResourceManager::meshes.find("CubeMesh");
+    auto meshIt = ResourceManager::GetInstance().meshes.find("CubeMesh");
     // todo probably can explode if mesh initialization failed or if run initCubeMesh two times... who knows.
-    if (meshIt == ResourceManager::meshes.end())
+    if (meshIt == ResourceManager::GetInstance().meshes.end())
     {
         initCubeMesh();
     }
-        mesh = &ResourceManager::meshes.at("CubeMesh");
+    mesh = &ResourceManager::GetInstance().meshes.at("CubeMesh");
 };
 
 void CubeModel::Update()

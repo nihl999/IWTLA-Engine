@@ -15,16 +15,20 @@ private:
     float yaw = -90.0f;
     float pitch = 0.0f;
     float aspectRatio = ((float)16 / 9);
-    glm::vec3 position = glm::vec3(0.f);
     glm::vec3 forward = glm::vec3(0.0f, 0.0f, -1.0f);
     glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
     glm::vec3 cameraRight = glm::cross(cameraUp, forward);
     glm::mat4 modelMatrix = glm::lookAt(position, position + forward, cameraUp);
     glm::mat4 projectionMatrix = glm::perspective(glm::radians(fov), aspectRatio, nearClip, farClip);
     glm::mat4 finalViewMatrix = projectionMatrix * modelMatrix;
+
+public:
     void updateCameraDir();
     void updateViewMatrix();
     void updateProjectionMatrix();
+
+public:
+    glm::vec3 position = glm::vec3(0.f);
 
 public:
     Camera();
