@@ -4,7 +4,7 @@
 #include <glm/glm.hpp>
 #include <core/world/light.h>
 #include <Camera.h>
-#include <core/graphics/utils/cube_model.h>
+#include <core/world/entity/entity.h>
 
 // todo probably with real ecs will set cameras as normal entities with renderer system
 class Scene

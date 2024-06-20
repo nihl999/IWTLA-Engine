@@ -9,6 +9,8 @@
 #include <core/window/window.h>
 #include <common/File/File.h>
 #include <core/resources/resource_manager.h>
+#include <core/graphics/utils/light_model.h>
+#include <core/graphics/utils/cube_model.h>
 
 void Application::DrawApplicationPropertiesDebug()
 {
@@ -27,12 +29,14 @@ void Application::DrawApplicationPropertiesDebug()
 Application::Application() : window(Window(1280, 720)), renderer(Renderer::GetInstance())
 {
     resourceManager = &ResourceManager::GetInstance();
-    currentScene = Scene(Camera(), {new CubeModel(glm::vec3(0, 0, -5)), new CubeModel()});
+    currentScene = Scene(Camera(), {new CubeModel(glm::vec3(0, 0, -5)), new CubeModel(), new LightModel(currentScene.pointLights[0].position)});
     startTime = glfwGetTime();
 
-    ShaderProgram shaderProgram = resourceManager->LoadShadersFromFile("vertex.shader", "fragment.shader");
+    // todo nope
+    ShaderProgram litShaderProgram = resourceManager->LoadShadersFromFile("lit", "lit_vertex.vs", "lit_fragment.fs");
+    ShaderProgram unlitShaderProgram = resourceManager->LoadShadersFromFile("unlit", "unlit_vertex.vs", "unlit_fragment.fs");
 
-    renderer.BindShaderProgram(shaderProgram);
+    renderer.BindShaderProgram(litShaderProgram);
     glUniform1f(2, currentScene.ambientLight.intensity);
 }
 
@@ -54,54 +58,38 @@ void Application::Update()
 
     currentScene.camera.update();
     currentScene.Update();
-    glm::mat4 viewProj = currentScene.camera.getViewMatrix();
 
-    glUniformMatrix4fv(0,
-                       1,
-                       false,
-                       &viewProj[0][0]);
+    currentScene.entities[2]->position = currentScene.pointLights[0].position;
 
-    glClearColor(0.2f, 0.2f, 0.2f, 1);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    // todo better shader uniform handling
-    glUniform1f(2, currentScene.ambientLight.intensity);
-    glUniform3fv(3,
-                 1,
-                 &currentScene.pointLights[0].position[0]);
-    glUniform3fv(4,
-                 1,
-                 &currentScene.pointLights[0].color[0]);
-    // todo no
-    glUniform3fv(5,
-                 1,
-                 &currentScene.camera.position[0]);
     for (Entity *entity : currentScene.entities)
     {
         HasMesh *meshInfo = dynamic_cast<HasMesh *>(entity);
         if (meshInfo == nullptr)
             continue;
-        glUniformMatrix4fv(1,
-                           1,
-                           GL_FALSE,
-                           &entity->modelMatrix[0][0]);
-        glBufferData(GL_ARRAY_BUFFER, sizeof(MeshVertex) * meshInfo->mesh->verticeCount, &meshInfo->mesh->vertices[0], GL_STATIC_DRAW);
-        // todo for the love of god, create a method for getting map itens
-        Texture tex;
-        try
+
+        // todo learn UBOs
+        std::optional<ShaderProgram> shader = resourceManager->GetShader(meshInfo->mesh->material.shader);
+
+        if (!shader)
         {
-            tex = resourceManager->textures.at(meshInfo->mesh->textureName);
-        }
-        catch (const std::out_of_range &oor)
-        {
-            // todo hate try catches, find a way
-            printf("\ntexture doesnt exist on resource manager, exploding\n");
+            printf("kabooom shader not found %s\n", meshInfo->mesh->material.shader);
             exit(1);
         }
-        if (tex.id != InvalidTexId)
-        {
-            glBindTexture(GL_TEXTURE_2D, tex.id);
-        }
-        glDrawArrays(GL_TRIANGLES, 0, sizeof(MeshVertex) * meshInfo->mesh->verticeCount);
+
+        renderer.BindShaderProgram(shader.value());
+        renderer.UniformFMat4("view_projection_matrix", currentScene.camera.getViewMatrix());
+
+        renderer.UniformF1("ambient_light_force", currentScene.pointLights[0].intensity);
+        renderer.UniformFVec3("point_light_position",
+                              currentScene.pointLights[0].position);
+        renderer.UniformFVec3("point_light_color",
+                              currentScene.pointLights[0].color);
+        renderer.UniformFVec3("cam_pos",
+                              currentScene.camera.position);
+        renderer.UniformFMat4("model_matrix",
+                              entity->modelMatrix);
+
+        renderer.RenderMesh(*meshInfo->mesh);
     }
 
     DrawApplicationPropertiesDebug();

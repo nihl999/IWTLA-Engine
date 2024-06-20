@@ -1,7 +1,7 @@
 #include "resource_manager.h"
 #include <common/stb_image.h>
 #include <common/File/File.h>
-#include <core/renderer/renderer.h>
+#include <core/graphics/renderer/renderer.h>
 
 ResourceManager *ResourceManager::instance = nullptr;
 
@@ -25,31 +25,34 @@ Texture ResourceManager::LoadTextureFromFile(std::string filename)
         exit(1);
     }
     // todo logging function
-    texture.data = std::make_shared<byte *>(data);
-    textures.emplace(filename, texture);
-    printf("texture: %s loaded successfully, id: %d\n", filename.c_str(), texture.id);
+    texture.data = data;
 
     Renderer::GetInstance().CreateGPUTexture(texture);
+
+    textures.emplace(filename, texture);
+    printf("texture: %s loaded successfully, id: %d\n", filename.c_str(), texture.id);
 
     return texture;
 };
 
-ShaderProgram ResourceManager::LoadShadersFromFile(std::string vertexFile, std::string fragmentFile)
+ShaderProgram ResourceManager::LoadShadersFromFile(std::string shaderName, std::string vertexFile, std::string fragmentFile)
 {
     // todo clean
     char *vertexShader = FileUtils::readFile(vertexFile.c_str());
     char *fragmentShader = FileUtils::readFile(fragmentFile.c_str());
-    i32 programId = Renderer::GetInstance().CreateShaderProgram(vertexShader, fragmentShader);
+    ShaderProgram shaderProgram = ShaderProgram();
+    Renderer::GetInstance().CreateShaderProgram(vertexShader, fragmentShader, shaderProgram);
     free(vertexShader);
     free(fragmentShader);
-    ShaderProgram shaderProgram = ShaderProgram();
-    shaderProgram.id = programId;
+    shaders.emplace(shaderName, shaderProgram);
     return shaderProgram;
 }
 
 ResourceManager::ResourceManager()
 {
     stbi_set_flip_vertically_on_load(1);
+    // note default tex maps
+    LoadTextureFromFile("white_1x1.jpg");
 };
 
 ResourceManager &ResourceManager::GetInstance()
@@ -65,8 +68,45 @@ ResourceManager::~ResourceManager()
 {
     for (auto texture = textures.begin(); texture != textures.end(); texture++)
     {
-        stbi_image_free(*texture->second.data);
+        stbi_image_free(texture->second.data);
         // todo this works?
-        texture->second.data.reset();
+        texture->second.data = 0;
     }
 };
+
+std::optional<Texture> ResourceManager::GetTexture(std::string textureName)
+{
+    try
+    {
+        return textures.at(textureName);
+    }
+    catch (const std::out_of_range &oor)
+    {
+        printf("texture doesnt exist on resource manager\n");
+        return std::nullopt;
+    }
+}
+std::optional<Mesh> ResourceManager::GetMesh(std::string meshName)
+{
+    try
+    {
+        return meshes.at(meshName);
+    }
+    catch (const std::out_of_range &oor)
+    {
+        printf("mesh doesnt exist on resource manager\n");
+        return std::nullopt;
+    }
+}
+std::optional<ShaderProgram> ResourceManager::GetShader(std::string shaderName)
+{
+    try
+    {
+        return shaders.at(shaderName);
+    }
+    catch (const std::out_of_range &oor)
+    {
+        printf("shader doesnt exist on resource manager\n");
+        return std::nullopt;
+    }
+}

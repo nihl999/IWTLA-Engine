@@ -4,12 +4,19 @@
 #include <string>
 #include <core/defines.h>
 
-const i32 InvalidTexId = -999;
+const u32 InvalidTexId = -999;
 struct MeshVertex
 {
     glm::vec3 position;
     glm::vec3 normal;
     glm::vec3 texCoord;
+};
+struct BatchMeshVertex
+{
+    glm::vec3 position;
+    glm::vec3 normal;
+    glm::vec3 texCoord;
+    u32 modelMatrixIndex;
 };
 
 struct Texture
@@ -18,15 +25,20 @@ struct Texture
     i32 width;
     i32 height;
     i8 nrChannels;
-    std::shared_ptr<byte *> data;
+    byte *data;
+};
+
+struct Material
+{
+    glm::vec3 tint;
+    std::string diffuseMap;
+    std::string specularMap;
+    std::string shader = std::string("lit");
 };
 
 struct Mesh
 {
-public:
-    // todo im dumb
     MeshVertex *vertices;
     u32 verticeCount = 0;
-    // todo implement texture and material resources ---
-    std::string textureName;
+    Material material;
 };

@@ -145,13 +145,13 @@ void initCubeMesh()
     cubeMesh->verticeCount = 36;
     std::string file = "container.jpg";
     cubeTexture = ResourceManager::GetInstance().LoadTextureFromFile(file);
-    cubeMesh->textureName = file;
+    Material mat = {.tint = glm::vec3(1),
+                    .diffuseMap = file,
+                    .specularMap = std::string("white_1x1.jpg")};
+    cubeMesh->material = mat;
 
-    // todo refactor - pretty manager
     ResourceManager::GetInstance().meshes.emplace(std::string("CubeMesh"), *cubeMesh);
 }
-
-// todo this is dumb, could do with 1 method and without last position
 
 CubeModel::CubeModel() : CubeModel::CubeModel(glm::vec3(0))
 {
