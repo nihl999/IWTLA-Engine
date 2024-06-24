@@ -22,6 +22,9 @@ public:
     bool UniformFMat4(std::string variableName, const glm::mat4 &value);
     bool UniformFVec3(std::string variableName, const glm::vec3 &value);
     bool UniformF1(std::string variableName, const f32 value);
+    bool UniformI1(std::string variableName, const i32 value);
+
+    bool UniformMaterial(Material &material);
 
 private:
     static Renderer *instance;

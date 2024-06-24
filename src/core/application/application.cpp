@@ -29,12 +29,12 @@ void Application::DrawApplicationPropertiesDebug()
 Application::Application() : window(Window(1280, 720)), renderer(Renderer::GetInstance())
 {
     resourceManager = &ResourceManager::GetInstance();
-    currentScene = Scene(Camera(), {new CubeModel(glm::vec3(0, 0, -5)), new CubeModel(), new LightModel(currentScene.pointLights[0].position)});
+    currentScene = Scene(Camera(), {new CubeModel(glm::vec3(1, 0, 0)), new CubeModel(glm::vec3(-1, 0, 0)), new LightModel(currentScene.pointLights[0].position)});
     startTime = glfwGetTime();
 
     // todo nope
-    ShaderProgram litShaderProgram = resourceManager->LoadShadersFromFile("lit", "lit_vertex.vs", "lit_fragment.fs");
-    ShaderProgram unlitShaderProgram = resourceManager->LoadShadersFromFile("unlit", "unlit_vertex.vs", "unlit_fragment.fs");
+    ShaderProgram litShaderProgram = resourceManager->LoadShadersFromFile("lit", "defaults/lit_vertex.vs", "defaults/lit_fragment.fs");
+    ShaderProgram unlitShaderProgram = resourceManager->LoadShadersFromFile("unlit", "defaults/unlit_vertex.vs", "defaults/unlit_fragment.fs");
 
     renderer.BindShaderProgram(litShaderProgram);
     glUniform1f(2, currentScene.ambientLight.intensity);

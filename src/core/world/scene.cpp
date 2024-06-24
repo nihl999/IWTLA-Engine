@@ -7,7 +7,7 @@ Scene::Scene(Camera cam, const std::vector<Entity *> &ents) : camera(cam), entit
     ambientLight = {
         .color = glm::vec3(1),
         .intensity = 1.0f};
-    pointLights = std::vector<World::PointLight>({{.position = glm::vec3(0),
+    pointLights = std::vector<World::PointLight>({{.position = glm::vec3(0, 5, 0),
                                                    .color = glm::vec3(1),
                                                    .intensity = 1.0f}});
     directionalLights = std::vector<World::DirectionalLight>();
@@ -15,10 +15,6 @@ Scene::Scene(Camera cam, const std::vector<Entity *> &ents) : camera(cam), entit
 
 void Scene::DrawScenePropertiesDebug()
 {
-    ImGui::Begin("Scene Properties");
-    ImGui::SliderFloat("Ambient Light force", &ambientLight.intensity, 0.01f, 1.0f, "%.2f");
-
-    ImGui::End();
     ImGui::Begin("Entities Properties");
     ImGui::Text("Entities Count %d", entities.size());
     if (ImGui::TreeNode("Entity List: "))
@@ -48,7 +44,7 @@ void Scene::DrawScenePropertiesDebug()
             if (ImGui::TreeNode(&pointLights[n], "Light %d", n))
             {
                 ImGui::DragFloat3("Pos", &pointLights[n].position[0], 0.5f, 0.0f, 0.0f, "%.2f");
-                ImGui::SliderFloat3("Color", &pointLights[n].color[0], 0.0f, 1.0f, "%.02f");
+                ImGui::ColorPicker3("Color", &pointLights[n].color[0]);
                 ImGui::SliderFloat("Intensity", &pointLights[n].intensity, 0.0f, 1.0f, "%.02f");
                 ImGui::TreePop();
             }

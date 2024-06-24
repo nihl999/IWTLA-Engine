@@ -100,18 +100,9 @@ void Renderer::EndFrame()
 
 void Renderer::RenderMesh(Mesh mesh)
 {
-    std::optional<Texture> tex;
     ResourceManager &manager = ResourceManager::GetInstance();
-    tex = manager.GetTexture(mesh.material.diffuseMap);
-    if (!tex)
-    {
-        printf("texture inexistent broke broke boke");
-        exit(1);
-    }
-    if (tex.value().id != InvalidTexId)
-    {
-        glBindTexture(GL_TEXTURE_2D, tex.value().id);
-    }
+
+    UniformMaterial(mesh.material);
     glBufferData(GL_ARRAY_BUFFER, sizeof(MeshVertex) * mesh.verticeCount, &mesh.vertices[0], GL_STATIC_DRAW);
     glDrawArrays(GL_TRIANGLES, 0, sizeof(MeshVertex) * mesh.verticeCount);
 };
@@ -130,7 +121,7 @@ void Renderer::CreateGPUTexture(Texture &texture)
     glBindTexture(GL_TEXTURE_2D, tex);
 
     texture.id = tex;
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, texture.width, texture.height, 0, GL_RGB, GL_UNSIGNED_BYTE, &texture.data[0]);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, texture.width, texture.height, 0, GL_RGBA, GL_UNSIGNED_BYTE, &texture.data[0]);
     glGenerateMipmap(GL_TEXTURE_2D);
     return;
 }
@@ -190,5 +181,38 @@ bool Renderer::UniformF1(std::string variableName, const f32 value)
     i32 uniformLocation = glGetUniformLocation(currentShaderProgram.id, variableName.c_str());
     glUniform1f(uniformLocation,
                 value);
+    return true;
+}
+bool Renderer::UniformI1(std::string variableName, const i32 value)
+{
+    i32 uniformLocation = glGetUniformLocation(currentShaderProgram.id, variableName.c_str());
+    glUniform1i(uniformLocation,
+                value);
+    return true;
+}
+bool Renderer::UniformMaterial(Material &material)
+{
+    std::optional<Texture> diffuseTexture = ResourceManager::GetInstance().GetTexture(material.diffuseMap);
+    if (!diffuseTexture)
+    {
+        printf("kabooom diffuse not found %s\n", material.diffuseMap);
+        exit(1);
+    }
+    std::optional<Texture> specularTexture = ResourceManager::GetInstance().GetTexture(material.specularMap);
+    if (!specularTexture)
+    {
+        printf("kabooom specular not found %s\n", material.diffuseMap);
+        exit(1);
+    }
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, diffuseTexture.value().id);
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, specularTexture.value().id);
+    UniformI1("material.diffuse",
+              0);
+    UniformI1("material.specular",
+              1);
+    UniformF1("material.shininess",
+              material.shininess);
     return true;
 }

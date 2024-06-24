@@ -17,7 +17,7 @@ Texture ResourceManager::LoadTextureFromFile(std::string filename)
 
     std::string filepath = GetResourceFolderPath().append(filename);
     printf("filepath > %s\n", filepath.c_str());
-    byte *data = stbi_load(filepath.c_str(), &texture.width, &texture.height, (i32 *)&texture.nrChannels, 0);
+    byte *data = stbi_load(filepath.c_str(), &texture.width, &texture.height, (i32 *)&texture.nrChannels, STBI_rgb_alpha);
     if (!data)
     {
         const char *failureReason = stbi_failure_reason();
@@ -52,7 +52,7 @@ ResourceManager::ResourceManager()
 {
     stbi_set_flip_vertically_on_load(1);
     // note default tex maps
-    LoadTextureFromFile("white_1x1.jpg");
+    LoadTextureFromFile("defaults/white_1x1.jpg");
 };
 
 ResourceManager &ResourceManager::GetInstance()

@@ -30,10 +30,11 @@ struct Texture
 
 struct Material
 {
+    std::string shader = std::string("lit");
     glm::vec3 tint;
     std::string diffuseMap;
     std::string specularMap;
-    std::string shader = std::string("lit");
+    f32 shininess = 1.0;
 };
 
 struct Mesh
@@ -42,3 +43,5 @@ struct Mesh
     u32 verticeCount = 0;
     Material material;
 };
+
+Mesh LoadMeshFromFile(std::string file);

@@ -123,7 +123,8 @@ const float cube_vert_normals[108] = {
 void initCubeMesh()
 {
     Mesh *cubeMesh = (Mesh *)calloc(1, sizeof(Mesh));
-    Texture cubeTexture;
+    Texture diffTexture;
+    Texture specTexture;
     // MeshVertex vertices[36];
     MeshVertex *vertices = (MeshVertex *)calloc(1, sizeof(MeshVertex) * 36);
     if (!vertices)
@@ -143,11 +144,13 @@ void initCubeMesh()
 
     cubeMesh->vertices = vertices;
     cubeMesh->verticeCount = 36;
-    std::string file = "container.jpg";
-    cubeTexture = ResourceManager::GetInstance().LoadTextureFromFile(file);
+    std::string diffTexFile = "container.png";
+    std::string specTexFile = "container_specular.png";
+    diffTexture = ResourceManager::GetInstance().LoadTextureFromFile(diffTexFile);
+    specTexture = ResourceManager::GetInstance().LoadTextureFromFile(specTexFile);
     Material mat = {.tint = glm::vec3(1),
-                    .diffuseMap = file,
-                    .specularMap = std::string("white_1x1.jpg")};
+                    .diffuseMap = diffTexFile,
+                    .specularMap = specTexFile};
     cubeMesh->material = mat;
 
     ResourceManager::GetInstance().meshes.emplace(std::string("CubeMesh"), *cubeMesh);

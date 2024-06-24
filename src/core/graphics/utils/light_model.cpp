@@ -143,10 +143,11 @@ void initLightMesh()
 
     lightMesh->vertices = vertices;
     lightMesh->verticeCount = 36;
-    Material mat = {.tint = glm::vec3(1),
-                    .diffuseMap = std::string("white_1x1.jpg"),
-                    .specularMap = std::string("white_1x1.jpg"),
-                    .shader = std::string("unlit")};
+    Material mat = {
+        .shader = std::string("unlit"),
+        .tint = glm::vec3(1),
+        .diffuseMap = std::string("defaults/white_1x1.jpg"),
+        .specularMap = std::string("defaults/white_1x1.jpg")};
     lightMesh->material = mat;
 
     ResourceManager::GetInstance().meshes.emplace(std::string("LightMesh"), *lightMesh);
@@ -163,6 +164,7 @@ LightModel::LightModel(glm::vec3 _position)
     printf("Called Position Setter CubeModel constructor\n");
     printf("x=%f y=%f z=%f\n", position.x, position.y, position.z);
     position = _position;
+    scale = glm::vec3(.3, .3, .3);
     auto meshIt = ResourceManager::GetInstance().meshes.find("LightMesh");
     // todo probably can explode if mesh initialization failed or if run initCubeMesh two times... who knows.
     if (meshIt == ResourceManager::GetInstance().meshes.end())
