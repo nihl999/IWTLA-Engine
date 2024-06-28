@@ -55,7 +55,6 @@ Renderer::Renderer() : currentShaderProgram(ShaderProgram())
         GL_FALSE,
         sizeof(MeshVertex),
         (void *)offsetof(MeshVertex, normal));
-    printf("normal offsetof: %d", offsetof(MeshVertex, normal));
     glVertexAttribPointer(
         2,
         3,
@@ -100,7 +99,6 @@ void Renderer::EndFrame()
 
 void Renderer::RenderMesh(Mesh mesh)
 {
-    ResourceManager &manager = ResourceManager::GetInstance();
 
     UniformMaterial(mesh.material);
     glBufferData(GL_ARRAY_BUFFER, sizeof(MeshVertex) * mesh.verticeCount, &mesh.vertices[0], GL_STATIC_DRAW);
@@ -192,22 +190,24 @@ bool Renderer::UniformI1(std::string variableName, const i32 value)
 }
 bool Renderer::UniformMaterial(Material &material)
 {
-    std::optional<Texture> diffuseTexture = ResourceManager::GetInstance().GetTexture(material.diffuseMap);
-    if (!diffuseTexture)
+    ResourceSystem::Resource *diffuseResource = ResourceSystem::GetResource(material.diffuseMap);
+    if (diffuseResource == nullptr)
     {
         printf("kabooom diffuse not found %s\n", material.diffuseMap);
         exit(1);
     }
-    std::optional<Texture> specularTexture = ResourceManager::GetInstance().GetTexture(material.specularMap);
-    if (!specularTexture)
+    ResourceSystem::Resource *specularResource = ResourceSystem::GetResource(material.specularMap);
+    if (!specularResource)
     {
         printf("kabooom specular not found %s\n", material.diffuseMap);
         exit(1);
     }
+    Texture *diffuseTexture = (Texture *)diffuseResource->data;
+    Texture *specularTexture = (Texture *)specularResource->data;
     glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, diffuseTexture.value().id);
+    glBindTexture(GL_TEXTURE_2D, diffuseTexture->id);
     glActiveTexture(GL_TEXTURE1);
-    glBindTexture(GL_TEXTURE_2D, specularTexture.value().id);
+    glBindTexture(GL_TEXTURE_2D, specularTexture->id);
     UniformI1("material.diffuse",
               0);
     UniformI1("material.specular",

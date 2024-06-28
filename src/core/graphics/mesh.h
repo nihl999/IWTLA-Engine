@@ -3,6 +3,7 @@
 #include <memory>
 #include <string>
 #include <core/defines.h>
+#include <core/resources/resource_manager.h>
 
 const u32 InvalidTexId = -999;
 struct MeshVertex
@@ -30,17 +31,18 @@ struct Texture
 
 struct Material
 {
-    std::string shader = std::string("lit");
+    std::string shader = std::string("defaults/shaders/unlit");
     glm::vec3 tint;
-    std::string diffuseMap;
-    std::string specularMap;
-    f32 shininess = 1.0;
+    ResourceSystem::Handle diffuseMap;
+    ResourceSystem::Handle specularMap;
+    f32 shininess = 32.0;
 };
 
 struct Mesh
 {
     MeshVertex *vertices;
     u32 verticeCount = 0;
+    // todo next thing... handle handle material
     Material material;
 };
 

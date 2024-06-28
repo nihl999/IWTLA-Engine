@@ -1,34 +1,49 @@
 #pragma once
-#include <core/graphics/mesh.h>
-#include <core/graphics/renderer/shader.h>
-#include <core/graphics/renderer/renderer.h>
+#include <core/defines.h>
 #include <string>
 #include <unordered_map>
-#include <optional>
+#include <vector>
 
-class ResourceManager
+namespace ResourceSystem
 {
-private:
-    static ResourceManager *instance;
+    enum ResourceType
+    {
+        RESOURCE_TEXTURE,
+        RESOURCE_MATERIAL,
+        RESOURCE_MESH,
+        RESOURCE_MODEL,
+        RESOURCE_SHADER,
+        RESOURCE_TYPE_COUNT
+    };
+    struct ResourceDescriptor
+    {
+        std::string path;
+        std::string name;
+        ResourceType type;
+    };
 
-public:
-    std::unordered_map<std::string, Texture> textures = std::unordered_map<std::string, Texture>();
-    std::unordered_map<std::string, Mesh> meshes = std::unordered_map<std::string, Mesh>();
-    std::unordered_map<std::string, ShaderProgram> shaders = std::unordered_map<std::string, ShaderProgram>();
+    struct Resource
+    {
+        void *data;
+    };
 
-private:
-    ResourceManager();
+    typedef u16 Handle;
 
-public:
-    static ResourceManager &GetInstance();
-    ~ResourceManager();
+    // Handle currentHandle;
 
-    std::optional<Texture> GetTexture(std::string textureName);
-    std::optional<Mesh> GetMesh(std::string meshName);
-    std::optional<ShaderProgram> GetShader(std::string shaderName);
+    // std::unordered_map<std::string, Handle> m_nameHandleMap;
+    // // todo custom allocation
+    // std::unordered_map<Handle, Resource> m_resources;
+    // std::vector<ResourceDescriptor> m_resourceDescriptors;
+
+    Resource *GetResource(std::string rName);
+    Resource *GetResource(Handle rId);
 
     std::string GetResourceFolderPath();
-    Texture LoadTextureFromFile(std::string filepath);
-    Mesh LoadMeshFromFile(std::string filepath);
-    ShaderProgram LoadShadersFromFile(std::string shaderName, std::string vertexFile, std::string fragmentFile);
+    void LoadResource(Handle h);
+    void LoadTextureFromFile(ResourceDescriptor descriptor, Handle h);
+    void LoadShadersFromFile(ResourceDescriptor descriptor, Handle h);
+
+    void Init();
+    void Cleanup();
 };

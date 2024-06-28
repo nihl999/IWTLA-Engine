@@ -28,15 +28,19 @@ void Application::DrawApplicationPropertiesDebug()
 
 Application::Application() : window(Window(1280, 720)), renderer(Renderer::GetInstance())
 {
-    resourceManager = &ResourceManager::GetInstance();
+    ResourceSystem::Init();
     currentScene = Scene(Camera(), {new CubeModel(glm::vec3(1, 0, 0)), new CubeModel(glm::vec3(-1, 0, 0)), new LightModel(currentScene.pointLights[0].position)});
     startTime = glfwGetTime();
 
     // todo nope
-    ShaderProgram litShaderProgram = resourceManager->LoadShadersFromFile("lit", "defaults/lit_vertex.vs", "defaults/lit_fragment.fs");
-    ShaderProgram unlitShaderProgram = resourceManager->LoadShadersFromFile("unlit", "defaults/unlit_vertex.vs", "defaults/unlit_fragment.fs");
-
-    renderer.BindShaderProgram(litShaderProgram);
+    ResourceSystem::Resource *litShaderResource = ResourceSystem::GetResource("defaults/shaders/lit");
+    if (litShaderResource == nullptr)
+    {
+        printf("lit shader not loaded \n");
+        exit(1);
+    }
+    ShaderProgram *litShader = (ShaderProgram *)litShaderResource->data;
+    renderer.BindShaderProgram(*litShader);
     glUniform1f(2, currentScene.ambientLight.intensity);
 }
 
@@ -68,15 +72,15 @@ void Application::Update()
             continue;
 
         // todo learn UBOs
-        std::optional<ShaderProgram> shader = resourceManager->GetShader(meshInfo->mesh->material.shader);
 
-        if (!shader)
+        ResourceSystem::Resource *shaderResource = ResourceSystem::GetResource(meshInfo->mesh->material.shader);
+        if (shaderResource == nullptr)
         {
-            printf("kabooom shader not found %s\n", meshInfo->mesh->material.shader);
+            printf("lit shader not loaded \n");
             exit(1);
         }
-
-        renderer.BindShaderProgram(shader.value());
+        ShaderProgram *shader = (ShaderProgram *)shaderResource->data;
+        renderer.BindShaderProgram(*shader);
         renderer.UniformFMat4("view_projection_matrix", currentScene.camera.getViewMatrix());
 
         renderer.UniformF1("ambient_light_force", currentScene.pointLights[0].intensity);

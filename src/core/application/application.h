@@ -11,7 +11,6 @@ class Application
 private:
     Window window;
     Renderer renderer;
-    ResourceManager *resourceManager;
     float lastFrameTime = 0;
     float startTime = 0;
 
