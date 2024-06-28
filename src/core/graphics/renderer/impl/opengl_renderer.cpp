@@ -1,5 +1,7 @@
 #include <core/graphics/renderer/renderer.h>
-#include <core/resources/resource_manager.h>
+#include <core/graphics/texture.h>
+#include <core/graphics/material.h>
+#include <core/resources/resource_system.h>
 #include <imgui/imgui.h>
 #include <imgui/backends/imgui_impl_opengl3.h>
 #include <GLAD/glad.h>
@@ -46,22 +48,22 @@ Renderer::Renderer() : currentShaderProgram(ShaderProgram())
         3,
         GL_FLOAT,
         GL_FALSE,
-        sizeof(MeshVertex),
-        (void *)offsetof(MeshVertex, position));
+        sizeof(Vertex),
+        (void *)offsetof(Vertex, position));
     glVertexAttribPointer(
         1,
         3,
         GL_FLOAT,
         GL_FALSE,
-        sizeof(MeshVertex),
-        (void *)offsetof(MeshVertex, normal));
+        sizeof(Vertex),
+        (void *)offsetof(Vertex, normal));
     glVertexAttribPointer(
         2,
         3,
         GL_FLOAT,
         GL_FALSE,
-        sizeof(MeshVertex),
-        (void *)offsetof(MeshVertex, texCoord));
+        sizeof(Vertex),
+        (void *)offsetof(Vertex, texCoord));
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -101,8 +103,8 @@ void Renderer::RenderMesh(Mesh mesh)
 {
 
     UniformMaterial(mesh.material);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(MeshVertex) * mesh.verticeCount, &mesh.vertices[0], GL_STATIC_DRAW);
-    glDrawArrays(GL_TRIANGLES, 0, sizeof(MeshVertex) * mesh.verticeCount);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * mesh.verticeCount, &mesh.vertices[0], GL_STATIC_DRAW);
+    glDrawArrays(GL_TRIANGLES, 0, sizeof(Vertex) * mesh.verticeCount);
 };
 
 void Renderer::BindShaderProgram(ShaderProgram program)

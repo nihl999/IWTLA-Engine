@@ -1,8 +1,8 @@
-#include "resource_manager.h"
+#include <core/resources/resource_system.h>
 #include <common/stb_image.h>
 #include <common/File/File.h>
 #include <core/graphics/renderer/renderer.h>
-#include <core/graphics/mesh.h>
+#include <core/graphics/model.h>
 #include <core/graphics/renderer/shader.h>
 #include <core/graphics/renderer/renderer.h>
 #include <core/assert.h>
@@ -256,7 +256,7 @@ namespace ResourceSystem
         Handle diffuse = PrepareResource({.path = "container.png", .name = "container_diffuse", .type = RESOURCE_TEXTURE});
         Handle specular = PrepareResource({.path = "container_specular.png", .name = "container_specular", .type = RESOURCE_TEXTURE});
 
-        MeshVertex *vertices = new MeshVertex[36];
+        Vertex *vertices = new Vertex[36];
         if (!vertices)
         {
             // todo logging
@@ -265,7 +265,7 @@ namespace ResourceSystem
         }
         for (u32 i = 0; i < 36; i++)
         {
-            MeshVertex vert;
+            Vertex vert;
             vert.position = glm::vec3(cube_vert_pos[i * 3], cube_vert_pos[i * 3 + 1], cube_vert_pos[i * 3 + 2]);
             vert.normal = glm::vec3(cube_vert_normals[i * 3], cube_vert_normals[i * 3 + 1], cube_vert_normals[i * 3 + 2]);
             vert.texCoord = glm::vec3(cube_vert_uvs[i * 2], cube_vert_uvs[i * 2 + 1], 1);
@@ -407,7 +407,7 @@ namespace ResourceSystem
         Handle diffuse = m_nameHandleMap["defaults/textures/white"];
         Handle specular = m_nameHandleMap["defaults/textures/white"];
 
-        MeshVertex *vertices = new MeshVertex[36];
+        Vertex *vertices = new Vertex[36];
         if (!vertices)
         {
             // todo logging
@@ -416,7 +416,7 @@ namespace ResourceSystem
         }
         for (u32 i = 0; i < 36; i++)
         {
-            MeshVertex vert;
+            Vertex vert;
             vert.position = glm::vec3(cube_vert_pos[i * 3], cube_vert_pos[i * 3 + 1], cube_vert_pos[i * 3 + 2]);
             vert.normal = glm::vec3(cube_vert_normals[i * 3], cube_vert_normals[i * 3 + 1], cube_vert_normals[i * 3 + 2]);
             vert.texCoord = glm::vec3(cube_vert_uvs[i * 2], cube_vert_uvs[i * 2 + 1], 1);

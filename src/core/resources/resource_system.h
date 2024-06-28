@@ -29,6 +29,7 @@ namespace ResourceSystem
 
     typedef u16 Handle;
 
+    // extern const u32 InvalidTextureId;
     // Handle currentHandle;
 
     // std::unordered_map<std::string, Handle> m_nameHandleMap;

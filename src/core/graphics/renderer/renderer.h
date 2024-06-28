@@ -1,6 +1,8 @@
 #pragma once
 #include <core/defines.h>
-#include <core/graphics/mesh.h>
+#include <core/graphics/model.h>
+#include <core/graphics/texture.h>
+#include <core/graphics/material.h>
 #include <core/graphics/renderer/shader.h>
 #include <glm/glm.hpp>
 
