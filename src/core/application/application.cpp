@@ -13,9 +13,14 @@
 #include <core/graphics/utils/cube_model.h>
 #include <core/world/components.h>
 
+#include <random>
+
+u32 frames = 0;
+f64 lastFPSCalc;
 void Application::DrawApplicationPropertiesDebug()
 {
     ImGui::Begin("Application Properties");
+    ImGui::Text("Frame time: %f ms", deltaTime * 1000);
     ImGui::Checkbox("Capture Mouse", &Input::capturingMouse);
     // todo Should be on some inputs tab maybe? or application handles... anyway
     ImGui::SliderFloat("Mouse Sensitivity", &Input::sensitivity, 0.01f, 3.0f, "%.2f");
@@ -33,31 +38,40 @@ Application::Application() : window(Window(1280, 720)), renderer(Renderer::GetIn
     currentScene = Scene(Camera(glm::vec3(0, 0, 10)));
     currentScene.Setup([](Scene &scene)
                        {
-                           flecs::entity cube1 = scene.world.entity("cube1");
-                           cube1.set<ECSComponents::Transform>({.position = glm::vec3(2.5, 0, 0)});
-                           flecs::entity cube2 = scene.world.entity("cube2");
-                           cube2.set<ECSComponents::Transform>({.position = glm::vec3(-2.5, 0, 0)});
+                           // Random seed
+                           std::random_device rd;
+
+                           // Initialize Mersenne Twister pseudo-random number generator
+                           std::mt19937 gen(rd());
+
+                           std::uniform_real_distribution<f32> x(-10, 30);
+                           std::uniform_real_distribution<f32> y(0, 10);
+                           std::uniform_real_distribution<f32> z(-10, -50);
+
+                           for (u32 i = 0; i <= 20; i++)
+                           {
+                               flecs::entity cube = scene.world.entity();
+                               cube.set<ECSComponents::Transform>({.position = glm::vec3(x(gen), y(gen), z(gen))});
+                               cube.add<ECSComponents::Velocity>();
+                               cube.add<ECSComponents::Renderable>();
+                               cube.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube_tex", .type = ResourceSystem::RESOURCE_MODEL})});
+                           };
+
                            flecs::entity light = scene.world.entity("light");
                            light.set<ECSComponents::Transform>({.position = glm::vec3(0, 10, 0)});
-
-                           cube1.add<ECSComponents::Velocity>();
-                           cube2.add<ECSComponents::Velocity>();
                            light.add<ECSComponents::Velocity>();
-
-                           cube1.add<ECSComponents::Renderable>();
-                           cube2.add<ECSComponents::Renderable>();
                            light.add<ECSComponents::Renderable>();
                            light.set<ECSComponents::PointLight>({.position = glm::vec3(0, 5, 0),
                                                                  .color = glm::vec3(1),
                                                                  .intensity = 1.0f});
 
-                           cube1.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube_tex", .type = ResourceSystem::RESOURCE_MODEL})});
-                           cube2.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube_tex", .type = ResourceSystem::RESOURCE_MODEL})});
+
                            light.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube", .type = ResourceSystem::RESOURCE_MODEL})});
                            // lambda end
                        });
     currentScene.RegisterSystems();
     startTime = glfwGetTime();
+    lastFPSCalc = glfwGetTime();
 }
 
 void Application::Update()
@@ -69,6 +83,7 @@ void Application::Update()
     window.PoolEvents();
     deltaTime = glfwGetTime() - lastFrameTime;
     lastFrameTime = glfwGetTime();
+    frames++;
 
     window.NewFrame();
     renderer.NewFrame();
@@ -85,6 +100,12 @@ void Application::Update()
       window.SwapBuffers();
       // todo dont realy want to poll mouse position, but it will be what it will be
 
+      if (lastFrameTime - lastFPSCalc >= 1)
+      {
+          // printf("%f ms/frame\n", 1000.0 / double(frames));
+          lastFPSCalc = lastFrameTime;
+          frames = 0;
+      }
       Input::mouseDeltaX = 0;
       Input::mouseDeltaY = 0;
 }

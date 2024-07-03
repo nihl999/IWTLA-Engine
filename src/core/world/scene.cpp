@@ -133,7 +133,7 @@ void Scene::RegisterRenderModels()
                                         return;
                                     }
                                     Graphics::Model *model = (Graphics::Model *)modelResource->data;
-                                    printf("x: %f y: %f z: %f\n", t.position.x, t.position.y, t.position.z);
+                                    // printf("x: %f y: %f z: %f\n", t.position.x, t.position.y, t.position.z);
                                     auto light = world.filter<Transform, PointLight>().first();
                                     const Transform *lightPos = light.get<Transform>();
                                     const PointLight *lightC = light.get<PointLight>();

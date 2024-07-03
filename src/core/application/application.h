@@ -15,7 +15,7 @@ private:
 
 public:
     bool shouldRun = true;
-    float deltaTime = 0;
+    f64 deltaTime = 0;
     Scene currentScene;
     Application();
 
