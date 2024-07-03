@@ -8,9 +8,10 @@
 #include <core/world/scene.h>
 #include <core/window/window.h>
 #include <common/File/File.h>
-#include <core/resources/resource_manager.h>
+#include <core/resources/resource_system.h>
 #include <core/graphics/utils/light_model.h>
 #include <core/graphics/utils/cube_model.h>
+#include <core/world/components.h>
 
 void Application::DrawApplicationPropertiesDebug()
 {
@@ -29,19 +30,34 @@ void Application::DrawApplicationPropertiesDebug()
 Application::Application() : window(Window(1280, 720)), renderer(Renderer::GetInstance())
 {
     ResourceSystem::Init();
-    currentScene = Scene(Camera(), {new CubeModel(glm::vec3(1, 0, 0)), new CubeModel(glm::vec3(-1, 0, 0)), new LightModel(currentScene.pointLights[0].position)});
-    startTime = glfwGetTime();
+    currentScene = Scene(Camera(glm::vec3(0, 0, 10)));
+    currentScene.Setup([](Scene &scene)
+                       {
+                           flecs::entity cube1 = scene.world.entity("cube1");
+                           cube1.set<ECSComponents::Transform>({.position = glm::vec3(2.5, 0, 0)});
+                           flecs::entity cube2 = scene.world.entity("cube2");
+                           cube2.set<ECSComponents::Transform>({.position = glm::vec3(-2.5, 0, 0)});
+                           flecs::entity light = scene.world.entity("light");
+                           light.set<ECSComponents::Transform>({.position = glm::vec3(0, 10, 0)});
 
-    // todo nope
-    ResourceSystem::Resource *litShaderResource = ResourceSystem::GetResource("defaults/shaders/lit");
-    if (litShaderResource == nullptr)
-    {
-        printf("lit shader not loaded \n");
-        exit(1);
-    }
-    ShaderProgram *litShader = (ShaderProgram *)litShaderResource->data;
-    renderer.BindShaderProgram(*litShader);
-    glUniform1f(2, currentScene.ambientLight.intensity);
+                           cube1.add<ECSComponents::Velocity>();
+                           cube2.add<ECSComponents::Velocity>();
+                           light.add<ECSComponents::Velocity>();
+
+                           cube1.add<ECSComponents::Renderable>();
+                           cube2.add<ECSComponents::Renderable>();
+                           light.add<ECSComponents::Renderable>();
+                           light.set<ECSComponents::PointLight>({.position = glm::vec3(0, 5, 0),
+                                                                 .color = glm::vec3(1),
+                                                                 .intensity = 1.0f});
+
+                           cube1.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube_tex", .type = ResourceSystem::RESOURCE_MODEL})});
+                           cube2.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube_tex", .type = ResourceSystem::RESOURCE_MODEL})});
+                           light.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube", .type = ResourceSystem::RESOURCE_MODEL})});
+                           // lambda end
+                       });
+    currentScene.RegisterSystems();
+    startTime = glfwGetTime();
 }
 
 void Application::Update()
@@ -58,52 +74,17 @@ void Application::Update()
     renderer.NewFrame();
 
     currentScene.camera.move(glm::vec3(Input::axis["Horizontal"].currentAxisValue * deltaTime, Input::axis["Fly"].currentAxisValue * deltaTime, Input::axis["Vertical"].currentAxisValue * deltaTime));
-    currentScene.camera.updateYawPitch(Input::mouseDeltaX, Input::mouseDeltaY);
+      currentScene.camera.updateYawPitch(Input::mouseDeltaX, Input::mouseDeltaY);
+      currentScene.Update();
 
-    currentScene.camera.update();
-    currentScene.Update();
+      DrawApplicationPropertiesDebug();
+      currentScene.camera.DrawCameraPropertiesDebug();
 
-    currentScene.entities[2]->position = currentScene.pointLights[0].position;
+      renderer.EndFrame();
 
-    for (Entity *entity : currentScene.entities)
-    {
-        HasMesh *meshInfo = dynamic_cast<HasMesh *>(entity);
-        if (meshInfo == nullptr)
-            continue;
+      window.SwapBuffers();
+      // todo dont realy want to poll mouse position, but it will be what it will be
 
-        // todo learn UBOs
-
-        ResourceSystem::Resource *shaderResource = ResourceSystem::GetResource(meshInfo->mesh->material.shader);
-        if (shaderResource == nullptr)
-        {
-            printf("lit shader not loaded \n");
-            exit(1);
-        }
-        ShaderProgram *shader = (ShaderProgram *)shaderResource->data;
-        renderer.BindShaderProgram(*shader);
-        renderer.UniformFMat4("view_projection_matrix", currentScene.camera.getViewMatrix());
-
-        renderer.UniformF1("ambient_light_force", currentScene.pointLights[0].intensity);
-        renderer.UniformFVec3("point_light_position",
-                              currentScene.pointLights[0].position);
-        renderer.UniformFVec3("point_light_color",
-                              currentScene.pointLights[0].color);
-        renderer.UniformFVec3("cam_pos",
-                              currentScene.camera.position);
-        renderer.UniformFMat4("model_matrix",
-                              entity->modelMatrix);
-
-        renderer.RenderMesh(*meshInfo->mesh);
-    }
-
-    DrawApplicationPropertiesDebug();
-    currentScene.camera.DrawCameraPropertiesDebug();
-
-    renderer.EndFrame();
-
-    window.SwapBuffers();
-    // todo dont realy want to poll mouse position, but it will be what it will be
-
-    Input::mouseDeltaX = 0;
-    Input::mouseDeltaY = 0;
+      Input::mouseDeltaX = 0;
+      Input::mouseDeltaY = 0;
 }

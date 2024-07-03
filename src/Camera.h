@@ -1,6 +1,4 @@
-#ifndef CAMERA_CLASS
-#define CAMERA_CLASS
-
+#pragma once
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <core/defines.h>
@@ -20,7 +18,6 @@ private:
     glm::vec3 cameraRight = glm::cross(cameraUp, forward);
     glm::mat4 modelMatrix = glm::lookAt(position, position + forward, cameraUp);
     glm::mat4 projectionMatrix = glm::perspective(glm::radians(fov), aspectRatio, nearClip, farClip);
-    glm::mat4 finalViewMatrix = projectionMatrix * modelMatrix;
 
 public:
     void updateCameraDir();
@@ -29,16 +26,16 @@ public:
 
 public:
     glm::vec3 position = glm::vec3(0.f);
+    glm::mat4 finalViewMatrix = projectionMatrix * modelMatrix;
 
 public:
     Camera();
+    Camera(glm::vec3 spawnPosition);
     void update();
     void updateYawPitch(float yawDelta, float pitchDelta);
     void updatePosition(glm::vec3 newPosition);
     void translate(glm::vec3 translation);
     void move(glm::vec3 directions);
     void DrawCameraPropertiesDebug();
-    glm::mat4 getViewMatrix();
+    glm::mat4 getViewMatrix() const;
 };
-
-#endif

@@ -25,6 +25,11 @@ namespace ResourceSystem
     Handle PrepareResource(const ResourceDescriptor resourceDescriptor)
     {
         Handle h = currentHandle;
+        // NOTE: Assumes that names are unique...
+        if (m_nameHandleMap.find(resourceDescriptor.name) != m_nameHandleMap.end())
+        {
+            return m_nameHandleMap[resourceDescriptor.name];
+        }
         m_resourceDescriptors.push_back(resourceDescriptor);
         m_nameHandleMap[resourceDescriptor.name] = h;
         currentHandle++;
@@ -126,8 +131,8 @@ namespace ResourceSystem
         LoadResource(defaultUnlit);
 
         // Hardcoded loading
-        Handle defaultCube = PrepareResource({.path = "hardcoded/cube", .name = "defaults/mesh/cube_tex", .type = RESOURCE_MESH});
-        Handle defaultUntextured = PrepareResource({.path = "hardcoded/cube", .name = "defaults/mesh/cube", .type = RESOURCE_MESH});
+        Handle defaultCube = PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube_tex", .type = RESOURCE_MODEL});
+        Handle defaultUntextured = PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube", .type = RESOURCE_MODEL});
         LoadHardcodedCubeMeshTextured(defaultCube);
         LoadHardcodedCubeMesh(defaultUntextured);
     };
@@ -252,37 +257,39 @@ namespace ResourceSystem
             0.0f, 1.0f, 0.0f,
             0.0f, 1.0f, 0.0f};
 
-        Mesh *cubeMesh = new Mesh;
+        Graphics::Mesh cubeMesh;
         Handle diffuse = PrepareResource({.path = "container.png", .name = "container_diffuse", .type = RESOURCE_TEXTURE});
         Handle specular = PrepareResource({.path = "container_specular.png", .name = "container_specular", .type = RESOURCE_TEXTURE});
 
-        Vertex *vertices = new Vertex[36];
-        if (!vertices)
-        {
-            // todo logging
-            printf("error callocing cube_model cubeMesh vertices\n");
-            exit(1);
-        }
+        std::vector<Graphics::Vertex> vertices = std::vector<Graphics::Vertex>();
+        vertices.reserve(36);
         for (u32 i = 0; i < 36; i++)
         {
-            Vertex vert;
+            Graphics::Vertex vert;
             vert.position = glm::vec3(cube_vert_pos[i * 3], cube_vert_pos[i * 3 + 1], cube_vert_pos[i * 3 + 2]);
             vert.normal = glm::vec3(cube_vert_normals[i * 3], cube_vert_normals[i * 3 + 1], cube_vert_normals[i * 3 + 2]);
             vert.texCoord = glm::vec3(cube_vert_uvs[i * 2], cube_vert_uvs[i * 2 + 1], 1);
-            vertices[i] = vert;
+            vertices.push_back(vert);
         }
 
-        cubeMesh->vertices = vertices;
-        cubeMesh->verticeCount = 36;
-        Material mat = {.shader = "defaults/shaders/lit",
-                        .tint = glm::vec3(1),
-                        .diffuseMap = diffuse,
-                        .specularMap = specular,
-                        .shininess = 64};
-        cubeMesh->material = mat;
+        cubeMesh.vertices = vertices;
+        Handle mat = PrepareResource({.path = "hardcoded/textured_cube_mat", .name = "hardcoded/textured_cube_mat", .type = RESOURCE_MATERIAL});
+        Material *material = new Material{.shader = "defaults/shaders/lit",
+                                          .tint = glm::vec3(1),
+                                          .diffuseMap = diffuse,
+                                          .specularMap = specular,
+                                          .shininess = 64};
+        m_resources[mat] = {.data = material};
+        cubeMesh.material = mat;
 
+        // Handle defaultCubeMesh = PrepareResource({.path = "hardcoded/cube", .name = "defaults/mesh/cube_tex", .type = RESOURCE_MESH});
+        std::vector<Graphics::Mesh> meshes = std::vector<Graphics::Mesh>();
+        meshes.push_back(cubeMesh);
+        Graphics::Model *model = new Graphics::Model{
+            .meshes = meshes};
+        // m_resources[defaultCubeMesh] = {.data = cubeMesh};
         m_resources[h] = {
-            .data = cubeMesh};
+            .data = model};
     }
     void LoadHardcodedCubeMesh(Handle h)
     {
@@ -403,34 +410,39 @@ namespace ResourceSystem
             0.0f, 1.0f, 0.0f,
             0.0f, 1.0f, 0.0f};
 
-        Mesh *cubeMesh = new Mesh;
+        Graphics::Mesh cubeMesh;
         Handle diffuse = m_nameHandleMap["defaults/textures/white"];
         Handle specular = m_nameHandleMap["defaults/textures/white"];
 
-        Vertex *vertices = new Vertex[36];
-        if (!vertices)
-        {
-            // todo logging
-            printf("error callocing cube_model cubeMesh vertices\n");
-            exit(1);
-        }
+        std::vector<Graphics::Vertex> vertices = std::vector<Graphics::Vertex>();
+        vertices.reserve(36);
+
         for (u32 i = 0; i < 36; i++)
         {
-            Vertex vert;
+            Graphics::Vertex vert;
             vert.position = glm::vec3(cube_vert_pos[i * 3], cube_vert_pos[i * 3 + 1], cube_vert_pos[i * 3 + 2]);
             vert.normal = glm::vec3(cube_vert_normals[i * 3], cube_vert_normals[i * 3 + 1], cube_vert_normals[i * 3 + 2]);
             vert.texCoord = glm::vec3(cube_vert_uvs[i * 2], cube_vert_uvs[i * 2 + 1], 1);
-            vertices[i] = vert;
+            vertices.push_back(vert);
         }
 
-        cubeMesh->vertices = vertices;
-        cubeMesh->verticeCount = 36;
-        Material mat = {.tint = glm::vec3(1),
-                        .diffuseMap = diffuse,
-                        .specularMap = specular};
-        cubeMesh->material = mat;
+        cubeMesh.vertices = vertices;
+        Handle mat = PrepareResource({.path = "hardcoded/untextured_cube_mat", .name = "hardcoded/untextured_cube_mat", .type = RESOURCE_MATERIAL});
+        Material *material = new Material{.tint = glm::vec3(1),
+                                          .diffuseMap = diffuse,
+                                          .specularMap = specular};
+        m_resources[mat] = {.data = material};
+        cubeMesh.material = mat;
 
+        std::vector<Graphics::Mesh> meshes = std::vector<Graphics::Mesh>();
+        meshes.push_back(cubeMesh);
+        Graphics::Model *model = new Graphics::Model{
+            .meshes = meshes};
+        // m_resources[defaultCubeMesh] = {.data = cubeMesh};
         m_resources[h] = {
-            .data = cubeMesh};
+            .data = model};
+
+        //     m_resources[h] = {
+        //         .data = cubeMesh};
     }
 }

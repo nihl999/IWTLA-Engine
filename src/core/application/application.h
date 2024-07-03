@@ -4,7 +4,6 @@
 #include <core/world/scene.h>
 #include <core/window/window.h>
 #include <core/graphics/renderer/renderer.h>
-#include <core/resources/resource_manager.h>
 
 class Application
 {

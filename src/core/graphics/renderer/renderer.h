@@ -13,7 +13,8 @@ public:
     static Renderer &GetInstance();
     void NewFrame();
     void EndFrame();
-    void RenderMesh(Mesh mesh);
+    void RenderMesh(Graphics::Mesh mesh);
+    void RenderMeshIndexed(Graphics::Mesh mesh);
 
     // resources side
     void CreateGPUTexture(Texture &texture);

@@ -45,6 +45,8 @@ namespace ResourceSystem
     void LoadTextureFromFile(ResourceDescriptor descriptor, Handle h);
     void LoadShadersFromFile(ResourceDescriptor descriptor, Handle h);
 
+    Handle PrepareResource(const ResourceDescriptor resourceDescriptor);
+
     void Init();
     void Cleanup();
 };

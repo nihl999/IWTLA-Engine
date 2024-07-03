@@ -2,6 +2,7 @@
 #include <imgui/imgui.h>
 
 Camera::Camera(){};
+Camera::Camera(glm::vec3 spawnPosition) : position(spawnPosition) {};
 void Camera::updateViewMatrix()
 {
     modelMatrix = glm::lookAt(
@@ -23,7 +24,7 @@ void Camera::update()
     updateProjectionMatrix();
     updateViewMatrix();
 }
-glm::mat4 Camera::getViewMatrix()
+glm::mat4 Camera::getViewMatrix() const
 {
     return finalViewMatrix;
 }

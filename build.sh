@@ -9,6 +9,6 @@ cppFilenames=$(find . -type f -name "*.cpp")
 compilerFlags="-g -std=c++20"
 
 includeFlags="-I../src -I../include"
-linkerFlags="-L../lib -lglfw3 -lglad -luser32 -lgdi32 -lopengl32 -limguiglgl -limgui -lassimp"
+linkerFlags="-L../lib -lglfw3 -lglad -luser32 -lgdi32 -lopengl32 -limguiglgl -limgui -lflecs -lWs2_32"
 
 g++ $cppFilenames $compilerFlags -o ../bin/$outName $includeFlags $linkerFlags
