@@ -2,12 +2,18 @@
 
 in vec3 uv;
 
-uniform sampler2D ourTexture;
+struct Material {
+    sampler2D diffuse;
+    sampler2D specular;
+    float     shininess;
+}; 
 
 uniform vec3 point_light_color;
+uniform Material material;
 
 out vec4 color;
 
 void main() {
-    color = texture(ourTexture, uv.xy) * vec4(point_light_color, 1);
+    vec3 frag_diffuse_tex = vec3(texture(material.diffuse, uv.xy));
+    color = vec4(frag_diffuse_tex, 1) * vec4(point_light_color, 1);
 }

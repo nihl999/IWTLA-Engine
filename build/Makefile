@@ -249,30 +249,6 @@ src/core/application/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/application/application.cpp.s
 .PHONY : src/core/application/application.cpp.s
 
-src/core/graphics/mesh.obj: src/core/graphics/mesh.cpp.obj
-.PHONY : src/core/graphics/mesh.obj
-
-# target to build an object file
-src/core/graphics/mesh.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/graphics/mesh.cpp.obj
-.PHONY : src/core/graphics/mesh.cpp.obj
-
-src/core/graphics/mesh.i: src/core/graphics/mesh.cpp.i
-.PHONY : src/core/graphics/mesh.i
-
-# target to preprocess a source file
-src/core/graphics/mesh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/graphics/mesh.cpp.i
-.PHONY : src/core/graphics/mesh.cpp.i
-
-src/core/graphics/mesh.s: src/core/graphics/mesh.cpp.s
-.PHONY : src/core/graphics/mesh.s
-
-# target to generate assembly for a file
-src/core/graphics/mesh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/graphics/mesh.cpp.s
-.PHONY : src/core/graphics/mesh.cpp.s
-
 src/core/graphics/renderer/impl/opengl_renderer.obj: src/core/graphics/renderer/impl/opengl_renderer.cpp.obj
 .PHONY : src/core/graphics/renderer/impl/opengl_renderer.obj
 
@@ -344,6 +320,30 @@ src/core/resources/resource_system.s: src/core/resources/resource_system.cpp.s
 src/core/resources/resource_system.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/resources/resource_system.cpp.s
 .PHONY : src/core/resources/resource_system.cpp.s
+
+src/core/utils/uuid/uuid.obj: src/core/utils/uuid/uuid.cpp.obj
+.PHONY : src/core/utils/uuid/uuid.obj
+
+# target to build an object file
+src/core/utils/uuid/uuid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj
+.PHONY : src/core/utils/uuid/uuid.cpp.obj
+
+src/core/utils/uuid/uuid.i: src/core/utils/uuid/uuid.cpp.i
+.PHONY : src/core/utils/uuid/uuid.i
+
+# target to preprocess a source file
+src/core/utils/uuid/uuid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.i
+.PHONY : src/core/utils/uuid/uuid.cpp.i
+
+src/core/utils/uuid/uuid.s: src/core/utils/uuid/uuid.cpp.s
+.PHONY : src/core/utils/uuid/uuid.s
+
+# target to generate assembly for a file
+src/core/utils/uuid/uuid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.s
+.PHONY : src/core/utils/uuid/uuid.cpp.s
 
 src/core/window/impl/glfw_window.obj: src/core/window/impl/glfw_window.cpp.obj
 .PHONY : src/core/window/impl/glfw_window.obj
@@ -441,9 +441,6 @@ help:
 	@echo "... src/core/application/application.obj"
 	@echo "... src/core/application/application.i"
 	@echo "... src/core/application/application.s"
-	@echo "... src/core/graphics/mesh.obj"
-	@echo "... src/core/graphics/mesh.i"
-	@echo "... src/core/graphics/mesh.s"
 	@echo "... src/core/graphics/renderer/impl/opengl_renderer.obj"
 	@echo "... src/core/graphics/renderer/impl/opengl_renderer.i"
 	@echo "... src/core/graphics/renderer/impl/opengl_renderer.s"
@@ -453,6 +450,9 @@ help:
 	@echo "... src/core/resources/resource_system.obj"
 	@echo "... src/core/resources/resource_system.i"
 	@echo "... src/core/resources/resource_system.s"
+	@echo "... src/core/utils/uuid/uuid.obj"
+	@echo "... src/core/utils/uuid/uuid.i"
+	@echo "... src/core/utils/uuid/uuid.s"
 	@echo "... src/core/window/impl/glfw_window.obj"
 	@echo "... src/core/window/impl/glfw_window.i"
 	@echo "... src/core/window/impl/glfw_window.s"

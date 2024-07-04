@@ -47,6 +47,7 @@ Renderer::Renderer() : currentShaderProgram(ShaderProgram())
     glEnableVertexAttribArray(0);
     glEnableVertexAttribArray(1);
     glEnableVertexAttribArray(2);
+    glEnableVertexAttribArray(3);
     glVertexAttribPointer(
         0,
         3,
@@ -67,7 +68,14 @@ Renderer::Renderer() : currentShaderProgram(ShaderProgram())
         GL_FLOAT,
         GL_FALSE,
         sizeof(Graphics::Vertex),
-        (void *)offsetof(Graphics::Vertex, texCoord));
+        (void *)offsetof(Graphics::Vertex, uv));
+    glVertexAttribPointer(
+        3,
+        3,
+        GL_FLOAT,
+        GL_FALSE,
+        sizeof(Graphics::Vertex),
+        (void *)offsetof(Graphics::Vertex, color));
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -128,8 +136,8 @@ void Renderer::RenderMeshIndexed(Graphics::Mesh mesh)
     Material *material = (Material *)materialResource->data;
     UniformMaterial(*material);
     glBufferData(GL_ARRAY_BUFFER, sizeof(Graphics::Vertex) * mesh.vertices.size(), &mesh.vertices[0], GL_STATIC_DRAW);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(Graphics::Vertex) * mesh.indices.size(), &mesh.indices[0], GL_STATIC_DRAW);
-    glDrawElements(GL_TRIANGLES, mesh.vertices.size(), GL_UNSIGNED_INT, NULL);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(u32) * mesh.indices.size(), &mesh.indices[0], GL_STATIC_DRAW);
+    glDrawElements(GL_TRIANGLES, mesh.indices.size(), GL_UNSIGNED_INT, NULL);
 };
 
 void Renderer::BindShaderProgram(ShaderProgram program)
@@ -166,7 +174,7 @@ void Renderer::CreateShaderProgram(char *vrtSrc, char *frgSrc, ShaderProgram &ou
 
     glGetProgramiv(programId, GL_LINK_STATUS, &result);
     glGetProgramiv(programId, GL_INFO_LOG_LENGTH, &infoLogLength);
-    printf("shader program link result: %d", result);
+    printf("shader program link result: %d\n", result);
     if (infoLogLength > 0)
     {
         char programErrorMessage[infoLogLength + 1];

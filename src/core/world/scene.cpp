@@ -165,7 +165,10 @@ void Scene::RegisterRenderModels()
                                         renderer.UniformFMat4("model_matrix",
                                                               t.modelMatrix);
 
-                                        renderer.RenderMesh(mesh);
+                                        if (mesh.indices.size() > 0)
+                                            renderer.RenderMeshIndexed(mesh);
+                                        else
+                                            renderer.RenderMesh(mesh);
                                     }
                                     // unbreak
                                 });

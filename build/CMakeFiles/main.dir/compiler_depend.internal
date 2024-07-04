@@ -1032,9 +1032,6 @@ CMakeFiles/main.dir/src/core/application/application.cpp.obj
  S:/w64devkit/x86_64-w64-mingw32/include/vadefs.h
  S:/w64devkit/x86_64-w64-mingw32/include/wchar.h
 
-CMakeFiles/main.dir/src/core/graphics/mesh.cpp.obj
- S:/dev/c++/opengl/src/core/graphics/mesh.cpp
-
 CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj
  S:/dev/c++/opengl/src/core/graphics/renderer/impl/opengl_renderer.cpp
  S:/dev/c++/opengl/include/glad/glad.h
@@ -1613,6 +1610,36 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/dev/c++/opengl/src/core/resources/resource_system.cpp
  S:/dev/c++/opengl/include/glad/glad.h
  S:/dev/c++/opengl/include/KHR/khrplatform.h
+ S:/dev/c++/opengl/include/assimp/Compiler/poppack1.h
+ S:/dev/c++/opengl/include/assimp/Compiler/pushpack1.h
+ S:/dev/c++/opengl/include/assimp/Importer.hpp
+ S:/dev/c++/opengl/include/assimp/MathFunctions.h
+ S:/dev/c++/opengl/include/assimp/aabb.h
+ S:/dev/c++/opengl/include/assimp/anim.h
+ S:/dev/c++/opengl/include/assimp/camera.h
+ S:/dev/c++/opengl/include/assimp/color4.h
+ S:/dev/c++/opengl/include/assimp/color4.inl
+ S:/dev/c++/opengl/include/assimp/config.h
+ S:/dev/c++/opengl/include/assimp/defs.h
+ S:/dev/c++/opengl/include/assimp/light.h
+ S:/dev/c++/opengl/include/assimp/material.h
+ S:/dev/c++/opengl/include/assimp/material.inl
+ S:/dev/c++/opengl/include/assimp/matrix3x3.h
+ S:/dev/c++/opengl/include/assimp/matrix3x3.inl
+ S:/dev/c++/opengl/include/assimp/matrix4x4.h
+ S:/dev/c++/opengl/include/assimp/matrix4x4.inl
+ S:/dev/c++/opengl/include/assimp/mesh.h
+ S:/dev/c++/opengl/include/assimp/metadata.h
+ S:/dev/c++/opengl/include/assimp/postprocess.h
+ S:/dev/c++/opengl/include/assimp/quaternion.h
+ S:/dev/c++/opengl/include/assimp/quaternion.inl
+ S:/dev/c++/opengl/include/assimp/scene.h
+ S:/dev/c++/opengl/include/assimp/texture.h
+ S:/dev/c++/opengl/include/assimp/types.h
+ S:/dev/c++/opengl/include/assimp/vector2.h
+ S:/dev/c++/opengl/include/assimp/vector2.inl
+ S:/dev/c++/opengl/include/assimp/vector3.h
+ S:/dev/c++/opengl/include/assimp/vector3.inl
  S:/dev/c++/opengl/include/glm/common.hpp
  S:/dev/c++/opengl/include/glm/detail/_fixes.hpp
  S:/dev/c++/opengl/include/glm/detail/_vectorize.hpp
@@ -1628,6 +1655,7 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/dev/c++/opengl/include/glm/detail/func_vector_relational.inl
  S:/dev/c++/opengl/include/glm/detail/qualifier.hpp
  S:/dev/c++/opengl/include/glm/detail/setup.hpp
+ S:/dev/c++/opengl/include/glm/detail/type_float.hpp
  S:/dev/c++/opengl/include/glm/detail/type_half.hpp
  S:/dev/c++/opengl/include/glm/detail/type_half.inl
  S:/dev/c++/opengl/include/glm/detail/type_mat2x2.hpp
@@ -1648,6 +1676,8 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/dev/c++/opengl/include/glm/detail/type_mat4x3.inl
  S:/dev/c++/opengl/include/glm/detail/type_mat4x4.hpp
  S:/dev/c++/opengl/include/glm/detail/type_mat4x4.inl
+ S:/dev/c++/opengl/include/glm/detail/type_quat.hpp
+ S:/dev/c++/opengl/include/glm/detail/type_quat.inl
  S:/dev/c++/opengl/include/glm/detail/type_vec1.hpp
  S:/dev/c++/opengl/include/glm/detail/type_vec1.inl
  S:/dev/c++/opengl/include/glm/detail/type_vec2.hpp
@@ -1657,6 +1687,8 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/dev/c++/opengl/include/glm/detail/type_vec4.hpp
  S:/dev/c++/opengl/include/glm/detail/type_vec4.inl
  S:/dev/c++/opengl/include/glm/exponential.hpp
+ S:/dev/c++/opengl/include/glm/ext/matrix_clip_space.hpp
+ S:/dev/c++/opengl/include/glm/ext/matrix_clip_space.inl
  S:/dev/c++/opengl/include/glm/ext/matrix_double2x2.hpp
  S:/dev/c++/opengl/include/glm/ext/matrix_double2x2_precision.hpp
  S:/dev/c++/opengl/include/glm/ext/matrix_double2x3.hpp
@@ -1693,32 +1725,64 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/dev/c++/opengl/include/glm/ext/matrix_float4x3_precision.hpp
  S:/dev/c++/opengl/include/glm/ext/matrix_float4x4.hpp
  S:/dev/c++/opengl/include/glm/ext/matrix_float4x4_precision.hpp
+ S:/dev/c++/opengl/include/glm/ext/matrix_projection.hpp
+ S:/dev/c++/opengl/include/glm/ext/matrix_projection.inl
+ S:/dev/c++/opengl/include/glm/ext/matrix_transform.hpp
+ S:/dev/c++/opengl/include/glm/ext/matrix_transform.inl
+ S:/dev/c++/opengl/include/glm/ext/quaternion_common.hpp
+ S:/dev/c++/opengl/include/glm/ext/quaternion_common.inl
+ S:/dev/c++/opengl/include/glm/ext/quaternion_double.hpp
+ S:/dev/c++/opengl/include/glm/ext/quaternion_double_precision.hpp
+ S:/dev/c++/opengl/include/glm/ext/quaternion_float.hpp
+ S:/dev/c++/opengl/include/glm/ext/quaternion_float_precision.hpp
+ S:/dev/c++/opengl/include/glm/ext/quaternion_geometric.hpp
+ S:/dev/c++/opengl/include/glm/ext/quaternion_geometric.inl
+ S:/dev/c++/opengl/include/glm/ext/quaternion_relational.hpp
+ S:/dev/c++/opengl/include/glm/ext/quaternion_relational.inl
+ S:/dev/c++/opengl/include/glm/ext/quaternion_transform.hpp
+ S:/dev/c++/opengl/include/glm/ext/quaternion_transform.inl
+ S:/dev/c++/opengl/include/glm/ext/quaternion_trigonometric.hpp
+ S:/dev/c++/opengl/include/glm/ext/quaternion_trigonometric.inl
+ S:/dev/c++/opengl/include/glm/ext/scalar_constants.hpp
+ S:/dev/c++/opengl/include/glm/ext/scalar_constants.inl
  S:/dev/c++/opengl/include/glm/ext/scalar_int_sized.hpp
  S:/dev/c++/opengl/include/glm/ext/scalar_uint_sized.hpp
+ S:/dev/c++/opengl/include/glm/ext/vector_bool1.hpp
+ S:/dev/c++/opengl/include/glm/ext/vector_bool1_precision.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_bool2.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_bool2_precision.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_bool3.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_bool3_precision.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_bool4.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_bool4_precision.hpp
+ S:/dev/c++/opengl/include/glm/ext/vector_double1.hpp
+ S:/dev/c++/opengl/include/glm/ext/vector_double1_precision.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_double2.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_double2_precision.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_double3.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_double3_precision.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_double4.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_double4_precision.hpp
+ S:/dev/c++/opengl/include/glm/ext/vector_float1.hpp
+ S:/dev/c++/opengl/include/glm/ext/vector_float1_precision.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_float2.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_float2_precision.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_float3.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_float3_precision.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_float4.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_float4_precision.hpp
+ S:/dev/c++/opengl/include/glm/ext/vector_int1.hpp
+ S:/dev/c++/opengl/include/glm/ext/vector_int1_sized.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_int2.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_int2_sized.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_int3.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_int3_sized.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_int4.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_int4_sized.hpp
+ S:/dev/c++/opengl/include/glm/ext/vector_relational.hpp
+ S:/dev/c++/opengl/include/glm/ext/vector_relational.inl
+ S:/dev/c++/opengl/include/glm/ext/vector_uint1.hpp
+ S:/dev/c++/opengl/include/glm/ext/vector_uint1_sized.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_uint2.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_uint2_sized.hpp
  S:/dev/c++/opengl/include/glm/ext/vector_uint3.hpp
@@ -1728,6 +1792,17 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/dev/c++/opengl/include/glm/fwd.hpp
  S:/dev/c++/opengl/include/glm/geometric.hpp
  S:/dev/c++/opengl/include/glm/glm.hpp
+ S:/dev/c++/opengl/include/glm/gtc/constants.hpp
+ S:/dev/c++/opengl/include/glm/gtc/constants.inl
+ S:/dev/c++/opengl/include/glm/gtc/epsilon.hpp
+ S:/dev/c++/opengl/include/glm/gtc/epsilon.inl
+ S:/dev/c++/opengl/include/glm/gtc/matrix_transform.hpp
+ S:/dev/c++/opengl/include/glm/gtc/matrix_transform.inl
+ S:/dev/c++/opengl/include/glm/gtc/quaternion.hpp
+ S:/dev/c++/opengl/include/glm/gtc/quaternion.inl
+ S:/dev/c++/opengl/include/glm/gtc/type_ptr.hpp
+ S:/dev/c++/opengl/include/glm/gtc/type_ptr.inl
+ S:/dev/c++/opengl/include/glm/gtc/vec1.hpp
  S:/dev/c++/opengl/include/glm/integer.hpp
  S:/dev/c++/opengl/include/glm/mat2x2.hpp
  S:/dev/c++/opengl/include/glm/mat2x3.hpp
@@ -1756,8 +1831,11 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/dev/c++/opengl/src/core/graphics/renderer/shader.h
  S:/dev/c++/opengl/src/core/graphics/texture.h
  S:/dev/c++/opengl/src/core/resources/resource_system.h
+ S:/dev/c++/opengl/src/core/utils/uuid/uuid.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/algorithm
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/backward/binders.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bit
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/algorithmfwd.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/alloc_traits.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/allocator.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/basic_string.h
@@ -1767,10 +1845,12 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/concept_check.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/cpp_type_traits.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/cxxabi_forced.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/cxxabi_init_exception.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/enable_special_members.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/erase_if.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/exception.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/exception_defines.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/exception_ptr.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/functexcept.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/functional_hash.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/hash_bytes.h
@@ -1783,6 +1863,7 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/memory_resource.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/memoryfwd.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/move.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/nested_exception.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/new_allocator.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/node_handle.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ostream_insert.h
@@ -1790,6 +1871,8 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/predefined_ops.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ptr_traits.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/range_access.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ranges_algo.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ranges_algobase.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ranges_base.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ranges_cmp.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ranges_util.h
@@ -1797,19 +1880,24 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/requires_hosted.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/specfun.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/std_abs.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_algo.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_algobase.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_bvector.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_construct.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_function.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_heap.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_iterator.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_iterator_base_funcs.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_iterator_base_types.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_pair.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_tempbuf.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_uninitialized.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_vector.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/string_view.tcc
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stringfwd.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/uniform_int_dist.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/unordered_map.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/unordered_set.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/uses_allocator.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/uses_allocator_args.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/utility.h
@@ -1828,9 +1916,11 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cstdint
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cstdio
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cstdlib
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cstring
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cwchar
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/debug/assertions.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/debug/debug.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/exception
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/aligned_buffer.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/alloc_traits.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/numeric_traits.h
@@ -1841,6 +1931,8 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/limits
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/new
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/numbers
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/pstl/execution_defs.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/pstl/glue_algorithm_defs.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/pstl/pstl_config.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/stdlib.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/string
@@ -1859,7 +1951,9 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/special_function_util.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tuple
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/type_traits
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/typeinfo
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/unordered_map
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/unordered_set
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/vector
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h
  S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h
@@ -1885,6 +1979,153 @@ CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
  S:/w64devkit/x86_64-w64-mingw32/include/ctype.h
  S:/w64devkit/x86_64-w64-mingw32/include/errno.h
  S:/w64devkit/x86_64-w64-mingw32/include/float.h
+ S:/w64devkit/x86_64-w64-mingw32/include/limits.h
+ S:/w64devkit/x86_64-w64-mingw32/include/locale.h
+ S:/w64devkit/x86_64-w64-mingw32/include/malloc.h
+ S:/w64devkit/x86_64-w64-mingw32/include/math.h
+ S:/w64devkit/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h
+ S:/w64devkit/x86_64-w64-mingw32/include/sec_api/stdio_s.h
+ S:/w64devkit/x86_64-w64-mingw32/include/sec_api/stdlib_s.h
+ S:/w64devkit/x86_64-w64-mingw32/include/sec_api/string_s.h
+ S:/w64devkit/x86_64-w64-mingw32/include/sec_api/wchar_s.h
+ S:/w64devkit/x86_64-w64-mingw32/include/stddef.h
+ S:/w64devkit/x86_64-w64-mingw32/include/stdint.h
+ S:/w64devkit/x86_64-w64-mingw32/include/stdio.h
+ S:/w64devkit/x86_64-w64-mingw32/include/stdlib.h
+ S:/w64devkit/x86_64-w64-mingw32/include/string.h
+ S:/w64devkit/x86_64-w64-mingw32/include/swprintf.inl
+ S:/w64devkit/x86_64-w64-mingw32/include/sys/types.h
+ S:/w64devkit/x86_64-w64-mingw32/include/vadefs.h
+ S:/w64devkit/x86_64-w64-mingw32/include/wchar.h
+
+CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj
+ S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp
+ S:/dev/c++/opengl/src/core/defines.h
+ S:/dev/c++/opengl/src/core/utils/uuid/uuid.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/backward/binders.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bit
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/alloc_traits.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/allocator.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/basic_string.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/basic_string.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/char_traits.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/charconv.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/concept_check.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/cpp_type_traits.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/cxxabi_forced.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/exception.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/exception_defines.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/functexcept.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/functional_hash.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/hash_bytes.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/invoke.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/iterator_concepts.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/localefwd.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/max_size_type.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/memory_resource.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/memoryfwd.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/move.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/new_allocator.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ostream_insert.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/postypes.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/predefined_ops.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ptr_traits.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/random.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/random.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/range_access.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ranges_base.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ranges_cmp.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ranges_util.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/refwrap.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/requires_hosted.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/specfun.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/std_abs.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_algobase.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_bvector.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_construct.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_function.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_iterator.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_iterator_base_funcs.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_iterator_base_types.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_numeric.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_pair.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_uninitialized.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_vector.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/string_view.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stringfwd.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/uniform_int_dist.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/uses_allocator.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/uses_allocator_args.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/utility.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/vector.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/version.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cctype
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cerrno
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/clocale
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cmath
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/compare
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/concepts
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cstddef
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cstdint
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cstdio
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cstdlib
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cwchar
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/debug/assertions.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/debug/debug.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/alloc_traits.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/numeric_traits.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/string_conversions.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/type_traits.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/initializer_list
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/iosfwd
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/limits
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/new
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/numbers
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/numeric
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/pstl/execution_defs.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/pstl/glue_numeric_defs.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/pstl/pstl_config.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/random
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/stdlib.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/string
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/string_view
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/bessel_function.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/beta_function.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/ell_integral.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/exp_integral.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/gamma.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/hypergeometric.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/legendre_function.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/modified_bessel_func.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/poly_hermite.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/poly_laguerre.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/riemann_zeta.tcc
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tr1/special_function_util.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tuple
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/type_traits
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/vector
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/limits.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/mm_malloc.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/stddef.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/stdint.h
+ S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/syslimits.h
+ S:/w64devkit/x86_64-w64-mingw32/include/_mingw.h
+ S:/w64devkit/x86_64-w64-mingw32/include/_mingw_mac.h
+ S:/w64devkit/x86_64-w64-mingw32/include/_mingw_off_t.h
+ S:/w64devkit/x86_64-w64-mingw32/include/_mingw_secapi.h
+ S:/w64devkit/x86_64-w64-mingw32/include/_mingw_stat64.h
+ S:/w64devkit/x86_64-w64-mingw32/include/corecrt.h
+ S:/w64devkit/x86_64-w64-mingw32/include/corecrt_stdio_config.h
+ S:/w64devkit/x86_64-w64-mingw32/include/corecrt_wstdlib.h
+ S:/w64devkit/x86_64-w64-mingw32/include/crtdefs.h
+ S:/w64devkit/x86_64-w64-mingw32/include/ctype.h
+ S:/w64devkit/x86_64-w64-mingw32/include/errno.h
  S:/w64devkit/x86_64-w64-mingw32/include/limits.h
  S:/w64devkit/x86_64-w64-mingw32/include/locale.h
  S:/w64devkit/x86_64-w64-mingw32/include/malloc.h

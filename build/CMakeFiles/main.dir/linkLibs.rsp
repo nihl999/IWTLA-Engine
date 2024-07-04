@@ -1,1 +1,1 @@
-  -LS:/dev/c++/opengl/lib  -lglfw3 -lglad -luser32 -lgdi32 -lopengl32 -limguiglgl -limgui -lflecs -lWs2_32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+  -LS:/dev/c++/opengl/lib  -lglfw3 -lglad -limguiglgl -limgui -lflecs -lassimp -lz -lWs2_32 -luser32 -lgdi32 -lopengl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

@@ -6,9 +6,17 @@
 #include <core/graphics/renderer/shader.h>
 #include <core/graphics/renderer/renderer.h>
 #include <core/assert.h>
-
+#include <assimp/Importer.hpp>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h>
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
+#include <core/utils/uuid/uuid.h>
 namespace ResourceSystem
 {
+    void ProcessMesh(aiMesh *mesh, glm::mat4 meshTransformation);
+    void TraverseNodes(aiNode *node, glm::mat4 transform);
+    void GetTotalMeshes(aiNode *node);
     // todo make base resource folder changeable
     std::string GetResourceFolderPath()
     {
@@ -21,6 +29,7 @@ namespace ResourceSystem
     std::unordered_map<std::string, Handle> m_nameHandleMap = {};
     std::unordered_map<Handle, Resource> m_resources = {};
     std::vector<ResourceDescriptor> m_resourceDescriptors = {};
+    // todo: Create a Emplace function. For creating resources handles from already loaded resources.
 
     Handle PrepareResource(const ResourceDescriptor resourceDescriptor)
     {
@@ -135,6 +144,9 @@ namespace ResourceSystem
         Handle defaultUntextured = PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube", .type = RESOURCE_MODEL});
         LoadHardcodedCubeMeshTextured(defaultCube);
         LoadHardcodedCubeMesh(defaultUntextured);
+
+        Handle testCube = PrepareResource({.path = "hardcoded/models/test", .name = "hardcoded/models/test", .type = RESOURCE_MODEL});
+        LoadModel("models/cottage/cottage_obj.obj", testCube);
     };
     // todo Cleanup function
 
@@ -268,7 +280,7 @@ namespace ResourceSystem
             Graphics::Vertex vert;
             vert.position = glm::vec3(cube_vert_pos[i * 3], cube_vert_pos[i * 3 + 1], cube_vert_pos[i * 3 + 2]);
             vert.normal = glm::vec3(cube_vert_normals[i * 3], cube_vert_normals[i * 3 + 1], cube_vert_normals[i * 3 + 2]);
-            vert.texCoord = glm::vec3(cube_vert_uvs[i * 2], cube_vert_uvs[i * 2 + 1], 1);
+            vert.uv = glm::vec3(cube_vert_uvs[i * 2], cube_vert_uvs[i * 2 + 1], 1);
             vertices.push_back(vert);
         }
 
@@ -282,12 +294,10 @@ namespace ResourceSystem
         m_resources[mat] = {.data = material};
         cubeMesh.material = mat;
 
-        // Handle defaultCubeMesh = PrepareResource({.path = "hardcoded/cube", .name = "defaults/mesh/cube_tex", .type = RESOURCE_MESH});
         std::vector<Graphics::Mesh> meshes = std::vector<Graphics::Mesh>();
         meshes.push_back(cubeMesh);
         Graphics::Model *model = new Graphics::Model{
             .meshes = meshes};
-        // m_resources[defaultCubeMesh] = {.data = cubeMesh};
         m_resources[h] = {
             .data = model};
     }
@@ -422,7 +432,7 @@ namespace ResourceSystem
             Graphics::Vertex vert;
             vert.position = glm::vec3(cube_vert_pos[i * 3], cube_vert_pos[i * 3 + 1], cube_vert_pos[i * 3 + 2]);
             vert.normal = glm::vec3(cube_vert_normals[i * 3], cube_vert_normals[i * 3 + 1], cube_vert_normals[i * 3 + 2]);
-            vert.texCoord = glm::vec3(cube_vert_uvs[i * 2], cube_vert_uvs[i * 2 + 1], 1);
+            vert.uv = glm::vec3(cube_vert_uvs[i * 2], cube_vert_uvs[i * 2 + 1], 1);
             vertices.push_back(vert);
         }
 
@@ -438,11 +448,168 @@ namespace ResourceSystem
         meshes.push_back(cubeMesh);
         Graphics::Model *model = new Graphics::Model{
             .meshes = meshes};
-        // m_resources[defaultCubeMesh] = {.data = cubeMesh};
+
         m_resources[h] = {
             .data = model};
-
-        //     m_resources[h] = {
-        //         .data = cubeMesh};
     }
+
+    //----------
+    // NOTE: MODEL LOADING
+    const aiScene *modelScene = nullptr;
+    u32 total = 0;
+    std::vector<Graphics::Mesh> meshes;
+
+    void GetTotalMeshes(aiNode *node)
+    {
+        total += node->mNumMeshes;
+        for (u32 child = 0; child < node->mNumChildren; child++)
+        {
+            GetTotalMeshes(node->mChildren[child]);
+        }
+    };
+    glm::mat4 identity = glm::mat4(1);
+    glm::mat4 ConvertMatrix(const aiMatrix4x4 &from)
+    {
+        return glm::transpose(glm::make_mat4(&from.a1));
+    }
+
+    void ProcessMesh(aiMesh *mesh, glm::mat4 meshTransformation)
+    {
+        aiMaterial *material = modelScene->mMaterials[mesh->mMaterialIndex];
+        f32 shine;
+
+        // todo: CAN BREAK IF NOT LOADED, SHOULD CALL PREPARERESOURCE
+        // TODO: resource system probably should stop loading only on GetResource.
+        Handle diffuse = m_nameHandleMap["defaults/textures/white"];
+        Handle specular = m_nameHandleMap["defaults/textures/white"];
+
+        // NOTE: Handle only one texture type per material
+        if (material->GetTextureCount(aiTextureType_DIFFUSE) > 0)
+        {
+            aiString path;
+            if (material->GetTexture(aiTextureType_DIFFUSE, 0, &path) == aiReturn_SUCCESS)
+            {
+                std::string fullPath = path.data;
+                printf("diffuse path: %s\n", fullPath.c_str());
+                diffuse = ResourceSystem::PrepareResource({.path = fullPath, .name = fullPath, .type = RESOURCE_TEXTURE});
+            }
+        }
+        if (material->GetTextureCount(aiTextureType_SPECULAR) > 0)
+        {
+            aiString path;
+            if (material->GetTexture(aiTextureType_SPECULAR, 0, &path) == aiReturn_SUCCESS)
+            {
+
+                std::string fullPath = path.data;
+                printf("specular path: %s\n", fullPath.c_str());
+                specular = ResourceSystem::PrepareResource({.path = fullPath, .name = fullPath, .type = RESOURCE_TEXTURE});
+            }
+        }
+        // NOTE: Idea to handle multiple textures, however my Material cant handle this yet, nor i care to handle now;
+        //   for (u32 diffuseTexture = 0; diffuseTexture < material->GetTextureCount(aiTextureType_DIFFUSE); diffuseTexture++)
+        //  {
+        //      aiString path;
+        //      if (material->GetTexture(aiTextureType_DIFFUSE, diffuseTexture, &path) == aiReturn_SUCCESS)
+        //      {
+        //          std::string fullPath = path.data;
+        //          printf("diffuse path: %s\n", fullPath.c_str());
+        //          diffuse = ResourceSystem::PrepareResource({.path = fullPath, .name = fullPath, .type = RESOURCE_TEXTURE});
+        //      }
+        //  }
+        aiGetMaterialFloat(material, AI_MATKEY_SHININESS, &shine);
+        // todo Resource System material loading
+        Material *mat = new Material{
+            .tint = glm::vec3(1),
+            .diffuseMap = diffuse,
+            .specularMap = specular,
+            .shininess = shine};
+        std::string uuid = Random::GenerateStringUUID();
+        Handle materialHandle = ResourceSystem::PrepareResource({.path = uuid, .name = uuid, .type = RESOURCE_MATERIAL});
+        m_resources[materialHandle] = {
+            .data = mat};
+        std::vector<Graphics::Vertex>
+            vertices;
+        vertices.reserve(mesh->mNumVertices);
+
+        for (u32 vertexIndex = 0; vertexIndex < mesh->mNumVertices; vertexIndex++)
+        {
+            aiVector3d pos = mesh->mVertices[vertexIndex];
+            aiVector3d normal = mesh->mNormals[vertexIndex];
+            aiVector3D uv = aiVector3D(1);
+            if (mesh->HasTextureCoords(0))
+            {
+                uv = mesh->mTextureCoords[0][vertexIndex];
+            }
+            Graphics::Vertex vertex = {
+                .position = glm::vec3(pos.x, pos.y, pos.z),
+                .normal = glm::vec3(normal.x, normal.y, normal.z),
+                .uv = glm::vec3(uv.x, uv.y, 0),
+                .color = glm::vec3(1)};
+            vertices.push_back(vertex);
+        }
+
+        std::vector<u32> indices;
+        indices.reserve(mesh->mNumFaces * 3);
+        for (u32 faceIndex = 0; faceIndex < mesh->mNumFaces; faceIndex++)
+        {
+            const aiFace &face = mesh->mFaces[faceIndex];
+            u32 tri1 = face.mIndices[0];
+            u32 tri2 = face.mIndices[1];
+            u32 tri3 = face.mIndices[2];
+            indices.push_back(tri1);
+            indices.push_back(tri2);
+            indices.push_back(tri3);
+            printf("triangulo %d: | 1: %u | 2: %u | 3: %u\n", faceIndex, tri1, tri2, tri3);
+        }
+
+        Graphics::Mesh mMesh = {
+            .vertices = vertices,
+            .indices = indices,
+            .material = materialHandle,
+            .localTransform = meshTransformation};
+
+        meshes.push_back(mMesh);
+    }
+    void TraverseNodes(aiNode *node, glm::mat4 transform)
+    {
+        glm::mat4 nodeTransformation = ConvertMatrix(node->mTransformation);
+        glm::mat4 worldTransformation = transform * nodeTransformation;
+        for (u32 numMesh = 0; numMesh < node->mNumMeshes; numMesh++)
+        {
+            aiMesh *mesh = modelScene->mMeshes[node->mMeshes[numMesh]];
+            ProcessMesh(mesh, worldTransformation);
+        }
+        for (u32 child = 0; child < node->mNumChildren; child++)
+        {
+            TraverseNodes(node->mChildren[child], transform);
+        }
+    };
+
+    // todo temporary handle passing
+    void LoadModel(std::string fileName, Handle h)
+    {
+        std::string newPath = ResourceSystem::GetResourceFolderPath().append(fileName);
+        Assimp::Importer importer;
+        const aiScene *scene = importer.ReadFile(newPath.c_str(), aiProcessPreset_TargetRealtime_Fast);
+
+        if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
+        {
+            const char *error = importer.GetErrorString();
+            printf("error loading model kaboom %d\n", error);
+            exit(1);
+        }
+
+        modelScene = scene;
+
+        GetTotalMeshes(scene->mRootNode);
+        meshes.reserve(total);
+        TraverseNodes(scene->mRootNode, identity);
+
+        Graphics::Model *model = new Graphics::Model{
+            .meshes = meshes};
+
+        m_resources[h] = {
+            .data = model};
+    }
+    //----------
 }

@@ -13,12 +13,6 @@
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/graphics/mesh.cpp.obj -c S:/dev/c++/opengl/src/core/graphics/mesh.cpp",
-  "file": "S:/dev/c++/opengl/src/core/graphics/mesh.cpp",
-  "output": "CMakeFiles/main.dir/src/core/graphics/mesh.cpp.obj"
-},
-{
-  "directory": "S:/dev/c++/opengl/build",
   "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj -c S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp",
   "file": "S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp",
   "output": "CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj"
@@ -70,5 +64,11 @@
   "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/common/File/File.cpp.obj -c S:/dev/c++/opengl/src/common/File/File.cpp",
   "file": "S:/dev/c++/opengl/src/common/File/File.cpp",
   "output": "CMakeFiles/main.dir/src/common/File/File.cpp.obj"
+},
+{
+  "directory": "S:/dev/c++/opengl/build",
+  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj -c S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp",
+  "file": "S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp",
+  "output": "CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj"
 }
 ]

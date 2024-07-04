@@ -44,6 +44,8 @@ namespace ResourceSystem
     void LoadResource(Handle h);
     void LoadTextureFromFile(ResourceDescriptor descriptor, Handle h);
     void LoadShadersFromFile(ResourceDescriptor descriptor, Handle h);
+    // todo temporary
+    void LoadModel(std::string file, Handle h);
 
     Handle PrepareResource(const ResourceDescriptor resourceDescriptor);
 

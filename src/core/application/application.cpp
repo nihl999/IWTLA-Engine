@@ -54,7 +54,10 @@ Application::Application() : window(Window(1280, 720)), renderer(Renderer::GetIn
                                cube.set<ECSComponents::Transform>({.position = glm::vec3(x(gen), y(gen), z(gen))});
                                cube.add<ECSComponents::Velocity>();
                                cube.add<ECSComponents::Renderable>();
-                               cube.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube_tex", .type = ResourceSystem::RESOURCE_MODEL})});
+                               if (i != 20)
+                                   cube.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube_tex", .type = ResourceSystem::RESOURCE_MODEL})});
+                               else
+                                   cube.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/models/test", .name = "hardcoded/models/test", .type = ResourceSystem::RESOURCE_MODEL})});
                            };
 
                            flecs::entity light = scene.world.entity("light");

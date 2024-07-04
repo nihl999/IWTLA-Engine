@@ -6,7 +6,7 @@
 
 struct Material
 {
-    std::string shader = "defaults/shaders/unlit";
+    std::string shader = "defaults/shaders/lit";
     glm::vec3 tint;
     ResourceSystem::Handle diffuseMap;
     ResourceSystem::Handle specularMap;
