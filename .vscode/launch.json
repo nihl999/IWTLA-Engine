@@ -1,15 +1,29 @@
 {
     "configurations": [
-    {
-        "name": "(Windows) Launch",
-        "type": "cppdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/bin/main.exe",
-        "args": [],
-        "stopAtEntry": false,
-        "cwd": "${workspaceFolder}/bin",
-        "environment": [],
-        "console": "newExternalWindow"
-    }
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch",
+            "program": "${workspaceFolder}/bin/main.exe",
+            "args": [ ],
+            "cwd": "${workspaceFolder}/bin",
+            // "sourceMap": { "/project/src": "${workspaceFolder}" },
+            "breakpointMode": "file"
+        },
+        // {
+        //     "name": "(Windows) Launch",
+        //     "type": "cppdbg",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/bin/main.exe",
+        //     "args": [ ],
+        //     "stopAtEntry": false,
+        //     "cwd": "${workspaceFolder}/bin",
+        //     "environment": [ ],
+        //     "externalConsole": false,
+        //     "MIMode": "lldb",
+        //     "miDebuggerPath": "S:/clang/bin/lldb.exe",
+        //     "setupCommands": [
+        //     ]
+        // }
     ]
 }

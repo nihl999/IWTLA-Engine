@@ -1,73 +1,73 @@
 [
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/main.cpp.obj -c S:/dev/c++/opengl/src/main.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/main.cpp.obj -c S:/dev/c++/opengl/src/main.cpp",
   "file": "S:/dev/c++/opengl/src/main.cpp",
   "output": "CMakeFiles/main.dir/src/main.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/application/application.cpp.obj -c S:/dev/c++/opengl/src/core/application/application.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/application/application.cpp.obj -c S:/dev/c++/opengl/src/core/application/application.cpp",
   "file": "S:/dev/c++/opengl/src/core/application/application.cpp",
   "output": "CMakeFiles/main.dir/src/core/application/application.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj -c S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj -c S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp",
   "file": "S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp",
   "output": "CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj -c S:/dev/c++/opengl/src/core/graphics/renderer/impl/opengl_renderer.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj -c S:/dev/c++/opengl/src/core/graphics/renderer/impl/opengl_renderer.cpp",
   "file": "S:/dev/c++/opengl/src/core/graphics/renderer/impl/opengl_renderer.cpp",
   "output": "CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj -c S:/dev/c++/opengl/src/core/resources/resource_system.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj -c S:/dev/c++/opengl/src/core/resources/resource_system.cpp",
   "file": "S:/dev/c++/opengl/src/core/resources/resource_system.cpp",
   "output": "CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj -c S:/dev/c++/opengl/src/core/window/impl/glfw_window.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj -c S:/dev/c++/opengl/src/core/window/impl/glfw_window.cpp",
   "file": "S:/dev/c++/opengl/src/core/window/impl/glfw_window.cpp",
   "output": "CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/world/scene.cpp.obj -c S:/dev/c++/opengl/src/core/world/scene.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/world/scene.cpp.obj -c S:/dev/c++/opengl/src/core/world/scene.cpp",
   "file": "S:/dev/c++/opengl/src/core/world/scene.cpp",
   "output": "CMakeFiles/main.dir/src/core/world/scene.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/Camera.cpp.obj -c S:/dev/c++/opengl/src/Camera.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/Camera.cpp.obj -c S:/dev/c++/opengl/src/Camera.cpp",
   "file": "S:/dev/c++/opengl/src/Camera.cpp",
   "output": "CMakeFiles/main.dir/src/Camera.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/Input.cpp.obj -c S:/dev/c++/opengl/src/Input.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/Input.cpp.obj -c S:/dev/c++/opengl/src/Input.cpp",
   "file": "S:/dev/c++/opengl/src/Input.cpp",
   "output": "CMakeFiles/main.dir/src/Input.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/common/stb_image.cpp.obj -c S:/dev/c++/opengl/src/common/stb_image.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/common/stb_image.cpp.obj -c S:/dev/c++/opengl/src/common/stb_image.cpp",
   "file": "S:/dev/c++/opengl/src/common/stb_image.cpp",
   "output": "CMakeFiles/main.dir/src/common/stb_image.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/common/File/File.cpp.obj -c S:/dev/c++/opengl/src/common/File/File.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/common/File/File.cpp.obj -c S:/dev/c++/opengl/src/common/File/File.cpp",
   "file": "S:/dev/c++/opengl/src/common/File/File.cpp",
   "output": "CMakeFiles/main.dir/src/common/File/File.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/opengl/build",
-  "command": "S:/w64devkit/bin/g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj -c S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp",
+  "command": "g++  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj -c S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp",
   "file": "S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp",
   "output": "CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj"
 }

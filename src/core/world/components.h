@@ -35,18 +35,9 @@ namespace ECSComponents
         f32 intensity;
     };
 
-    struct AmbientLight
-    {
-        glm::vec3 color;
-        f32 intensity;
+    struct DirectionalLight {
+      glm::vec3 direction;
+      glm::vec3 color;
+      f32 intensity;
     };
-
-    struct DirectionalLight
-    {
-        glm::vec3 position;
-        glm::vec3 direction;
-        glm::vec3 color;
-        f32 intensity;
-    };
-
 };

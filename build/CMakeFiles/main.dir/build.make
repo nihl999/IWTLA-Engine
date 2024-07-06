@@ -74,180 +74,180 @@ CMakeFiles/main.dir/src/main.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/main.cpp.obj: S:/dev/c++/opengl/src/main.cpp
 CMakeFiles/main.dir/src/main.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.obj -MF CMakeFiles/main.dir/src/main.cpp.obj.d -o CMakeFiles/main.dir/src/main.cpp.obj -c S:/dev/c++/opengl/src/main.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.obj -MF CMakeFiles/main.dir/src/main.cpp.obj.d -o CMakeFiles/main.dir/src/main.cpp.obj -c S:/dev/c++/opengl/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
 
 CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
 CMakeFiles/main.dir/src/core/application/application.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/core/application/application.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/core/application/application.cpp.obj: S:/dev/c++/opengl/src/core/application/application.cpp
 CMakeFiles/main.dir/src/core/application/application.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/core/application/application.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/application/application.cpp.obj -MF CMakeFiles/main.dir/src/core/application/application.cpp.obj.d -o CMakeFiles/main.dir/src/core/application/application.cpp.obj -c S:/dev/c++/opengl/src/core/application/application.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/application/application.cpp.obj -MF CMakeFiles/main.dir/src/core/application/application.cpp.obj.d -o CMakeFiles/main.dir/src/core/application/application.cpp.obj -c S:/dev/c++/opengl/src/core/application/application.cpp
 
 CMakeFiles/main.dir/src/core/application/application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/core/application/application.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/application/application.cpp > CMakeFiles/main.dir/src/core/application/application.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/application/application.cpp > CMakeFiles/main.dir/src/core/application/application.cpp.i
 
 CMakeFiles/main.dir/src/core/application/application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/core/application/application.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/application/application.cpp -o CMakeFiles/main.dir/src/core/application/application.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/application/application.cpp -o CMakeFiles/main.dir/src/core/application/application.cpp.s
 
 CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj: S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp
 CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj -MF CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj.d -o CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj -c S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj -MF CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj.d -o CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj -c S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp
 
 CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp > CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp > CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.i
 
 CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp -o CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/graphics/renderer/shader.cpp -o CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.s
 
 CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj: S:/dev/c++/opengl/src/core/graphics/renderer/impl/opengl_renderer.cpp
 CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj -MF CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj.d -o CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj -c S:/dev/c++/opengl/src/core/graphics/renderer/impl/opengl_renderer.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj -MF CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj.d -o CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj -c S:/dev/c++/opengl/src/core/graphics/renderer/impl/opengl_renderer.cpp
 
 CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/graphics/renderer/impl/opengl_renderer.cpp > CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/graphics/renderer/impl/opengl_renderer.cpp > CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.i
 
 CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/graphics/renderer/impl/opengl_renderer.cpp -o CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/graphics/renderer/impl/opengl_renderer.cpp -o CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.s
 
 CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj: S:/dev/c++/opengl/src/core/resources/resource_system.cpp
 CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj -MF CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj.d -o CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj -c S:/dev/c++/opengl/src/core/resources/resource_system.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj -MF CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj.d -o CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj -c S:/dev/c++/opengl/src/core/resources/resource_system.cpp
 
 CMakeFiles/main.dir/src/core/resources/resource_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/core/resources/resource_system.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/resources/resource_system.cpp > CMakeFiles/main.dir/src/core/resources/resource_system.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/resources/resource_system.cpp > CMakeFiles/main.dir/src/core/resources/resource_system.cpp.i
 
 CMakeFiles/main.dir/src/core/resources/resource_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/core/resources/resource_system.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/resources/resource_system.cpp -o CMakeFiles/main.dir/src/core/resources/resource_system.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/resources/resource_system.cpp -o CMakeFiles/main.dir/src/core/resources/resource_system.cpp.s
 
 CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj: S:/dev/c++/opengl/src/core/window/impl/glfw_window.cpp
 CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj -MF CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj.d -o CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj -c S:/dev/c++/opengl/src/core/window/impl/glfw_window.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj -MF CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj.d -o CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj -c S:/dev/c++/opengl/src/core/window/impl/glfw_window.cpp
 
 CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/window/impl/glfw_window.cpp > CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/window/impl/glfw_window.cpp > CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.i
 
 CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/window/impl/glfw_window.cpp -o CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/window/impl/glfw_window.cpp -o CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.s
 
 CMakeFiles/main.dir/src/core/world/scene.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/core/world/scene.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/core/world/scene.cpp.obj: S:/dev/c++/opengl/src/core/world/scene.cpp
 CMakeFiles/main.dir/src/core/world/scene.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/core/world/scene.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/world/scene.cpp.obj -MF CMakeFiles/main.dir/src/core/world/scene.cpp.obj.d -o CMakeFiles/main.dir/src/core/world/scene.cpp.obj -c S:/dev/c++/opengl/src/core/world/scene.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/world/scene.cpp.obj -MF CMakeFiles/main.dir/src/core/world/scene.cpp.obj.d -o CMakeFiles/main.dir/src/core/world/scene.cpp.obj -c S:/dev/c++/opengl/src/core/world/scene.cpp
 
 CMakeFiles/main.dir/src/core/world/scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/core/world/scene.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/world/scene.cpp > CMakeFiles/main.dir/src/core/world/scene.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/world/scene.cpp > CMakeFiles/main.dir/src/core/world/scene.cpp.i
 
 CMakeFiles/main.dir/src/core/world/scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/core/world/scene.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/world/scene.cpp -o CMakeFiles/main.dir/src/core/world/scene.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/world/scene.cpp -o CMakeFiles/main.dir/src/core/world/scene.cpp.s
 
 CMakeFiles/main.dir/src/Camera.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Camera.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/Camera.cpp.obj: S:/dev/c++/opengl/src/Camera.cpp
 CMakeFiles/main.dir/src/Camera.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/Camera.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Camera.cpp.obj -MF CMakeFiles/main.dir/src/Camera.cpp.obj.d -o CMakeFiles/main.dir/src/Camera.cpp.obj -c S:/dev/c++/opengl/src/Camera.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Camera.cpp.obj -MF CMakeFiles/main.dir/src/Camera.cpp.obj.d -o CMakeFiles/main.dir/src/Camera.cpp.obj -c S:/dev/c++/opengl/src/Camera.cpp
 
 CMakeFiles/main.dir/src/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Camera.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/Camera.cpp > CMakeFiles/main.dir/src/Camera.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/Camera.cpp > CMakeFiles/main.dir/src/Camera.cpp.i
 
 CMakeFiles/main.dir/src/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Camera.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/Camera.cpp -o CMakeFiles/main.dir/src/Camera.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/Camera.cpp -o CMakeFiles/main.dir/src/Camera.cpp.s
 
 CMakeFiles/main.dir/src/Input.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Input.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/Input.cpp.obj: S:/dev/c++/opengl/src/Input.cpp
 CMakeFiles/main.dir/src/Input.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/Input.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Input.cpp.obj -MF CMakeFiles/main.dir/src/Input.cpp.obj.d -o CMakeFiles/main.dir/src/Input.cpp.obj -c S:/dev/c++/opengl/src/Input.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Input.cpp.obj -MF CMakeFiles/main.dir/src/Input.cpp.obj.d -o CMakeFiles/main.dir/src/Input.cpp.obj -c S:/dev/c++/opengl/src/Input.cpp
 
 CMakeFiles/main.dir/src/Input.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Input.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/Input.cpp > CMakeFiles/main.dir/src/Input.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/Input.cpp > CMakeFiles/main.dir/src/Input.cpp.i
 
 CMakeFiles/main.dir/src/Input.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Input.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/Input.cpp -o CMakeFiles/main.dir/src/Input.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/Input.cpp -o CMakeFiles/main.dir/src/Input.cpp.s
 
 CMakeFiles/main.dir/src/common/stb_image.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/common/stb_image.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/common/stb_image.cpp.obj: S:/dev/c++/opengl/src/common/stb_image.cpp
 CMakeFiles/main.dir/src/common/stb_image.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/src/common/stb_image.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/common/stb_image.cpp.obj -MF CMakeFiles/main.dir/src/common/stb_image.cpp.obj.d -o CMakeFiles/main.dir/src/common/stb_image.cpp.obj -c S:/dev/c++/opengl/src/common/stb_image.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/common/stb_image.cpp.obj -MF CMakeFiles/main.dir/src/common/stb_image.cpp.obj.d -o CMakeFiles/main.dir/src/common/stb_image.cpp.obj -c S:/dev/c++/opengl/src/common/stb_image.cpp
 
 CMakeFiles/main.dir/src/common/stb_image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/common/stb_image.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/common/stb_image.cpp > CMakeFiles/main.dir/src/common/stb_image.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/common/stb_image.cpp > CMakeFiles/main.dir/src/common/stb_image.cpp.i
 
 CMakeFiles/main.dir/src/common/stb_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/common/stb_image.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/common/stb_image.cpp -o CMakeFiles/main.dir/src/common/stb_image.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/common/stb_image.cpp -o CMakeFiles/main.dir/src/common/stb_image.cpp.s
 
 CMakeFiles/main.dir/src/common/File/File.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/common/File/File.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/common/File/File.cpp.obj: S:/dev/c++/opengl/src/common/File/File.cpp
 CMakeFiles/main.dir/src/common/File/File.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/src/common/File/File.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/common/File/File.cpp.obj -MF CMakeFiles/main.dir/src/common/File/File.cpp.obj.d -o CMakeFiles/main.dir/src/common/File/File.cpp.obj -c S:/dev/c++/opengl/src/common/File/File.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/common/File/File.cpp.obj -MF CMakeFiles/main.dir/src/common/File/File.cpp.obj.d -o CMakeFiles/main.dir/src/common/File/File.cpp.obj -c S:/dev/c++/opengl/src/common/File/File.cpp
 
 CMakeFiles/main.dir/src/common/File/File.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/common/File/File.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/common/File/File.cpp > CMakeFiles/main.dir/src/common/File/File.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/common/File/File.cpp > CMakeFiles/main.dir/src/common/File/File.cpp.i
 
 CMakeFiles/main.dir/src/common/File/File.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/common/File/File.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/common/File/File.cpp -o CMakeFiles/main.dir/src/common/File/File.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/common/File/File.cpp -o CMakeFiles/main.dir/src/common/File/File.cpp.s
 
 CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj: S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp
 CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj -MF CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj.d -o CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj -c S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj -MF CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj.d -o CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj -c S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp
 
 CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.i"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp > CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp > CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.i
 
 CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.s"
-	S:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp -o CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S S:/dev/c++/opengl/src/core/utils/uuid/uuid.cpp -o CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -285,7 +285,7 @@ S:/dev/c++/opengl/bin/main.exe: CMakeFiles/main.dir/objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable S:/dev/c++/opengl/bin/main.exe"
 	S:/Cmake/bin/cmake.exe -E rm -f CMakeFiles/main.dir/objects.a
 	S:/w64devkit/bin/ar.exe qc CMakeFiles/main.dir/objects.a @CMakeFiles/main.dir/objects1.rsp
-	S:/w64devkit/bin/g++.exe -g -Wl,--whole-archive CMakeFiles/main.dir/objects.a -Wl,--no-whole-archive -o S:/dev/c++/opengl/bin/main.exe -Wl,--out-implib,libmain.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/main.dir/linkLibs.rsp
+	g++ -g -Wl,--whole-archive CMakeFiles/main.dir/objects.a -Wl,--no-whole-archive -o S:/dev/c++/opengl/bin/main.exe -Wl,--out-implib,libmain.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/main.dir/linkLibs.rsp
 
 # Rule to build all files generated by this target.
 CMakeFiles/main.dir/build: S:/dev/c++/opengl/bin/main.exe

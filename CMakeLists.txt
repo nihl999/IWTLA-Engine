@@ -4,6 +4,10 @@ project(ouroboros_engine)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED YES)
+set(CMAKE_CXX_COMPILER "g++")
+
+set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
+
 
 add_executable(main 
     src/main.cpp
@@ -45,6 +49,7 @@ target_link_libraries(main
 )
 
 set_target_properties(main PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/) 
+
 
 
 
