@@ -216,6 +216,12 @@ bool Renderer::UniformF1(std::string variableName, const f32 value)
                 value);
     return true;
 }
+bool Renderer::UniformD1(std::string variableName, const f64 value) {
+  i32 uniformLocation =
+      glGetUniformLocation(currentShaderProgram.id, variableName.c_str());
+  glUniform1d(uniformLocation, value);
+  return true;
+}
 bool Renderer::UniformI1(std::string variableName, const i32 value)
 {
     i32 uniformLocation = glGetUniformLocation(currentShaderProgram.id, variableName.c_str());
@@ -223,19 +229,25 @@ bool Renderer::UniformI1(std::string variableName, const i32 value)
                 value);
     return true;
 }
+bool Renderer::UniformU1(std::string variableName, const u32 value) {
+  i32 uniformLocation =
+      glGetUniformLocation(currentShaderProgram.id, variableName.c_str());
+  glUniform1ui(uniformLocation, value);
+  return true;
+}
 bool Renderer::UniformMaterial(Material &material)
 {
     ResourceSystem::Resource *diffuseResource = ResourceSystem::GetResource(material.diffuseMap);
     if (diffuseResource == nullptr)
     {
-        printf("kabooom diffuse not found %s\n", material.diffuseMap);
-        exit(1);
+      printf("kabooom diffuse not found %d\n", material.diffuseMap);
+      exit(1);
     }
     ResourceSystem::Resource *specularResource = ResourceSystem::GetResource(material.specularMap);
     if (!specularResource)
     {
-        printf("kabooom specular not found %s\n", material.diffuseMap);
-        exit(1);
+      printf("kabooom specular not found %d\n", material.diffuseMap);
+      exit(1);
     }
     Texture *diffuseTexture = (Texture *)diffuseResource->data;
     Texture *specularTexture = (Texture *)specularResource->data;

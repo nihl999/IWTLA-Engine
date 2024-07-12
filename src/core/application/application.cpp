@@ -48,28 +48,57 @@ Application::Application() : window(Window(1280, 720)), renderer(Renderer::GetIn
                            std::uniform_real_distribution<f32> y(0, 10);
                            std::uniform_real_distribution<f32> z(-10, -50);
 
-                           for (u32 i = 0; i <= 20; i++)
-                           {
-                               flecs::entity cube = scene.world.entity();
-                               cube.set<ECSComponents::Transform>({.position = glm::vec3(x(gen), y(gen), z(gen))});
-                               cube.add<ECSComponents::Velocity>();
-                               cube.add<ECSComponents::Renderable>();
-                               if (i != 20)
-                                   cube.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube_tex", .type = ResourceSystem::RESOURCE_MODEL})});
-                               else
-                                   cube.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/models/test", .name = "hardcoded/models/test", .type = ResourceSystem::RESOURCE_MODEL})});
+                           for (u32 i = 0; i <= 10; i++) {
+                             flecs::entity cube = scene.world.entity();
+                             cube.set<ECSComponents::Transform>(
+                                 {.position =
+                                      glm::vec3(x(gen), y(gen), z(gen))});
+                             cube.add<ECSComponents::Velocity>();
+                             cube.add<ECSComponents::Renderable>();
+                             cube.set<ECSComponents::Model>(
+                                 {.model = ResourceSystem::PrepareResource(
+                                      {.path = "hardcoded/cube",
+                                       .name = "defaults/model/cube_tex",
+                                       .type =
+                                           ResourceSystem::RESOURCE_MODEL})});
                            };
 
-                           flecs::entity light = scene.world.entity("light");
-                           light.set<ECSComponents::Transform>({.position = glm::vec3(0, 10, 0)});
-                           light.add<ECSComponents::Velocity>();
-                           light.add<ECSComponents::Renderable>();
-                           light.set<ECSComponents::PointLight>({.position = glm::vec3(0, 5, 0),
-                                                                 .color = glm::vec3(1),
-                                                                 .intensity = 1.0f});
+                           {
+                             flecs::entity light =
+                                 scene.world.entity("directionallight");
+                             light.set<ECSComponents::Transform>(
+                                 {.position = glm::vec3(0, 10, 0)});
+                             light.add<ECSComponents::Velocity>();
+                             light.add<ECSComponents::Renderable>();
+                             light.set<ECSComponents::DirectionalLight>(
+                                 {.direction = glm::vec3(0, -0.5, -1),
+                                  .color = glm::vec3(1),
+                                  .intensity = 1.0f});
 
+                             light.set<ECSComponents::Model>(
+                                 {.model = ResourceSystem::PrepareResource(
+                                      {.path = "hardcoded/cube",
+                                       .name = "defaults/model/cube",
+                                       .type =
+                                           ResourceSystem::RESOURCE_MODEL})});
+                           }
+                           {
+                             flecs::entity light =
+                                 scene.world.entity("pointlight");
+                             light.set<ECSComponents::Transform>(
+                                 {.position = glm::vec3(0, 0, 0)});
+                             light.add<ECSComponents::Velocity>();
+                             light.add<ECSComponents::Renderable>();
+                             light.set<ECSComponents::PointLight>(
+                                 {.color = glm::vec3(1), .intensity = 1.0f});
 
-                           light.set<ECSComponents::Model>({.model = ResourceSystem::PrepareResource({.path = "hardcoded/cube", .name = "defaults/model/cube", .type = ResourceSystem::RESOURCE_MODEL})});
+                             light.set<ECSComponents::Model>(
+                                 {.model = ResourceSystem::PrepareResource(
+                                      {.path = "hardcoded/cube",
+                                       .name = "defaults/model/cube",
+                                       .type =
+                                           ResourceSystem::RESOURCE_MODEL})});
+                           }
                            // lambda end
                        });
     currentScene.RegisterSystems();

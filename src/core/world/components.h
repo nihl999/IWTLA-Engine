@@ -28,11 +28,11 @@ namespace ECSComponents
     {
     };
 
-    struct PointLight
-    {
-        glm::vec3 position;
-        glm::vec3 color;
-        f32 intensity;
+    struct PointLight {
+      f64 quadratic = 0.0075;
+      f64 linear = 0.045;
+      glm::vec3 color;
+      f32 intensity;
     };
 
     struct DirectionalLight {

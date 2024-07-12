@@ -29,25 +29,22 @@ namespace ResourceSystem
 
     typedef u16 Handle;
 
-    // extern const u32 InvalidTextureId;
-    // Handle currentHandle;
-
-    // std::unordered_map<std::string, Handle> m_nameHandleMap;
-    // // todo custom allocation
-    // std::unordered_map<Handle, Resource> m_resources;
-    // std::vector<ResourceDescriptor> m_resourceDescriptors;
-
     Resource *GetResource(std::string rName);
     Resource *GetResource(Handle rId);
 
-    std::string GetResourceFolderPath();
-    void LoadResource(Handle h);
-    void LoadTextureFromFile(ResourceDescriptor descriptor, Handle h);
-    void LoadShadersFromFile(ResourceDescriptor descriptor, Handle h);
-    // todo temporary
-    void LoadModel(std::string file, Handle h);
-
     Handle PrepareResource(const ResourceDescriptor resourceDescriptor);
+
+    // Implementation and Internals
+    // ------------
+    //  std::string GetResourceFolderPath();
+    //  void LoadResource(Handle h);
+    //  void LoadTextureFromFile(ResourceDescriptor descriptor, Handle h);
+    //  void LoadShadersFromFile(ResourceDescriptor descriptor, Handle h);
+    //  void LoadModelFromFile(ResourceDescriptor descriptor, Handle h);
+    //  void ProcessMesh(aiMesh *mesh, glm::mat4 meshTransformation);
+    //  void TraverseNodes(aiNode *node, glm::mat4 transform);
+    //  void GetTotalMeshes(aiNode *node);
+    //--------------
 
     void Init();
     void Cleanup();
