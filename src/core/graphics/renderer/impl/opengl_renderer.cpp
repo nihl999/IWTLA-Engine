@@ -1,11 +1,9 @@
+#include <GLAD/glad.h>
+#include <core/graphics/material.h>
 #include <core/graphics/renderer/renderer.h>
 #include <core/graphics/texture.h>
-#include <core/graphics/material.h>
 #include <core/resources/resource_system.h>
-#include <imgui/imgui.h>
 #include <imgui/backends/imgui_impl_opengl3.h>
-#include <GLAD/glad.h>
-#include <optional>
 
 i32 intern_CreateShader(const char *shaderSrc, GLenum shaderType)
 {

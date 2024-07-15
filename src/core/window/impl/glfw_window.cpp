@@ -1,13 +1,13 @@
+#include "imgui.h"
 #define GLFW_INCLUDE_NONE
-#include <stdio.h>
-#include <stdlib.h>
-#include <GLFW/glfw3.h>
 #include <GLAD/glad.h>
-#include <imgui/imgui.h>
+#include <GLFW/glfw3.h>
+#include <Input.h>
+#include <core/window/window.h>
 #include <imgui/backends/imgui_impl_glfw.h>
 #include <imgui/backends/imgui_impl_opengl3.h>
-#include <core/window/window.h>
-#include <Input.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 // todo i dont like this file.
 
@@ -15,7 +15,9 @@ GLFWwindow *window;
 
 void WindowSizeCallback(GLFWwindow *window, int width, int height)
 {
-    glViewport(0, 0, width, height);
+  ImGuiIO &io = ImGui::GetIO();
+  io.DisplaySize = ImVec2((float)width, (float)height);
+  glViewport(0, 0, width, height);
 }
 
 Window::Window(int _width, int _height) : width(_width), height(_height), aspectRatio((float)_width / (float)height)
@@ -48,6 +50,7 @@ Window::Window(int _width, int _height) : width(_width), height(_height), aspect
 
     ImGui::CreateContext();
     ImGuiIO &io = ImGui::GetIO();
+    io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
 
     ImGui_ImplGlfw_InitForOpenGL(window, true); // Second param install_callback=true will install GLFW callbacks and chain to existing ones.
     ImGui_ImplOpenGL3_Init();

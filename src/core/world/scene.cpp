@@ -54,9 +54,6 @@ void Scene::DrawScenePropertiesDebug()
         world.each([&](flecs::entity e, Transform &t, DirectionalLight &light) {
           ImGui::PushID(e.id());
           if (ImGui::TreeNode(&dirlightes, "Dir Light %d", dirlightes)) {
-            ImGui::DragFloat3("Pos", &t.position[0], 0.5f, 0.0f, 0.0f, "%.2f");
-            ImGui::DragFloat3("Sca", &t.scale[0], 0.5f, 0.0f, 0.0f, "%.2f");
-            ImGui::DragFloat3("Rot", &t.rotation[0], 0.5f, 0.0f, 0.0f, "%.2f");
             ImGui::SliderFloat3("Dir", &light.direction[0], -1.0f, 1.0f,
                                 "%.2f");
             ImGui::ColorPicker3("Color", &light.color[0]);
@@ -216,12 +213,12 @@ void Scene::RegisterRenderModels()
                                                       std::to_string(index) +
                                                       "].position",
                                                   t.position);
-                                              renderer.UniformD1(
+                                              renderer.UniformF1(
                                                   "pointLights[" +
                                                       std::to_string(index) +
                                                       "].linear",
                                                   p.linear);
-                                              renderer.UniformD1(
+                                              renderer.UniformF1(
                                                   "pointLights[" +
                                                       std::to_string(index) +
                                                       "].quadratic",

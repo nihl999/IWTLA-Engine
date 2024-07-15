@@ -1,13 +1,10 @@
 cmake_minimum_required(VERSION 3.29.3)
 
+
 project(ouroboros_engine)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED YES)
-set(CMAKE_CXX_COMPILER "g++")
-
-set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
-
 
 add_executable(main 
     src/main.cpp
@@ -24,6 +21,8 @@ add_executable(main
     src/core/utils/uuid/uuid.cpp
 )
 
+set_target_properties(main PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/) 
+
 target_include_directories(main 
     PUBLIC
     ${CMAKE_SOURCE_DIR}/include/
@@ -31,24 +30,40 @@ target_include_directories(main
 )
 
 target_link_directories(main
-PUBLIC
-${CMAKE_SOURCE_DIR}/lib/)
+    PUBLIC
+    ${CMAKE_SOURCE_DIR}/lib/
+)
+
+
+add_subdirectory(vendor/flecs)
+add_subdirectory(vendor/glfw)
+add_subdirectory(vendor/glad)
+add_subdirectory(vendor/stb)
+add_subdirectory(vendor/imgui)
+
+#assimp fuckery
+set(ASSIMP_BUILD_ZLIB ON CACHE BOOL "Build zlib" FORCE)
+SET (ASSIMP_BUILD_TESTS OFF)
+SET (ASSIMP_WARNINGS_AS_ERRORS OFF)
+add_subdirectory(vendor/assimp)
+
 
 target_link_libraries(main 
-    glfw3 
-    glad  
-    imguiglgl 
-    imgui 
-    flecs 
+    flecs::flecs_static
+    glfw
+    glad
+    stb::image
+    stb::image_write
+    stb::noise
     assimp
-    z
+    imgui
     -lWs2_32
     -luser32 
     -lgdi32 
     -lopengl32
 )
 
-set_target_properties(main PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/) 
+
 
 
 

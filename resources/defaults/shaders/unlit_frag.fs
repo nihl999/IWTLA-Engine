@@ -15,5 +15,5 @@ out vec4 color;
 
 void main() {
     vec3 frag_diffuse_tex = vec3(texture(material.diffuse, uv.xy));
-    color = vec4(frag_diffuse_tex, 1) * vec4(point_light_color, 1);
+    color = vec4(frag_diffuse_tex, 1);
 }

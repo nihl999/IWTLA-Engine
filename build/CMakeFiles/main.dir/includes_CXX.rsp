@@ -1,1 +1,1 @@
--IS:/dev/c++/opengl/include -IS:/dev/c++/opengl/src
+-IS:/dev/c++/opengl/include -IS:/dev/c++/opengl/src -IS:/dev/c++/opengl/vendor/flecs/include -IS:/dev/c++/opengl/vendor/glfw/include -IS:/dev/c++/opengl/vendor/glad/include -IS:/dev/c++/opengl/vendor/imgui/. -IS:/dev/c++/opengl/vendor/imgui/backends -IS:/dev/c++/opengl/vendor/assimp/code/../include -IS:/dev/c++/opengl/build/vendor/assimp/code/../include

@@ -26,7 +26,7 @@ file(REMOVE_RECURSE
   "S:/dev/c++/opengl/bin/main.exe"
   "S:/dev/c++/opengl/bin/main.exe.manifest"
   "S:/dev/c++/opengl/bin/main.pdb"
-  "libmain.dll.a"
+  "main.lib"
 )
 
 # Per-language clean rules from dependency scanning.

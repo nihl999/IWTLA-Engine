@@ -1,136 +1,223 @@
 CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj: \
- S:/dev/c++/opengl/src/core/window/impl/glfw_window.cpp \
- S:/w64devkit/x86_64-w64-mingw32/include/stdio.h \
- S:/w64devkit/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
- S:/w64devkit/x86_64-w64-mingw32/include/corecrt.h \
- S:/w64devkit/x86_64-w64-mingw32/include/_mingw.h \
- S:/w64devkit/x86_64-w64-mingw32/include/_mingw_mac.h \
- S:/w64devkit/x86_64-w64-mingw32/include/_mingw_secapi.h \
- S:/w64devkit/x86_64-w64-mingw32/include/vadefs.h \
- S:/w64devkit/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
- S:/w64devkit/x86_64-w64-mingw32/include/_mingw_off_t.h \
- S:/w64devkit/x86_64-w64-mingw32/include/swprintf.inl \
- S:/w64devkit/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/stdlib.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cstdlib \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/pstl/pstl_config.h \
- S:/w64devkit/x86_64-w64-mingw32/include/stdlib.h \
- S:/w64devkit/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/limits.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/syslimits.h \
- S:/w64devkit/x86_64-w64-mingw32/include/limits.h \
- S:/w64devkit/x86_64-w64-mingw32/include/crtdefs.h \
- S:/w64devkit/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
- S:/w64devkit/x86_64-w64-mingw32/include/malloc.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/mm_malloc.h \
- S:/w64devkit/x86_64-w64-mingw32/include/errno.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/std_abs.h \
- S:/dev/c++/opengl/include/GLFW/glfw3.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/stddef.h \
- S:/w64devkit/x86_64-w64-mingw32/include/stddef.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/stdint.h \
- S:/w64devkit/x86_64-w64-mingw32/include/stdint.h \
- S:/dev/c++/opengl/include/GLAD/glad.h \
- S:/dev/c++/opengl/include/KHR/khrplatform.h \
- S:/dev/c++/opengl/include/imgui/imgui.h \
- S:/dev/c++/opengl/include/imgui/imconfig.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/float.h \
- S:/w64devkit/x86_64-w64-mingw32/include/float.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/stdarg.h \
- S:/w64devkit/x86_64-w64-mingw32/include/stdarg.h \
- S:/w64devkit/x86_64-w64-mingw32/include/_mingw_stdarg.h \
- S:/w64devkit/x86_64-w64-mingw32/include/string.h \
- S:/w64devkit/x86_64-w64-mingw32/include/sec_api/string_s.h \
- S:/w64devkit/x86_64-w64-mingw32/include/assert.h \
- S:/dev/c++/opengl/include/imgui/backends/imgui_impl_glfw.h \
- S:/dev/c++/opengl/include/imgui/backends/imgui_impl_opengl3.h \
- S:/dev/c++/opengl/src/core/window/window.h \
- S:/dev/c++/opengl/src/core/defines.h S:/dev/c++/opengl/src/Input.h \
- S:/dev/c++/opengl/include/glfw/glfw3.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/unordered_map \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/requires_hosted.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/initializer_list \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/unordered_map.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/hashtable.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/hashtable_policy.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/tuple \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_pair.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/type_traits \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/version.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/move.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/utility.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/compare \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/concepts \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/uses_allocator.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/invoke.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ranges_util.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ranges_base.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_iterator.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/cpp_type_traits.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_iterator_base_types.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/iterator_concepts.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ptr_traits.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ranges_cmp.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/type_traits.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/new \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/exception.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/exception_defines.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_construct.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_iterator_base_funcs.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/concept_check.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/debug/assertions.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/numeric_traits.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/max_size_type.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/numbers \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/functional_hash.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/hash_bytes.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_algobase.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/functexcept.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/debug/debug.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/predefined_ops.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bit \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/aligned_buffer.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/alloc_traits.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/alloc_traits.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/memoryfwd.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/allocator.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/new_allocator.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/enable_special_members.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stl_function.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/backward/binders.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/node_handle.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/range_access.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/erase_if.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/memory_resource.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cstddef \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/uses_allocator_args.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/string \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/stringfwd.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/char_traits.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/postypes.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cwchar \
- S:/w64devkit/x86_64-w64-mingw32/include/wchar.h \
- S:/w64devkit/x86_64-w64-mingw32/include/_mingw_stat64.h \
- S:/w64devkit/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/localefwd.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/clocale \
- S:/w64devkit/x86_64-w64-mingw32/include/locale.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/iosfwd \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cctype \
- S:/w64devkit/x86_64-w64-mingw32/include/ctype.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/ostream_insert.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/cxxabi_forced.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/refwrap.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/basic_string.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/string_view \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/string_view.tcc \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/ext/string_conversions.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cstdio \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/cerrno \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/charconv.h \
- S:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.1.0/include/c++/bits/basic_string.tcc
+  S:\dev\c++\opengl\src\core\window\impl\glfw_window.cpp \
+  S:\dev\c++\opengl\vendor\imgui\.\imgui.h \
+  S:\dev\c++\opengl\vendor\imgui\.\imconfig.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\float.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\float.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\vcruntime.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\sal.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\concurrencysal.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\vadefs.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\vadefs.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\stdarg.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stdarg___gnuc_va_list.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stdarg_va_list.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stdarg_va_arg.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stdarg___va_copy.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stdarg_va_copy.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\stddef.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stddef_ptrdiff_t.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stddef_size_t.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stddef_wchar_t.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stddef_null.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stddef_nullptr_t.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stddef_max_align_t.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__stddef_offsetof.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\string.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_memory.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_memcpy_s.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\errno.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\vcruntime_string.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\assert.h \
+  S:\dev\c++\opengl\include\GLAD\glad.h \
+  S:\dev\c++\opengl\include\KHR\khrplatform.h \
+  S:\dev\c++\opengl\include\GLFW\glfw3.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\stdint.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\stdint.h \
+  S:\dev\c++\opengl\src\Input.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\unordered_map \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\yvals_core.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\xkeycheck.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\xhash \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\cmath \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\yvals.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\crtdbg.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\vcruntime_new_debug.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\vcruntime_new.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\crtdefs.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\use_ansi.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\cstdlib \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\math.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\stdlib.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_search.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdlib.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\limits.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\limits.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\xtr1common \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\xutility \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\utility \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\initializer_list \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\cstddef \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\type_traits \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\cstdint \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\concepts \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\compare \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\climits \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\cstring \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\list \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\xmemory \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\limits \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\cfloat \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\cwchar \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\cstdio \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\stdio.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_stdio_config.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\wchar.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_wconio.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_wctype.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_wdirect.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_wio.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_share.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_wprocess.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_wtime.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\sys\stat.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\sys\types.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\x86intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\ia32intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\immintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\x86gprintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\hresetintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\uintrintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\usermsrintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\crc32intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\prfchiintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\raointintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\cmpccxaddintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\mmintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\xmmintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\mm_malloc.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\malloc.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\emmintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\pmmintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\tmmintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\smmintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\popcntintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\wmmintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__wmmintrin_aes.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\__wmmintrin_pclmul.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\clflushoptintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\clwbintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avxintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx2intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\f16cintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\bmiintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\bmi2intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\lzcntintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\fmaintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512fintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vlintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512bwintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512bitalgintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512cdintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vpopcntdqintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vpopcntdqvlintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vnniintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vlvnniintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avxvnniintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512dqintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vlbitalgintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vlbwintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vlcdintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vldqintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512erintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512ifmaintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512ifmavlintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avxifmaintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vbmiintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vbmivlintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vbmi2intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vlvbmi2intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512pfintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512fp16intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vlfp16intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512bf16intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vlbf16intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\pkuintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\vpclmulqdqintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\vaesintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\gfniintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avxvnniint8intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avxneconvertintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\sha512intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\sm3intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\sm4intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avxvnniint16intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\rtmintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\xtestintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\shaintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\fxsrintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\xsaveintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\xsaveoptintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\xsavecintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\xsavesintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\cetintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\adcintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\adxintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\rdseedintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\wbnoinvdintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\cldemoteintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\waitpkgintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\movdirintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\pconfigintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\sgxintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\ptwriteintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\invpcidintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\amxfp16intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\keylockerintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\amxintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\amxcomplexintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vp2intersectintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\avx512vlvp2intersectintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\enqcmdintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\serializeintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\tsxldtrkintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\mm3dnow.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\prfchwintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\ammintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\fma4intrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\xopintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\tbmintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\lwpintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\mwaitxintrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\clzerointrin.h \
+  C:\Program\ Files\LLVM\lib\clang\18\include\rdpruintrin.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\setjmp.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\new \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\exception \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\vcruntime_exception.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\eh.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_terminate.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\xatomic.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\tuple \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\xpolymorphic_allocator.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\vector \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\__msvc_bit_utils.hpp \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\__msvc_sanitizer_annotate_container.hpp \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\xbit_ops.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\xnode_handle.h \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\string \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\xstring \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\iosfwd \
+  S:\VS\VC\Tools\MSVC\14.39.33519\include\cctype \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\ctype.h \
+  S:\dev\c++\opengl\src\core\window\window.h \
+  S:\dev\c++\opengl\src\core\defines.h \
+  S:\dev\c++\opengl\include\imgui\backends\imgui_impl_glfw.h \
+  S:\dev\c++\opengl\include\imgui\backends\imgui_impl_opengl3.h

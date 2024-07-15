@@ -64,29 +64,218 @@ CMAKE_BINARY_DIR = S:/dev/c++/opengl/build
 
 # The main recursive "all" target.
 all: CMakeFiles/main.dir/all
+all: vendor/flecs/all
+all: vendor/glfw/all
+all: vendor/glad/all
+all: vendor/stb/all
+all: vendor/imgui/all
+all: vendor/assimp/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: vendor/flecs/preinstall
+preinstall: vendor/glfw/preinstall
+preinstall: vendor/glad/preinstall
+preinstall: vendor/stb/preinstall
+preinstall: vendor/imgui/preinstall
+preinstall: vendor/assimp/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/main.dir/clean
+clean: vendor/flecs/clean
+clean: vendor/glfw/clean
+clean: vendor/glad/clean
+clean: vendor/stb/clean
+clean: vendor/imgui/clean
+clean: vendor/assimp/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory vendor/assimp
+
+# Recursive "all" directory target.
+vendor/assimp/all: vendor/assimp/contrib/zlib/all
+vendor/assimp/all: vendor/assimp/code/all
+.PHONY : vendor/assimp/all
+
+# Recursive "preinstall" directory target.
+vendor/assimp/preinstall: vendor/assimp/contrib/zlib/preinstall
+vendor/assimp/preinstall: vendor/assimp/code/preinstall
+.PHONY : vendor/assimp/preinstall
+
+# Recursive "clean" directory target.
+vendor/assimp/clean: vendor/assimp/contrib/zlib/clean
+vendor/assimp/clean: vendor/assimp/code/clean
+.PHONY : vendor/assimp/clean
+
+#=============================================================================
+# Directory level rules for directory vendor/assimp/code
+
+# Recursive "all" directory target.
+vendor/assimp/code/all: vendor/assimp/code/CMakeFiles/assimp.dir/all
+.PHONY : vendor/assimp/code/all
+
+# Recursive "preinstall" directory target.
+vendor/assimp/code/preinstall:
+.PHONY : vendor/assimp/code/preinstall
+
+# Recursive "clean" directory target.
+vendor/assimp/code/clean: vendor/assimp/code/CMakeFiles/assimp.dir/clean
+.PHONY : vendor/assimp/code/clean
+
+#=============================================================================
+# Directory level rules for directory vendor/assimp/contrib/zlib
+
+# Recursive "all" directory target.
+vendor/assimp/contrib/zlib/all: vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
+.PHONY : vendor/assimp/contrib/zlib/all
+
+# Recursive "preinstall" directory target.
+vendor/assimp/contrib/zlib/preinstall:
+.PHONY : vendor/assimp/contrib/zlib/preinstall
+
+# Recursive "clean" directory target.
+vendor/assimp/contrib/zlib/clean: vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/clean
+.PHONY : vendor/assimp/contrib/zlib/clean
+
+#=============================================================================
+# Directory level rules for directory vendor/flecs
+
+# Recursive "all" directory target.
+vendor/flecs/all: vendor/flecs/CMakeFiles/flecs.dir/all
+vendor/flecs/all: vendor/flecs/CMakeFiles/flecs_static.dir/all
+.PHONY : vendor/flecs/all
+
+# Recursive "preinstall" directory target.
+vendor/flecs/preinstall:
+.PHONY : vendor/flecs/preinstall
+
+# Recursive "clean" directory target.
+vendor/flecs/clean: vendor/flecs/CMakeFiles/flecs.dir/clean
+vendor/flecs/clean: vendor/flecs/CMakeFiles/flecs_static.dir/clean
+.PHONY : vendor/flecs/clean
+
+#=============================================================================
+# Directory level rules for directory vendor/glad
+
+# Recursive "all" directory target.
+vendor/glad/all: vendor/glad/CMakeFiles/glad.dir/all
+.PHONY : vendor/glad/all
+
+# Recursive "preinstall" directory target.
+vendor/glad/preinstall:
+.PHONY : vendor/glad/preinstall
+
+# Recursive "clean" directory target.
+vendor/glad/clean: vendor/glad/CMakeFiles/glad.dir/clean
+.PHONY : vendor/glad/clean
+
+#=============================================================================
+# Directory level rules for directory vendor/glfw
+
+# Recursive "all" directory target.
+vendor/glfw/all: vendor/glfw/src/all
+vendor/glfw/all: vendor/glfw/docs/all
+.PHONY : vendor/glfw/all
+
+# Recursive "preinstall" directory target.
+vendor/glfw/preinstall: vendor/glfw/src/preinstall
+vendor/glfw/preinstall: vendor/glfw/docs/preinstall
+.PHONY : vendor/glfw/preinstall
+
+# Recursive "clean" directory target.
+vendor/glfw/clean: vendor/glfw/CMakeFiles/uninstall.dir/clean
+vendor/glfw/clean: vendor/glfw/src/clean
+vendor/glfw/clean: vendor/glfw/docs/clean
+.PHONY : vendor/glfw/clean
+
+#=============================================================================
+# Directory level rules for directory vendor/glfw/docs
+
+# Recursive "all" directory target.
+vendor/glfw/docs/all:
+.PHONY : vendor/glfw/docs/all
+
+# Recursive "preinstall" directory target.
+vendor/glfw/docs/preinstall:
+.PHONY : vendor/glfw/docs/preinstall
+
+# Recursive "clean" directory target.
+vendor/glfw/docs/clean:
+.PHONY : vendor/glfw/docs/clean
+
+#=============================================================================
+# Directory level rules for directory vendor/glfw/src
+
+# Recursive "all" directory target.
+vendor/glfw/src/all: vendor/glfw/src/CMakeFiles/glfw.dir/all
+.PHONY : vendor/glfw/src/all
+
+# Recursive "preinstall" directory target.
+vendor/glfw/src/preinstall:
+.PHONY : vendor/glfw/src/preinstall
+
+# Recursive "clean" directory target.
+vendor/glfw/src/clean: vendor/glfw/src/CMakeFiles/glfw.dir/clean
+vendor/glfw/src/clean: vendor/glfw/src/CMakeFiles/update_mappings.dir/clean
+.PHONY : vendor/glfw/src/clean
+
+#=============================================================================
+# Directory level rules for directory vendor/imgui
+
+# Recursive "all" directory target.
+vendor/imgui/all: vendor/imgui/CMakeFiles/imgui.dir/all
+.PHONY : vendor/imgui/all
+
+# Recursive "preinstall" directory target.
+vendor/imgui/preinstall:
+.PHONY : vendor/imgui/preinstall
+
+# Recursive "clean" directory target.
+vendor/imgui/clean: vendor/imgui/CMakeFiles/imgui.dir/clean
+.PHONY : vendor/imgui/clean
+
+#=============================================================================
+# Directory level rules for directory vendor/stb
+
+# Recursive "all" directory target.
+vendor/stb/all: vendor/stb/CMakeFiles/stb_image.dir/all
+vendor/stb/all: vendor/stb/CMakeFiles/stb_image_write.dir/all
+vendor/stb/all: vendor/stb/CMakeFiles/stb_noise.dir/all
+.PHONY : vendor/stb/all
+
+# Recursive "preinstall" directory target.
+vendor/stb/preinstall:
+.PHONY : vendor/stb/preinstall
+
+# Recursive "clean" directory target.
+vendor/stb/clean: vendor/stb/CMakeFiles/stb_image.dir/clean
+vendor/stb/clean: vendor/stb/CMakeFiles/stb_image_write.dir/clean
+vendor/stb/clean: vendor/stb/CMakeFiles/stb_noise.dir/clean
+.PHONY : vendor/stb/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
+CMakeFiles/main.dir/all: vendor/flecs/CMakeFiles/flecs_static.dir/all
+CMakeFiles/main.dir/all: vendor/glad/CMakeFiles/glad.dir/all
+CMakeFiles/main.dir/all: vendor/glfw/src/CMakeFiles/glfw.dir/all
+CMakeFiles/main.dir/all: vendor/stb/CMakeFiles/stb_image.dir/all
+CMakeFiles/main.dir/all: vendor/stb/CMakeFiles/stb_noise.dir/all
+CMakeFiles/main.dir/all: vendor/stb/CMakeFiles/stb_image_write.dir/all
+CMakeFiles/main.dir/all: vendor/imgui/CMakeFiles/imgui.dir/all
+CMakeFiles/main.dir/all: vendor/assimp/code/CMakeFiles/assimp.dir/all
+CMakeFiles/main.dir/all: vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=93,94 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 83
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
@@ -99,6 +288,319 @@ main: CMakeFiles/main.dir/rule
 CMakeFiles/main.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
 .PHONY : CMakeFiles/main.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/flecs/CMakeFiles/flecs.dir
+
+# All Build rule for target.
+vendor/flecs/CMakeFiles/flecs.dir/all:
+	$(MAKE) $(MAKESILENT) -f vendor/flecs/CMakeFiles/flecs.dir/build.make vendor/flecs/CMakeFiles/flecs.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/flecs/CMakeFiles/flecs.dir/build.make vendor/flecs/CMakeFiles/flecs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Built target flecs"
+.PHONY : vendor/flecs/CMakeFiles/flecs.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/flecs/CMakeFiles/flecs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/flecs/CMakeFiles/flecs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/flecs/CMakeFiles/flecs.dir/rule
+
+# Convenience name for target.
+flecs: vendor/flecs/CMakeFiles/flecs.dir/rule
+.PHONY : flecs
+
+# clean rule for target.
+vendor/flecs/CMakeFiles/flecs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/flecs/CMakeFiles/flecs.dir/build.make vendor/flecs/CMakeFiles/flecs.dir/clean
+.PHONY : vendor/flecs/CMakeFiles/flecs.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/flecs/CMakeFiles/flecs_static.dir
+
+# All Build rule for target.
+vendor/flecs/CMakeFiles/flecs_static.dir/all:
+	$(MAKE) $(MAKESILENT) -f vendor/flecs/CMakeFiles/flecs_static.dir/build.make vendor/flecs/CMakeFiles/flecs_static.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/flecs/CMakeFiles/flecs_static.dir/build.make vendor/flecs/CMakeFiles/flecs_static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85 "Built target flecs_static"
+.PHONY : vendor/flecs/CMakeFiles/flecs_static.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/flecs/CMakeFiles/flecs_static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 18
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/flecs/CMakeFiles/flecs_static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/flecs/CMakeFiles/flecs_static.dir/rule
+
+# Convenience name for target.
+flecs_static: vendor/flecs/CMakeFiles/flecs_static.dir/rule
+.PHONY : flecs_static
+
+# clean rule for target.
+vendor/flecs/CMakeFiles/flecs_static.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/flecs/CMakeFiles/flecs_static.dir/build.make vendor/flecs/CMakeFiles/flecs_static.dir/clean
+.PHONY : vendor/flecs/CMakeFiles/flecs_static.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/glfw/CMakeFiles/uninstall.dir
+
+# All Build rule for target.
+vendor/glfw/CMakeFiles/uninstall.dir/all:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/CMakeFiles/uninstall.dir/build.make vendor/glfw/CMakeFiles/uninstall.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/CMakeFiles/uninstall.dir/build.make vendor/glfw/CMakeFiles/uninstall.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num= "Built target uninstall"
+.PHONY : vendor/glfw/CMakeFiles/uninstall.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/glfw/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/CMakeFiles/uninstall.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/glfw/CMakeFiles/uninstall.dir/rule
+
+# Convenience name for target.
+uninstall: vendor/glfw/CMakeFiles/uninstall.dir/rule
+.PHONY : uninstall
+
+# clean rule for target.
+vendor/glfw/CMakeFiles/uninstall.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/CMakeFiles/uninstall.dir/build.make vendor/glfw/CMakeFiles/uninstall.dir/clean
+.PHONY : vendor/glfw/CMakeFiles/uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/glfw/src/CMakeFiles/glfw.dir
+
+# All Build rule for target.
+vendor/glfw/src/CMakeFiles/glfw.dir/all:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=86,87,88,89,90 "Built target glfw"
+.PHONY : vendor/glfw/src/CMakeFiles/glfw.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/src/CMakeFiles/glfw.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/glfw/src/CMakeFiles/glfw.dir/rule
+
+# Convenience name for target.
+glfw: vendor/glfw/src/CMakeFiles/glfw.dir/rule
+.PHONY : glfw
+
+# clean rule for target.
+vendor/glfw/src/CMakeFiles/glfw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/clean
+.PHONY : vendor/glfw/src/CMakeFiles/glfw.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/glfw/src/CMakeFiles/update_mappings.dir
+
+# All Build rule for target.
+vendor/glfw/src/CMakeFiles/update_mappings.dir/all:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/update_mappings.dir/build.make vendor/glfw/src/CMakeFiles/update_mappings.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/update_mappings.dir/build.make vendor/glfw/src/CMakeFiles/update_mappings.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num= "Built target update_mappings"
+.PHONY : vendor/glfw/src/CMakeFiles/update_mappings.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/glfw/src/CMakeFiles/update_mappings.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/src/CMakeFiles/update_mappings.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/glfw/src/CMakeFiles/update_mappings.dir/rule
+
+# Convenience name for target.
+update_mappings: vendor/glfw/src/CMakeFiles/update_mappings.dir/rule
+.PHONY : update_mappings
+
+# clean rule for target.
+vendor/glfw/src/CMakeFiles/update_mappings.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/update_mappings.dir/build.make vendor/glfw/src/CMakeFiles/update_mappings.dir/clean
+.PHONY : vendor/glfw/src/CMakeFiles/update_mappings.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/glad/CMakeFiles/glad.dir
+
+# All Build rule for target.
+vendor/glad/CMakeFiles/glad.dir/all:
+	$(MAKE) $(MAKESILENT) -f vendor/glad/CMakeFiles/glad.dir/build.make vendor/glad/CMakeFiles/glad.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/glad/CMakeFiles/glad.dir/build.make vendor/glad/CMakeFiles/glad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num= "Built target glad"
+.PHONY : vendor/glad/CMakeFiles/glad.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/glad/CMakeFiles/glad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glad/CMakeFiles/glad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/glad/CMakeFiles/glad.dir/rule
+
+# Convenience name for target.
+glad: vendor/glad/CMakeFiles/glad.dir/rule
+.PHONY : glad
+
+# clean rule for target.
+vendor/glad/CMakeFiles/glad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/glad/CMakeFiles/glad.dir/build.make vendor/glad/CMakeFiles/glad.dir/clean
+.PHONY : vendor/glad/CMakeFiles/glad.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/stb/CMakeFiles/stb_image.dir
+
+# All Build rule for target.
+vendor/stb/CMakeFiles/stb_image.dir/all:
+	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_image.dir/build.make vendor/stb/CMakeFiles/stb_image.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_image.dir/build.make vendor/stb/CMakeFiles/stb_image.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=95 "Built target stb_image"
+.PHONY : vendor/stb/CMakeFiles/stb_image.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/stb/CMakeFiles/stb_image.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/stb/CMakeFiles/stb_image.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/stb/CMakeFiles/stb_image.dir/rule
+
+# Convenience name for target.
+stb_image: vendor/stb/CMakeFiles/stb_image.dir/rule
+.PHONY : stb_image
+
+# clean rule for target.
+vendor/stb/CMakeFiles/stb_image.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_image.dir/build.make vendor/stb/CMakeFiles/stb_image.dir/clean
+.PHONY : vendor/stb/CMakeFiles/stb_image.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/stb/CMakeFiles/stb_image_write.dir
+
+# All Build rule for target.
+vendor/stb/CMakeFiles/stb_image_write.dir/all:
+	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_image_write.dir/build.make vendor/stb/CMakeFiles/stb_image_write.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_image_write.dir/build.make vendor/stb/CMakeFiles/stb_image_write.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num= "Built target stb_image_write"
+.PHONY : vendor/stb/CMakeFiles/stb_image_write.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/stb/CMakeFiles/stb_image_write.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/stb/CMakeFiles/stb_image_write.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/stb/CMakeFiles/stb_image_write.dir/rule
+
+# Convenience name for target.
+stb_image_write: vendor/stb/CMakeFiles/stb_image_write.dir/rule
+.PHONY : stb_image_write
+
+# clean rule for target.
+vendor/stb/CMakeFiles/stb_image_write.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_image_write.dir/build.make vendor/stb/CMakeFiles/stb_image_write.dir/clean
+.PHONY : vendor/stb/CMakeFiles/stb_image_write.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/stb/CMakeFiles/stb_noise.dir
+
+# All Build rule for target.
+vendor/stb/CMakeFiles/stb_noise.dir/all:
+	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_noise.dir/build.make vendor/stb/CMakeFiles/stb_noise.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_noise.dir/build.make vendor/stb/CMakeFiles/stb_noise.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=96 "Built target stb_noise"
+.PHONY : vendor/stb/CMakeFiles/stb_noise.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/stb/CMakeFiles/stb_noise.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/stb/CMakeFiles/stb_noise.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/stb/CMakeFiles/stb_noise.dir/rule
+
+# Convenience name for target.
+stb_noise: vendor/stb/CMakeFiles/stb_noise.dir/rule
+.PHONY : stb_noise
+
+# clean rule for target.
+vendor/stb/CMakeFiles/stb_noise.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_noise.dir/build.make vendor/stb/CMakeFiles/stb_noise.dir/clean
+.PHONY : vendor/stb/CMakeFiles/stb_noise.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/imgui/CMakeFiles/imgui.dir
+
+# All Build rule for target.
+vendor/imgui/CMakeFiles/imgui.dir/all: vendor/glad/CMakeFiles/glad.dir/all
+vendor/imgui/CMakeFiles/imgui.dir/all: vendor/glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=91,92 "Built target imgui"
+.PHONY : vendor/imgui/CMakeFiles/imgui.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/imgui/CMakeFiles/imgui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imgui/CMakeFiles/imgui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/imgui/CMakeFiles/imgui.dir/rule
+
+# Convenience name for target.
+imgui: vendor/imgui/CMakeFiles/imgui.dir/rule
+.PHONY : imgui
+
+# clean rule for target.
+vendor/imgui/CMakeFiles/imgui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/clean
+.PHONY : vendor/imgui/CMakeFiles/imgui.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir
+
+# All Build rule for target.
+vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all:
+	$(MAKE) $(MAKESILENT) -f vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build.make vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build.make vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=97,98,99,100 "Built target zlibstatic"
+.PHONY : vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/rule
+
+# Convenience name for target.
+zlibstatic: vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/rule
+.PHONY : zlibstatic
+
+# clean rule for target.
+vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build.make vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/clean
+.PHONY : vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/clean
+
+#=============================================================================
+# Target rules for target vendor/assimp/code/CMakeFiles/assimp.dir
+
+# All Build rule for target.
+vendor/assimp/code/CMakeFiles/assimp.dir/all: vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
+	$(MAKE) $(MAKESILENT) -f vendor/assimp/code/CMakeFiles/assimp.dir/build.make vendor/assimp/code/CMakeFiles/assimp.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/assimp/code/CMakeFiles/assimp.dir/build.make vendor/assimp/code/CMakeFiles/assimp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/opengl/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target assimp"
+.PHONY : vendor/assimp/code/CMakeFiles/assimp.dir/all
+
+# Build rule for subdir invocation for target.
+vendor/assimp/code/CMakeFiles/assimp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 54
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/assimp/code/CMakeFiles/assimp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+.PHONY : vendor/assimp/code/CMakeFiles/assimp.dir/rule
+
+# Convenience name for target.
+assimp: vendor/assimp/code/CMakeFiles/assimp.dir/rule
+.PHONY : assimp
+
+# clean rule for target.
+vendor/assimp/code/CMakeFiles/assimp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/assimp/code/CMakeFiles/assimp.dir/build.make vendor/assimp/code/CMakeFiles/assimp.dir/clean
+.PHONY : vendor/assimp/code/CMakeFiles/assimp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

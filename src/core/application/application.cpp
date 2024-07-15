@@ -1,17 +1,15 @@
 #define GLFW_INCLUDE_NONE
+#include "Input.h"
+#include <common/File/File.h>
 #include <core/application/application.h>
-#include <stdio.h>
-#include <imgui/imgui.h>
+#include <core/graphics/utils/cube_model.h>
+#include <core/graphics/utils/light_model.h>
+#include <core/resources/resource_system.h>
+#include <core/window/window.h>
+#include <core/world/components.h>
+#include <core/world/scene.h>
 #include <imgui/backends/imgui_impl_glfw.h>
 #include <imgui/backends/imgui_impl_opengl3.h>
-#include "Input.h"
-#include <core/world/scene.h>
-#include <core/window/window.h>
-#include <common/File/File.h>
-#include <core/resources/resource_system.h>
-#include <core/graphics/utils/light_model.h>
-#include <core/graphics/utils/cube_model.h>
-#include <core/world/components.h>
 
 #include <random>
 
@@ -46,7 +44,7 @@ Application::Application() : window(Window(1280, 720)), renderer(Renderer::GetIn
 
                            std::uniform_real_distribution<f32> x(-10, 30);
                            std::uniform_real_distribution<f32> y(0, 10);
-                           std::uniform_real_distribution<f32> z(-10, -50);
+                           std::uniform_real_distribution<f32> z(-50, -10);
 
                            for (u32 i = 0; i <= 10; i++) {
                              flecs::entity cube = scene.world.entity();
@@ -66,21 +64,11 @@ Application::Application() : window(Window(1280, 720)), renderer(Renderer::GetIn
                            {
                              flecs::entity light =
                                  scene.world.entity("directionallight");
-                             light.set<ECSComponents::Transform>(
-                                 {.position = glm::vec3(0, 10, 0)});
-                             light.add<ECSComponents::Velocity>();
-                             light.add<ECSComponents::Renderable>();
                              light.set<ECSComponents::DirectionalLight>(
                                  {.direction = glm::vec3(0, -0.5, -1),
                                   .color = glm::vec3(1),
                                   .intensity = 1.0f});
-
-                             light.set<ECSComponents::Model>(
-                                 {.model = ResourceSystem::PrepareResource(
-                                      {.path = "hardcoded/cube",
-                                       .name = "defaults/model/cube",
-                                       .type =
-                                           ResourceSystem::RESOURCE_MODEL})});
+                             light.add<ECSComponents::Transform>();
                            }
                            {
                              flecs::entity light =

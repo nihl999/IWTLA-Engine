@@ -27,7 +27,7 @@
         // }
         {
             "name": "(Windows) Launch",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}/bin/main.exe",
             "args": [ ],
@@ -35,8 +35,6 @@
             "cwd": "${workspaceFolder}/bin",
             "environment": [ ],
             "externalConsole": false,
-            "setupCommands": [
-            ]
         }
     ]
 }

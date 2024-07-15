@@ -310,8 +310,10 @@ void LoadHardcodedCubeMesh(Handle h) {
   Handle mat = PrepareResource({.path = "hardcoded/untextured_cube_mat",
                                 .name = "hardcoded/untextured_cube_mat",
                                 .type = RESOURCE_MATERIAL});
-  Material *material = new Material{
-      .tint = glm::vec3(1), .diffuseMap = diffuse, .specularMap = specular};
+  Material *material = new Material{.shader = "defaults/shaders/unlit",
+                                    .tint = glm::vec3(1),
+                                    .diffuseMap = diffuse,
+                                    .specularMap = specular};
   m_resources[mat] = {.data = material};
   cubeMesh.material = mat;
 

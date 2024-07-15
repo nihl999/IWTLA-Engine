@@ -29,8 +29,8 @@ namespace ECSComponents
     };
 
     struct PointLight {
-      f64 quadratic = 0.0075;
-      f64 linear = 0.045;
+      f32 quadratic = 0.0075;
+      f32 linear = 0.045;
       glm::vec3 color;
       f32 intensity;
     };
