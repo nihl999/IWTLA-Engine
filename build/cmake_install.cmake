@@ -1,8 +1,8 @@
-# Install script for directory: S:/dev/c++/opengl
+# Install script for directory: S:/dev/c++/IWTLA
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ouroboros_engine")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ouroboros")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,32 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("S:/dev/c++/opengl/build/vendor/flecs/cmake_install.cmake")
+  include("S:/dev/c++/IWTLA/build/engine/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("S:/dev/c++/opengl/build/vendor/glfw/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("S:/dev/c++/opengl/build/vendor/glad/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("S:/dev/c++/opengl/build/vendor/stb/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("S:/dev/c++/opengl/build/vendor/imgui/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("S:/dev/c++/opengl/build/vendor/assimp/cmake_install.cmake")
+  include("S:/dev/c++/IWTLA/build/sandbox/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -75,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "S:/dev/c++/opengl/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "S:/dev/c++/IWTLA/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

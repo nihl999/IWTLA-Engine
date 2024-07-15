@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
       
       The C compiler identification is Clang, found in:
-        S:/dev/c++/opengl/build/CMakeFiles/3.29.3/CompilerIdC/a.exe
+        S:/dev/c++/IWTLA/build/CMakeFiles/3.29.3/CompilerIdC/a.exe
       
   -
     kind: "message-v1"
@@ -70,7 +70,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is Clang, found in:
-        S:/dev/c++/opengl/build/CMakeFiles/3.29.3/CompilerIdCXX/a.exe
+        S:/dev/c++/IWTLA/build/CMakeFiles/3.29.3/CompilerIdCXX/a.exe
       
   -
     kind: "message-v1"
@@ -101,8 +101,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-2oiexa"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-2oiexa"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-d8ldhh"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-d8ldhh"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
@@ -112,21 +112,21 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-2oiexa'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-d8ldhh'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_20ec8/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_20ec8.dir/build.make CMakeFiles/cmTC_20ec8.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-2oiexa'
-        Building C object CMakeFiles/cmTC_20ec8.dir/CMakeCCompilerABI.c.obj
-        "C:/Program Files/LLVM/bin/clang.exe"   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_20ec8.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_20ec8.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_20ec8.dir/CMakeCCompilerABI.c.obj -c S:/Cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c
-        Linking C executable cmTC_20ec8.exe
-        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview  -v -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_20ec8.dir/objects1.rsp -o cmTC_20ec8.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_20ec8.lib -Xlinker /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-2oiexa/cmTC_20ec8.pdb -Xlinker /version:0.0 
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_f0503/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_f0503.dir/build.make CMakeFiles/cmTC_f0503.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-d8ldhh'
+        Building C object CMakeFiles/cmTC_f0503.dir/CMakeCCompilerABI.c.obj
+        "C:/Program Files/LLVM/bin/clang.exe"   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_f0503.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_f0503.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_f0503.dir/CMakeCCompilerABI.c.obj -c S:/Cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        Linking C executable cmTC_f0503.exe
+        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview  -v -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_f0503.dir/objects1.rsp -o cmTC_f0503.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_f0503.lib -Xlinker /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-d8ldhh/cmTC_f0503.pdb -Xlinker /version:0.0 
         clang version 18.1.6
         Target: x86_64-pc-windows-msvc
         Thread model: posix
         InstalledDir: C:\\Program Files\\LLVM\\bin
-         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_20ec8.exe "-libpath:S:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\lib\\\\x64" "-libpath:S:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\18\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_20ec8.dir/CMakeCCompilerABI.c.obj /MANIFEST:EMBED /implib:cmTC_20ec8.lib /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-2oiexa/cmTC_20ec8.pdb /version:0.0
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-2oiexa'
+         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_f0503.exe "-libpath:S:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\lib\\\\x64" "-libpath:S:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\18\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_f0503.dir/CMakeCCompilerABI.c.obj /MANIFEST:EMBED /implib:cmTC_f0503.lib /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-d8ldhh/cmTC_f0503.pdb /version:0.0
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-d8ldhh'
         
       exitCode: 0
   -
@@ -187,8 +187,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6w6hkq"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6w6hkq"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-yr5eq1"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-yr5eq1"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -199,21 +199,21 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6w6hkq'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-yr5eq1'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_7ce71/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_7ce71.dir/build.make CMakeFiles/cmTC_7ce71.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6w6hkq'
-        Building CXX object CMakeFiles/cmTC_7ce71.dir/CMakeCXXCompilerABI.cpp.obj
-        "C:/Program Files/LLVM/bin/clang++.exe"   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_7ce71.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles/cmTC_7ce71.dir/CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_7ce71.dir/CMakeCXXCompilerABI.cpp.obj -c S:/Cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
-        Linking CXX executable cmTC_7ce71.exe
-        "C:/Program Files/LLVM/bin/clang++.exe" -nostartfiles -nostdlib -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview  -v -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_7ce71.dir/objects1.rsp -o cmTC_7ce71.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_7ce71.lib -Xlinker /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6w6hkq/cmTC_7ce71.pdb -Xlinker /version:0.0 
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_a4f45/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_a4f45.dir/build.make CMakeFiles/cmTC_a4f45.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-yr5eq1'
+        Building CXX object CMakeFiles/cmTC_a4f45.dir/CMakeCXXCompilerABI.cpp.obj
+        "C:/Program Files/LLVM/bin/clang++.exe"   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_a4f45.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles/cmTC_a4f45.dir/CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_a4f45.dir/CMakeCXXCompilerABI.cpp.obj -c S:/Cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Linking CXX executable cmTC_a4f45.exe
+        "C:/Program Files/LLVM/bin/clang++.exe" -nostartfiles -nostdlib -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview  -v -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_a4f45.dir/objects1.rsp -o cmTC_a4f45.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_a4f45.lib -Xlinker /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-yr5eq1/cmTC_a4f45.pdb -Xlinker /version:0.0 
         clang version 18.1.6
         Target: x86_64-pc-windows-msvc
         Thread model: posix
         InstalledDir: C:\\Program Files\\LLVM\\bin
-         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_7ce71.exe "-libpath:S:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\lib\\\\x64" "-libpath:S:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\18\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_7ce71.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_7ce71.lib /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6w6hkq/cmTC_7ce71.pdb /version:0.0
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6w6hkq'
+         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_a4f45.exe "-libpath:S:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\lib\\\\x64" "-libpath:S:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\18\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_a4f45.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_a4f45.lib /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-yr5eq1/cmTC_a4f45.pdb /version:0.0
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-yr5eq1'
         
       exitCode: 0
   -
@@ -277,8 +277,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6mplo4"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6mplo4"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rmpvf8"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rmpvf8"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -288,16 +288,16 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6mplo4'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rmpvf8'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_2973d/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_2973d.dir/build.make CMakeFiles/cmTC_2973d.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6mplo4'
-        Building CXX object CMakeFiles/cmTC_2973d.dir/feature_tests.cxx.obj
-        "C:/Program Files/LLVM/bin/clang++.exe"   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview   -std=c++14 -MD -MT CMakeFiles/cmTC_2973d.dir/feature_tests.cxx.obj -MF CMakeFiles/cmTC_2973d.dir/feature_tests.cxx.obj.d -o CMakeFiles/cmTC_2973d.dir/feature_tests.cxx.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6mplo4/feature_tests.cxx
-        Linking CXX executable cmTC_2973d.exe
-        "C:/Program Files/LLVM/bin/clang++.exe" -nostartfiles -nostdlib -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_2973d.dir/objects1.rsp -o cmTC_2973d.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_2973d.lib -Xlinker /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6mplo4/cmTC_2973d.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_2973d.dir/linkLibs.rsp
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-6mplo4'
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_1fede/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_1fede.dir/build.make CMakeFiles/cmTC_1fede.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rmpvf8'
+        Building CXX object CMakeFiles/cmTC_1fede.dir/feature_tests.cxx.obj
+        "C:/Program Files/LLVM/bin/clang++.exe"   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview   -std=c++14 -MD -MT CMakeFiles/cmTC_1fede.dir/feature_tests.cxx.obj -MF CMakeFiles/cmTC_1fede.dir/feature_tests.cxx.obj.d -o CMakeFiles/cmTC_1fede.dir/feature_tests.cxx.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rmpvf8/feature_tests.cxx
+        Linking CXX executable cmTC_1fede.exe
+        "C:/Program Files/LLVM/bin/clang++.exe" -nostartfiles -nostdlib -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_1fede.dir/objects1.rsp -o cmTC_1fede.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_1fede.lib -Xlinker /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rmpvf8/cmTC_1fede.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_1fede.dir/linkLibs.rsp
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rmpvf8'
         
       exitCode: 0
   -
@@ -312,8 +312,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-wg3xje"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-wg3xje"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-1bkhv1"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-1bkhv1"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -323,16 +323,16 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-wg3xje'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-1bkhv1'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_39944/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_39944.dir/build.make CMakeFiles/cmTC_39944.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-wg3xje'
-        Building CXX object CMakeFiles/cmTC_39944.dir/feature_tests.cxx.obj
-        "C:/Program Files/LLVM/bin/clang++.exe"   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview   -std=c++14 -MD -MT CMakeFiles/cmTC_39944.dir/feature_tests.cxx.obj -MF CMakeFiles/cmTC_39944.dir/feature_tests.cxx.obj.d -o CMakeFiles/cmTC_39944.dir/feature_tests.cxx.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-wg3xje/feature_tests.cxx
-        Linking CXX executable cmTC_39944.exe
-        "C:/Program Files/LLVM/bin/clang++.exe" -nostartfiles -nostdlib -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_39944.dir/objects1.rsp -o cmTC_39944.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_39944.lib -Xlinker /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-wg3xje/cmTC_39944.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_39944.dir/linkLibs.rsp
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-wg3xje'
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_f941a/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_f941a.dir/build.make CMakeFiles/cmTC_f941a.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-1bkhv1'
+        Building CXX object CMakeFiles/cmTC_f941a.dir/feature_tests.cxx.obj
+        "C:/Program Files/LLVM/bin/clang++.exe"   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview   -std=c++14 -MD -MT CMakeFiles/cmTC_f941a.dir/feature_tests.cxx.obj -MF CMakeFiles/cmTC_f941a.dir/feature_tests.cxx.obj.d -o CMakeFiles/cmTC_f941a.dir/feature_tests.cxx.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-1bkhv1/feature_tests.cxx
+        Linking CXX executable cmTC_f941a.exe
+        "C:/Program Files/LLVM/bin/clang++.exe" -nostartfiles -nostdlib -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_f941a.dir/objects1.rsp -o cmTC_f941a.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_f941a.lib -Xlinker /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-1bkhv1/cmTC_f941a.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_f941a.dir/linkLibs.rsp
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-1bkhv1'
         
       exitCode: 0
   -
@@ -342,36 +342,36 @@ events:
       - "S:/Cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "S:/Cmake/share/cmake-3.29/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
       - "S:/Cmake/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
-      - "vendor/glfw/CMakeLists.txt:60 (find_package)"
+      - "engine/vendor/glfw/CMakeLists.txt:60 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-0gcfaf"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-0gcfaf"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-eecj16"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-eecj16"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-O0"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "S:/dev/c++/opengl/vendor/glfw/CMake/modules"
+      CMAKE_MODULE_PATH: "S:/dev/c++/IWTLA/engine/vendor/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-0gcfaf'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-eecj16'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_2c5d4/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_2c5d4.dir/build.make CMakeFiles/cmTC_2c5d4.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-0gcfaf'
-        Building C object CMakeFiles/cmTC_2c5d4.dir/src.c.obj
-        "C:/Program Files/LLVM/bin/clang.exe" -DCMAKE_HAVE_LIBC_PTHREAD  -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_2c5d4.dir/src.c.obj -MF CMakeFiles/cmTC_2c5d4.dir/src.c.obj.d -o CMakeFiles/cmTC_2c5d4.dir/src.c.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-0gcfaf/src.c
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-0gcfaf/src.c:1:10: fatal error: 'pthread.h' file not found
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_e1689/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_e1689.dir/build.make CMakeFiles/cmTC_e1689.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-eecj16'
+        Building C object CMakeFiles/cmTC_e1689.dir/src.c.obj
+        "C:/Program Files/LLVM/bin/clang.exe" -DCMAKE_HAVE_LIBC_PTHREAD  -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_e1689.dir/src.c.obj -MF CMakeFiles/cmTC_e1689.dir/src.c.obj.d -o CMakeFiles/cmTC_e1689.dir/src.c.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-eecj16/src.c
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-eecj16/src.c:1:10: fatal error: 'pthread.h' file not found
             1 | #include <pthread.h>
               |          ^~~~~~~~~~~
         1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_2c5d4.dir/build.make:79: CMakeFiles/cmTC_2c5d4.dir/src.c.obj] Error 1
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-0gcfaf'
-        make: *** [Makefile:127: cmTC_2c5d4/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_e1689.dir/build.make:79: CMakeFiles/cmTC_e1689.dir/src.c.obj] Error 1
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-eecj16'
+        make: *** [Makefile:127: cmTC_e1689/fast] Error 2
         
       exitCode: 2
   -
@@ -380,36 +380,36 @@ events:
       - "S:/Cmake/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
       - "S:/Cmake/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
       - "S:/Cmake/share/cmake-3.29/Modules/FindThreads.cmake:175 (_threads_check_lib)"
-      - "vendor/glfw/CMakeLists.txt:60 (find_package)"
+      - "engine/vendor/glfw/CMakeLists.txt:60 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-1i56fw"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-1i56fw"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rbd5cm"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rbd5cm"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-O0"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "S:/dev/c++/opengl/vendor/glfw/CMake/modules"
+      CMAKE_MODULE_PATH: "S:/dev/c++/IWTLA/engine/vendor/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-1i56fw'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rbd5cm'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_208e0/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_208e0.dir/build.make CMakeFiles/cmTC_208e0.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-1i56fw'
-        Building C object CMakeFiles/cmTC_208e0.dir/CheckFunctionExists.c.obj
-        "C:/Program Files/LLVM/bin/clang.exe"   -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_208e0.dir/CheckFunctionExists.c.obj -MF CMakeFiles/cmTC_208e0.dir/CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_208e0.dir/CheckFunctionExists.c.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-1i56fw/CheckFunctionExists.c
-        Linking C executable cmTC_208e0.exe
-        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib  -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_208e0.dir/objects1.rsp -o cmTC_208e0.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_208e0.lib -Xlinker /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-1i56fw/cmTC_208e0.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_208e0.dir/linkLibs.rsp
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_a1690/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_a1690.dir/build.make CMakeFiles/cmTC_a1690.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rbd5cm'
+        Building C object CMakeFiles/cmTC_a1690.dir/CheckFunctionExists.c.obj
+        "C:/Program Files/LLVM/bin/clang.exe"   -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_a1690.dir/CheckFunctionExists.c.obj -MF CMakeFiles/cmTC_a1690.dir/CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_a1690.dir/CheckFunctionExists.c.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rbd5cm/CheckFunctionExists.c
+        Linking C executable cmTC_a1690.exe
+        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib  -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_a1690.dir/objects1.rsp -o cmTC_a1690.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_a1690.lib -Xlinker /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rbd5cm/cmTC_a1690.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_a1690.dir/linkLibs.rsp
         lld-link: error: could not open 'pthreads.lib': no such file or directory
         clang: error: linker command failed with exit code 1 (use -v to see invocation)
-        make[1]: *** [CMakeFiles/cmTC_208e0.dir/build.make:101: cmTC_208e0.exe] Error 1
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-1i56fw'
-        make: *** [Makefile:127: cmTC_208e0/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_a1690.dir/build.make:101: cmTC_a1690.exe] Error 1
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-rbd5cm'
+        make: *** [Makefile:127: cmTC_a1690/fast] Error 2
         
       exitCode: 2
   -
@@ -418,36 +418,36 @@ events:
       - "S:/Cmake/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
       - "S:/Cmake/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
       - "S:/Cmake/share/cmake-3.29/Modules/FindThreads.cmake:176 (_threads_check_lib)"
-      - "vendor/glfw/CMakeLists.txt:60 (find_package)"
+      - "engine/vendor/glfw/CMakeLists.txt:60 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-8z4b17"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-8z4b17"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-36ri8r"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-36ri8r"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-O0"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "S:/dev/c++/opengl/vendor/glfw/CMake/modules"
+      CMAKE_MODULE_PATH: "S:/dev/c++/IWTLA/engine/vendor/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-8z4b17'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-36ri8r'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_2b052/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_2b052.dir/build.make CMakeFiles/cmTC_2b052.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-8z4b17'
-        Building C object CMakeFiles/cmTC_2b052.dir/CheckFunctionExists.c.obj
-        "C:/Program Files/LLVM/bin/clang.exe"   -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_2b052.dir/CheckFunctionExists.c.obj -MF CMakeFiles/cmTC_2b052.dir/CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_2b052.dir/CheckFunctionExists.c.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-8z4b17/CheckFunctionExists.c
-        Linking C executable cmTC_2b052.exe
-        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib  -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_2b052.dir/objects1.rsp -o cmTC_2b052.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_2b052.lib -Xlinker /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-8z4b17/cmTC_2b052.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_2b052.dir/linkLibs.rsp
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_f83c0/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_f83c0.dir/build.make CMakeFiles/cmTC_f83c0.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-36ri8r'
+        Building C object CMakeFiles/cmTC_f83c0.dir/CheckFunctionExists.c.obj
+        "C:/Program Files/LLVM/bin/clang.exe"   -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_f83c0.dir/CheckFunctionExists.c.obj -MF CMakeFiles/cmTC_f83c0.dir/CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_f83c0.dir/CheckFunctionExists.c.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-36ri8r/CheckFunctionExists.c
+        Linking C executable cmTC_f83c0.exe
+        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib  -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_f83c0.dir/objects1.rsp -o cmTC_f83c0.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_f83c0.lib -Xlinker /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-36ri8r/cmTC_f83c0.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_f83c0.dir/linkLibs.rsp
         lld-link: error: could not open 'pthread.lib': no such file or directory
         clang: error: linker command failed with exit code 1 (use -v to see invocation)
-        make[1]: *** [CMakeFiles/cmTC_2b052.dir/build.make:101: cmTC_2b052.exe] Error 1
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-8z4b17'
-        make: *** [Makefile:127: cmTC_2b052/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_f83c0.dir/build.make:101: cmTC_f83c0.exe] Error 1
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-36ri8r'
+        make: *** [Makefile:127: cmTC_f83c0/fast] Error 2
         
       exitCode: 2
   -
@@ -455,135 +455,135 @@ events:
     backtrace:
       - "S:/Cmake/share/cmake-3.29/Modules/FindThreads.cmake:136 (try_compile)"
       - "S:/Cmake/share/cmake-3.29/Modules/FindThreads.cmake:179 (_threads_check_flag_pthread)"
-      - "vendor/glfw/CMakeLists.txt:60 (find_package)"
+      - "engine/vendor/glfw/CMakeLists.txt:60 (find_package)"
     checks:
       - "Check if compiler accepts -pthread"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pf1490"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pf1490"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-uk53z1"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-uk53z1"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-O0"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "S:/dev/c++/opengl/vendor/glfw/CMake/modules"
+      CMAKE_MODULE_PATH: "S:/dev/c++/IWTLA/engine/vendor/glfw/CMake/modules"
     buildResult:
       variable: "THREADS_HAVE_PTHREAD_ARG"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pf1490'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-uk53z1'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_486de/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_486de.dir/build.make CMakeFiles/cmTC_486de.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pf1490'
-        Building C object CMakeFiles/cmTC_486de.dir/CheckForPthreads.c.obj
-        "C:/Program Files/LLVM/bin/clang.exe"   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_486de.dir/CheckForPthreads.c.obj -MF CMakeFiles/cmTC_486de.dir/CheckForPthreads.c.obj.d -o CMakeFiles/cmTC_486de.dir/CheckForPthreads.c.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pf1490/CheckForPthreads.c
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pf1490/CheckForPthreads.c:1:10: fatal error: 'pthread.h' file not found
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_846ab/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_846ab.dir/build.make CMakeFiles/cmTC_846ab.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-uk53z1'
+        Building C object CMakeFiles/cmTC_846ab.dir/CheckForPthreads.c.obj
+        "C:/Program Files/LLVM/bin/clang.exe"   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_846ab.dir/CheckForPthreads.c.obj -MF CMakeFiles/cmTC_846ab.dir/CheckForPthreads.c.obj.d -o CMakeFiles/cmTC_846ab.dir/CheckForPthreads.c.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-uk53z1/CheckForPthreads.c
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-uk53z1/CheckForPthreads.c:1:10: fatal error: 'pthread.h' file not found
             1 | #include <pthread.h>
               |          ^~~~~~~~~~~
         1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_486de.dir/build.make:79: CMakeFiles/cmTC_486de.dir/CheckForPthreads.c.obj] Error 1
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pf1490'
-        make: *** [Makefile:127: cmTC_486de/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_846ab.dir/build.make:79: CMakeFiles/cmTC_846ab.dir/CheckForPthreads.c.obj] Error 1
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-uk53z1'
+        make: *** [Makefile:127: cmTC_846ab/fast] Error 2
         
       exitCode: 2
   -
     kind: "try_compile-v1"
     backtrace:
       - "S:/Cmake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
-      - "vendor/assimp/contrib/zlib/CMakeLists.txt:35 (check_include_file)"
+      - "engine/vendor/assimp/contrib/zlib/CMakeLists.txt:35 (check_include_file)"
     checks:
       - "Looking for sys/types.h"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-j5crq6"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-j5crq6"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-prrhcj"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-prrhcj"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: "-fno-strict-aliasing "
       CMAKE_C_FLAGS_DEBUG: "-O0"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "S:/dev/c++/opengl/vendor/assimp/cmake-modules"
+      CMAKE_MODULE_PATH: "S:/dev/c++/IWTLA/engine/vendor/assimp/cmake-modules"
       CMAKE_POSITION_INDEPENDENT_CODE: "ON"
     buildResult:
       variable: "HAVE_SYS_TYPES_H"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-j5crq6'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-prrhcj'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_85afc/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_85afc.dir/build.make CMakeFiles/cmTC_85afc.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-j5crq6'
-        Building C object CMakeFiles/cmTC_85afc.dir/CheckIncludeFile.c.obj
-        "C:/Program Files/LLVM/bin/clang.exe"   -fno-strict-aliasing   -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_85afc.dir/CheckIncludeFile.c.obj -MF CMakeFiles/cmTC_85afc.dir/CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_85afc.dir/CheckIncludeFile.c.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-j5crq6/CheckIncludeFile.c
-        Linking C executable cmTC_85afc.exe
-        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib -fno-strict-aliasing   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_85afc.dir/objects1.rsp -o cmTC_85afc.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_85afc.lib -Xlinker /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-j5crq6/cmTC_85afc.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_85afc.dir/linkLibs.rsp
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-j5crq6'
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_d5d93/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_d5d93.dir/build.make CMakeFiles/cmTC_d5d93.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-prrhcj'
+        Building C object CMakeFiles/cmTC_d5d93.dir/CheckIncludeFile.c.obj
+        "C:/Program Files/LLVM/bin/clang.exe"   -fno-strict-aliasing   -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_d5d93.dir/CheckIncludeFile.c.obj -MF CMakeFiles/cmTC_d5d93.dir/CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_d5d93.dir/CheckIncludeFile.c.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-prrhcj/CheckIncludeFile.c
+        Linking C executable cmTC_d5d93.exe
+        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib -fno-strict-aliasing   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_d5d93.dir/objects1.rsp -o cmTC_d5d93.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_d5d93.lib -Xlinker /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-prrhcj/cmTC_d5d93.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_d5d93.dir/linkLibs.rsp
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-prrhcj'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
       - "S:/Cmake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
-      - "vendor/assimp/contrib/zlib/CMakeLists.txt:36 (check_include_file)"
+      - "engine/vendor/assimp/contrib/zlib/CMakeLists.txt:36 (check_include_file)"
     checks:
       - "Looking for stdint.h"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-70vw8a"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-70vw8a"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-2n1lq4"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-2n1lq4"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: "-fno-strict-aliasing "
       CMAKE_C_FLAGS_DEBUG: "-O0"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "S:/dev/c++/opengl/vendor/assimp/cmake-modules"
+      CMAKE_MODULE_PATH: "S:/dev/c++/IWTLA/engine/vendor/assimp/cmake-modules"
       CMAKE_POSITION_INDEPENDENT_CODE: "ON"
     buildResult:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-70vw8a'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-2n1lq4'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_c0537/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_c0537.dir/build.make CMakeFiles/cmTC_c0537.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-70vw8a'
-        Building C object CMakeFiles/cmTC_c0537.dir/CheckIncludeFile.c.obj
-        "C:/Program Files/LLVM/bin/clang.exe"   -fno-strict-aliasing   -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_c0537.dir/CheckIncludeFile.c.obj -MF CMakeFiles/cmTC_c0537.dir/CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_c0537.dir/CheckIncludeFile.c.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-70vw8a/CheckIncludeFile.c
-        Linking C executable cmTC_c0537.exe
-        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib -fno-strict-aliasing   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_c0537.dir/objects1.rsp -o cmTC_c0537.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_c0537.lib -Xlinker /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-70vw8a/cmTC_c0537.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_c0537.dir/linkLibs.rsp
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-70vw8a'
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_9d224/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_9d224.dir/build.make CMakeFiles/cmTC_9d224.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-2n1lq4'
+        Building C object CMakeFiles/cmTC_9d224.dir/CheckIncludeFile.c.obj
+        "C:/Program Files/LLVM/bin/clang.exe"   -fno-strict-aliasing   -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_9d224.dir/CheckIncludeFile.c.obj -MF CMakeFiles/cmTC_9d224.dir/CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_9d224.dir/CheckIncludeFile.c.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-2n1lq4/CheckIncludeFile.c
+        Linking C executable cmTC_9d224.exe
+        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib -fno-strict-aliasing   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_9d224.dir/objects1.rsp -o cmTC_9d224.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_9d224.lib -Xlinker /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-2n1lq4/cmTC_9d224.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_9d224.dir/linkLibs.rsp
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-2n1lq4'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
       - "S:/Cmake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
-      - "vendor/assimp/contrib/zlib/CMakeLists.txt:37 (check_include_file)"
+      - "engine/vendor/assimp/contrib/zlib/CMakeLists.txt:37 (check_include_file)"
     checks:
       - "Looking for stddef.h"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-yqb4lo"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-yqb4lo"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mba7e7"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mba7e7"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: "-fno-strict-aliasing "
       CMAKE_C_FLAGS_DEBUG: "-O0"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "S:/dev/c++/opengl/vendor/assimp/cmake-modules"
+      CMAKE_MODULE_PATH: "S:/dev/c++/IWTLA/engine/vendor/assimp/cmake-modules"
       CMAKE_POSITION_INDEPENDENT_CODE: "ON"
     buildResult:
       variable: "HAVE_STDDEF_H"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-yqb4lo'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mba7e7'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_08fb6/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_08fb6.dir/build.make CMakeFiles/cmTC_08fb6.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-yqb4lo'
-        Building C object CMakeFiles/cmTC_08fb6.dir/CheckIncludeFile.c.obj
-        "C:/Program Files/LLVM/bin/clang.exe"   -fno-strict-aliasing   -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_08fb6.dir/CheckIncludeFile.c.obj -MF CMakeFiles/cmTC_08fb6.dir/CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_08fb6.dir/CheckIncludeFile.c.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-yqb4lo/CheckIncludeFile.c
-        Linking C executable cmTC_08fb6.exe
-        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib -fno-strict-aliasing   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_08fb6.dir/objects1.rsp -o cmTC_08fb6.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_08fb6.lib -Xlinker /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-yqb4lo/cmTC_08fb6.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_08fb6.dir/linkLibs.rsp
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-yqb4lo'
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_d33db/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_d33db.dir/build.make CMakeFiles/cmTC_d33db.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mba7e7'
+        Building C object CMakeFiles/cmTC_d33db.dir/CheckIncludeFile.c.obj
+        "C:/Program Files/LLVM/bin/clang.exe"   -fno-strict-aliasing   -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_d33db.dir/CheckIncludeFile.c.obj -MF CMakeFiles/cmTC_d33db.dir/CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_d33db.dir/CheckIncludeFile.c.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mba7e7/CheckIncludeFile.c
+        Linking C executable cmTC_d33db.exe
+        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib -fno-strict-aliasing   -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_d33db.dir/objects1.rsp -o cmTC_d33db.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_d33db.lib -Xlinker /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mba7e7/cmTC_d33db.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_d33db.dir/linkLibs.rsp
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mba7e7'
         
       exitCode: 0
   -
@@ -591,140 +591,140 @@ events:
     backtrace:
       - "S:/Cmake/share/cmake-3.29/Modules/CheckTypeSize.cmake:146 (try_compile)"
       - "S:/Cmake/share/cmake-3.29/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
-      - "vendor/assimp/contrib/zlib/CMakeLists.txt:55 (check_type_size)"
+      - "engine/vendor/assimp/contrib/zlib/CMakeLists.txt:55 (check_type_size)"
     checks:
       - "Check size of off64_t"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: "-fno-strict-aliasing "
       CMAKE_C_FLAGS_DEBUG: "-O0"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "S:/dev/c++/opengl/vendor/assimp/cmake-modules"
+      CMAKE_MODULE_PATH: "S:/dev/c++/IWTLA/engine/vendor/assimp/cmake-modules"
       CMAKE_POSITION_INDEPENDENT_CODE: "ON"
     buildResult:
       variable: "HAVE_OFF64_T"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_09434/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_09434.dir/build.make CMakeFiles/cmTC_09434.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc'
-        Building C object CMakeFiles/cmTC_09434.dir/OFF64_T.c.obj
-        "C:/Program Files/LLVM/bin/clang.exe" -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1  -fno-strict-aliasing   -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_09434.dir/OFF64_T.c.obj -MF CMakeFiles/cmTC_09434.dir/OFF64_T.c.obj.d -o CMakeFiles/cmTC_09434.dir/OFF64_T.c.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc/OFF64_T.c
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc/OFF64_T.c:29:12: error: use of undeclared identifier 'off64_t'
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_2ca5a/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_2ca5a.dir/build.make CMakeFiles/cmTC_2ca5a.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d'
+        Building C object CMakeFiles/cmTC_2ca5a.dir/OFF64_T.c.obj
+        "C:/Program Files/LLVM/bin/clang.exe" -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1  -fno-strict-aliasing   -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_2ca5a.dir/OFF64_T.c.obj -MF CMakeFiles/cmTC_2ca5a.dir/OFF64_T.c.obj.d -o CMakeFiles/cmTC_2ca5a.dir/OFF64_T.c.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d/OFF64_T.c
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d/OFF64_T.c:29:12: error: use of undeclared identifier 'off64_t'
            29 |   ('0' + ((SIZE / 10000)%10)),
               |            ^
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
            27 | #define SIZE (sizeof(off64_t))
               |                      ^
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc/OFF64_T.c:30:12: error: use of undeclared identifier 'off64_t'
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d/OFF64_T.c:30:12: error: use of undeclared identifier 'off64_t'
            30 |   ('0' + ((SIZE / 1000)%10)),
               |            ^
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
            27 | #define SIZE (sizeof(off64_t))
               |                      ^
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc/OFF64_T.c:31:12: error: use of undeclared identifier 'off64_t'
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d/OFF64_T.c:31:12: error: use of undeclared identifier 'off64_t'
            31 |   ('0' + ((SIZE / 100)%10)),
               |            ^
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
            27 | #define SIZE (sizeof(off64_t))
               |                      ^
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc/OFF64_T.c:32:12: error: use of undeclared identifier 'off64_t'
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d/OFF64_T.c:32:12: error: use of undeclared identifier 'off64_t'
            32 |   ('0' + ((SIZE / 10)%10)),
               |            ^
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
            27 | #define SIZE (sizeof(off64_t))
               |                      ^
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc/OFF64_T.c:33:12: error: use of undeclared identifier 'off64_t'
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d/OFF64_T.c:33:12: error: use of undeclared identifier 'off64_t'
            33 |   ('0' +  (SIZE    % 10)),
               |            ^
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
            27 | #define SIZE (sizeof(off64_t))
               |                      ^
         5 errors generated.
-        make[1]: *** [CMakeFiles/cmTC_09434.dir/build.make:79: CMakeFiles/cmTC_09434.dir/OFF64_T.c.obj] Error 1
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-zgz2xc'
-        make: *** [Makefile:127: cmTC_09434/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_2ca5a.dir/build.make:79: CMakeFiles/cmTC_2ca5a.dir/OFF64_T.c.obj] Error 1
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-ar002d'
+        make: *** [Makefile:127: cmTC_2ca5a/fast] Error 2
         
       exitCode: 2
   -
     kind: "try_compile-v1"
     backtrace:
       - "S:/Cmake/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
-      - "vendor/assimp/contrib/zlib/CMakeLists.txt:64 (check_function_exists)"
+      - "engine/vendor/assimp/contrib/zlib/CMakeLists.txt:64 (check_function_exists)"
     checks:
       - "Looking for fseeko"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pwdzc7"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pwdzc7"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mnk7d3"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mnk7d3"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: "-fno-strict-aliasing "
       CMAKE_C_FLAGS_DEBUG: "-O0"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "S:/dev/c++/opengl/vendor/assimp/cmake-modules"
+      CMAKE_MODULE_PATH: "S:/dev/c++/IWTLA/engine/vendor/assimp/cmake-modules"
       CMAKE_POSITION_INDEPENDENT_CODE: "ON"
     buildResult:
       variable: "HAVE_FSEEKO"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pwdzc7'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mnk7d3'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_b6ffd/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_b6ffd.dir/build.make CMakeFiles/cmTC_b6ffd.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pwdzc7'
-        Building C object CMakeFiles/cmTC_b6ffd.dir/CheckFunctionExists.c.obj
-        "C:/Program Files/LLVM/bin/clang.exe"   -fno-strict-aliasing  -DCHECK_FUNCTION_EXISTS=fseeko -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_b6ffd.dir/CheckFunctionExists.c.obj -MF CMakeFiles/cmTC_b6ffd.dir/CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_b6ffd.dir/CheckFunctionExists.c.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pwdzc7/CheckFunctionExists.c
-        Linking C executable cmTC_b6ffd.exe
-        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib -fno-strict-aliasing  -DCHECK_FUNCTION_EXISTS=fseeko -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_b6ffd.dir/objects1.rsp -o cmTC_b6ffd.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_b6ffd.lib -Xlinker /pdb:S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pwdzc7/cmTC_b6ffd.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_b6ffd.dir/linkLibs.rsp
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_cdcb7/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_cdcb7.dir/build.make CMakeFiles/cmTC_cdcb7.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mnk7d3'
+        Building C object CMakeFiles/cmTC_cdcb7.dir/CheckFunctionExists.c.obj
+        "C:/Program Files/LLVM/bin/clang.exe"   -fno-strict-aliasing  -DCHECK_FUNCTION_EXISTS=fseeko -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_cdcb7.dir/CheckFunctionExists.c.obj -MF CMakeFiles/cmTC_cdcb7.dir/CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_cdcb7.dir/CheckFunctionExists.c.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mnk7d3/CheckFunctionExists.c
+        Linking C executable cmTC_cdcb7.exe
+        "C:/Program Files/LLVM/bin/clang.exe" -nostartfiles -nostdlib -fno-strict-aliasing  -DCHECK_FUNCTION_EXISTS=fseeko -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/cmTC_cdcb7.dir/objects1.rsp -o cmTC_cdcb7.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_cdcb7.lib -Xlinker /pdb:S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mnk7d3/cmTC_cdcb7.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_cdcb7.dir/linkLibs.rsp
         lld-link: error: undefined symbol: fseeko
-        >>> referenced by S:\\dev\\c++\\opengl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pwdzc7\\CheckFunctionExists.c:17
-        >>>               CMakeFiles/cmTC_b6ffd.dir/CheckFunctionExists.c.obj:(main)
+        >>> referenced by S:\\dev\\c++\\IWTLA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnk7d3\\CheckFunctionExists.c:17
+        >>>               CMakeFiles/cmTC_cdcb7.dir/CheckFunctionExists.c.obj:(main)
         clang: error: linker command failed with exit code 1 (use -v to see invocation)
-        make[1]: *** [CMakeFiles/cmTC_b6ffd.dir/build.make:101: cmTC_b6ffd.exe] Error 1
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-pwdzc7'
-        make: *** [Makefile:127: cmTC_b6ffd/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_cdcb7.dir/build.make:101: cmTC_cdcb7.exe] Error 1
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mnk7d3'
+        make: *** [Makefile:127: cmTC_cdcb7/fast] Error 2
         
       exitCode: 2
   -
     kind: "try_compile-v1"
     backtrace:
       - "S:/Cmake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
-      - "vendor/assimp/contrib/zlib/CMakeLists.txt:72 (check_include_file)"
+      - "engine/vendor/assimp/contrib/zlib/CMakeLists.txt:72 (check_include_file)"
     checks:
       - "Looking for unistd.h"
     directories:
-      source: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-7ct4o4"
-      binary: "S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-7ct4o4"
+      source: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mzo5p8"
+      binary: "S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mzo5p8"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: "-fno-strict-aliasing "
       CMAKE_C_FLAGS_DEBUG: "-O0"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "S:/dev/c++/opengl/vendor/assimp/cmake-modules"
+      CMAKE_MODULE_PATH: "S:/dev/c++/IWTLA/engine/vendor/assimp/cmake-modules"
       CMAKE_POSITION_INDEPENDENT_CODE: "ON"
     buildResult:
       variable: "Z_HAVE_UNISTD_H"
       cached: true
       stdout: |
-        Change Dir: 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-7ct4o4'
+        Change Dir: 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mzo5p8'
         
-        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_15a14/fast
-        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_15a14.dir/build.make CMakeFiles/cmTC_15a14.dir/build
-        make[1]: Entering directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-7ct4o4'
-        Building C object CMakeFiles/cmTC_15a14.dir/CheckIncludeFile.c.obj
-        "C:/Program Files/LLVM/bin/clang.exe"   -fno-strict-aliasing   -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_15a14.dir/CheckIncludeFile.c.obj -MF CMakeFiles/cmTC_15a14.dir/CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_15a14.dir/CheckIncludeFile.c.obj -c S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-7ct4o4/CheckIncludeFile.c
-        S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-7ct4o4/CheckIncludeFile.c:1:10: fatal error: 'unistd.h' file not found
+        Run Build Command(s): S:/Cmake/bin/cmake.exe -E env VERBOSE=1 S:/w64devkit/bin/make.exe -f Makefile cmTC_edff9/fast
+        S:/w64devkit/bin/make.exe  -f CMakeFiles/cmTC_edff9.dir/build.make CMakeFiles/cmTC_edff9.dir/build
+        make[1]: Entering directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mzo5p8'
+        Building C object CMakeFiles/cmTC_edff9.dir/CheckIncludeFile.c.obj
+        "C:/Program Files/LLVM/bin/clang.exe"   -fno-strict-aliasing   -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -MD -MT CMakeFiles/cmTC_edff9.dir/CheckIncludeFile.c.obj -MF CMakeFiles/cmTC_edff9.dir/CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_edff9.dir/CheckIncludeFile.c.obj -c S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mzo5p8/CheckIncludeFile.c
+        S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mzo5p8/CheckIncludeFile.c:1:10: fatal error: 'unistd.h' file not found
             1 | #include <unistd.h>
               |          ^~~~~~~~~~
         1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_15a14.dir/build.make:79: CMakeFiles/cmTC_15a14.dir/CheckIncludeFile.c.obj] Error 1
-        make[1]: Leaving directory 'S:/dev/c++/opengl/build/CMakeFiles/CMakeScratch/TryCompile-7ct4o4'
-        make: *** [Makefile:127: cmTC_15a14/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_edff9.dir/build.make:79: CMakeFiles/cmTC_edff9.dir/CheckIncludeFile.c.obj] Error 1
+        make[1]: Leaving directory 'S:/dev/c++/IWTLA/build/CMakeFiles/CMakeScratch/TryCompile-mzo5p8'
+        make: *** [Makefile:127: cmTC_edff9/fast] Error 2
         
       exitCode: 2
 ...

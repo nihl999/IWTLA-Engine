@@ -57,10 +57,10 @@ RM = S:/Cmake/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:/dev/c++/opengl
+CMAKE_SOURCE_DIR = S:/dev/c++/IWTLA
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:/dev/c++/opengl/build
+CMAKE_BINARY_DIR = S:/dev/c++/IWTLA/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles S:/dev/c++/opengl/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles S:/dev/c++/IWTLA/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/opengl/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named engine
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine
+.PHONY : engine
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+engine/fast:
+	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/build
+.PHONY : engine/fast
 
 #=============================================================================
 # Target rules for targets named flecs
@@ -184,7 +184,7 @@ flecs: cmake_check_build_system
 
 # fast build rule for target.
 flecs/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/flecs/CMakeFiles/flecs.dir/build.make vendor/flecs/CMakeFiles/flecs.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/flecs/CMakeFiles/flecs.dir/build.make engine/vendor/flecs/CMakeFiles/flecs.dir/build
 .PHONY : flecs/fast
 
 #=============================================================================
@@ -197,7 +197,7 @@ flecs_static: cmake_check_build_system
 
 # fast build rule for target.
 flecs_static/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/flecs/CMakeFiles/flecs_static.dir/build.make vendor/flecs/CMakeFiles/flecs_static.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/flecs/CMakeFiles/flecs_static.dir/build.make engine/vendor/flecs/CMakeFiles/flecs_static.dir/build
 .PHONY : flecs_static/fast
 
 #=============================================================================
@@ -210,7 +210,7 @@ uninstall: cmake_check_build_system
 
 # fast build rule for target.
 uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/glfw/CMakeFiles/uninstall.dir/build.make vendor/glfw/CMakeFiles/uninstall.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/glfw/CMakeFiles/uninstall.dir/build.make engine/vendor/glfw/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 #=============================================================================
@@ -223,7 +223,7 @@ glfw: cmake_check_build_system
 
 # fast build rule for target.
 glfw/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/glfw/src/CMakeFiles/glfw.dir/build.make engine/vendor/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
 #=============================================================================
@@ -236,7 +236,7 @@ update_mappings: cmake_check_build_system
 
 # fast build rule for target.
 update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/update_mappings.dir/build.make vendor/glfw/src/CMakeFiles/update_mappings.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/glfw/src/CMakeFiles/update_mappings.dir/build.make engine/vendor/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
 #=============================================================================
@@ -249,7 +249,7 @@ glad: cmake_check_build_system
 
 # fast build rule for target.
 glad/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/glad/CMakeFiles/glad.dir/build.make vendor/glad/CMakeFiles/glad.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/glad/CMakeFiles/glad.dir/build.make engine/vendor/glad/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
 #=============================================================================
@@ -262,7 +262,7 @@ stb_image: cmake_check_build_system
 
 # fast build rule for target.
 stb_image/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_image.dir/build.make vendor/stb/CMakeFiles/stb_image.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/stb/CMakeFiles/stb_image.dir/build.make engine/vendor/stb/CMakeFiles/stb_image.dir/build
 .PHONY : stb_image/fast
 
 #=============================================================================
@@ -275,7 +275,7 @@ stb_image_write: cmake_check_build_system
 
 # fast build rule for target.
 stb_image_write/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_image_write.dir/build.make vendor/stb/CMakeFiles/stb_image_write.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/stb/CMakeFiles/stb_image_write.dir/build.make engine/vendor/stb/CMakeFiles/stb_image_write.dir/build
 .PHONY : stb_image_write/fast
 
 #=============================================================================
@@ -288,7 +288,7 @@ stb_noise: cmake_check_build_system
 
 # fast build rule for target.
 stb_noise/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/stb/CMakeFiles/stb_noise.dir/build.make vendor/stb/CMakeFiles/stb_noise.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/stb/CMakeFiles/stb_noise.dir/build.make engine/vendor/stb/CMakeFiles/stb_noise.dir/build
 .PHONY : stb_noise/fast
 
 #=============================================================================
@@ -301,7 +301,7 @@ imgui: cmake_check_build_system
 
 # fast build rule for target.
 imgui/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/imgui/CMakeFiles/imgui.dir/build.make engine/vendor/imgui/CMakeFiles/imgui.dir/build
 .PHONY : imgui/fast
 
 #=============================================================================
@@ -314,7 +314,7 @@ zlibstatic: cmake_check_build_system
 
 # fast build rule for target.
 zlibstatic/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build.make vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build.make engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build
 .PHONY : zlibstatic/fast
 
 #=============================================================================
@@ -327,296 +327,21 @@ assimp: cmake_check_build_system
 
 # fast build rule for target.
 assimp/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/assimp/code/CMakeFiles/assimp.dir/build.make vendor/assimp/code/CMakeFiles/assimp.dir/build
+	$(MAKE) $(MAKESILENT) -f engine/vendor/assimp/code/CMakeFiles/assimp.dir/build.make engine/vendor/assimp/code/CMakeFiles/assimp.dir/build
 .PHONY : assimp/fast
 
-src/Camera.obj: src/Camera.cpp.obj
-.PHONY : src/Camera.obj
-
-# target to build an object file
-src/Camera.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Camera.cpp.obj
-.PHONY : src/Camera.cpp.obj
-
-src/Camera.i: src/Camera.cpp.i
-.PHONY : src/Camera.i
-
-# target to preprocess a source file
-src/Camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Camera.cpp.i
-.PHONY : src/Camera.cpp.i
-
-src/Camera.s: src/Camera.cpp.s
-.PHONY : src/Camera.s
-
-# target to generate assembly for a file
-src/Camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Camera.cpp.s
-.PHONY : src/Camera.cpp.s
-
-src/Input.obj: src/Input.cpp.obj
-.PHONY : src/Input.obj
-
-# target to build an object file
-src/Input.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Input.cpp.obj
-.PHONY : src/Input.cpp.obj
-
-src/Input.i: src/Input.cpp.i
-.PHONY : src/Input.i
-
-# target to preprocess a source file
-src/Input.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Input.cpp.i
-.PHONY : src/Input.cpp.i
-
-src/Input.s: src/Input.cpp.s
-.PHONY : src/Input.s
-
-# target to generate assembly for a file
-src/Input.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Input.cpp.s
-.PHONY : src/Input.cpp.s
-
-src/common/File/File.obj: src/common/File/File.cpp.obj
-.PHONY : src/common/File/File.obj
-
-# target to build an object file
-src/common/File/File.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/common/File/File.cpp.obj
-.PHONY : src/common/File/File.cpp.obj
-
-src/common/File/File.i: src/common/File/File.cpp.i
-.PHONY : src/common/File/File.i
-
-# target to preprocess a source file
-src/common/File/File.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/common/File/File.cpp.i
-.PHONY : src/common/File/File.cpp.i
-
-src/common/File/File.s: src/common/File/File.cpp.s
-.PHONY : src/common/File/File.s
-
-# target to generate assembly for a file
-src/common/File/File.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/common/File/File.cpp.s
-.PHONY : src/common/File/File.cpp.s
-
-src/common/stb_image.obj: src/common/stb_image.cpp.obj
-.PHONY : src/common/stb_image.obj
-
-# target to build an object file
-src/common/stb_image.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/common/stb_image.cpp.obj
-.PHONY : src/common/stb_image.cpp.obj
-
-src/common/stb_image.i: src/common/stb_image.cpp.i
-.PHONY : src/common/stb_image.i
-
-# target to preprocess a source file
-src/common/stb_image.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/common/stb_image.cpp.i
-.PHONY : src/common/stb_image.cpp.i
-
-src/common/stb_image.s: src/common/stb_image.cpp.s
-.PHONY : src/common/stb_image.s
-
-# target to generate assembly for a file
-src/common/stb_image.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/common/stb_image.cpp.s
-.PHONY : src/common/stb_image.cpp.s
-
-src/core/application/application.obj: src/core/application/application.cpp.obj
-.PHONY : src/core/application/application.obj
-
-# target to build an object file
-src/core/application/application.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/application/application.cpp.obj
-.PHONY : src/core/application/application.cpp.obj
-
-src/core/application/application.i: src/core/application/application.cpp.i
-.PHONY : src/core/application/application.i
-
-# target to preprocess a source file
-src/core/application/application.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/application/application.cpp.i
-.PHONY : src/core/application/application.cpp.i
-
-src/core/application/application.s: src/core/application/application.cpp.s
-.PHONY : src/core/application/application.s
-
-# target to generate assembly for a file
-src/core/application/application.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/application/application.cpp.s
-.PHONY : src/core/application/application.cpp.s
-
-src/core/graphics/renderer/impl/opengl_renderer.obj: src/core/graphics/renderer/impl/opengl_renderer.cpp.obj
-.PHONY : src/core/graphics/renderer/impl/opengl_renderer.obj
-
-# target to build an object file
-src/core/graphics/renderer/impl/opengl_renderer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj
-.PHONY : src/core/graphics/renderer/impl/opengl_renderer.cpp.obj
-
-src/core/graphics/renderer/impl/opengl_renderer.i: src/core/graphics/renderer/impl/opengl_renderer.cpp.i
-.PHONY : src/core/graphics/renderer/impl/opengl_renderer.i
-
-# target to preprocess a source file
-src/core/graphics/renderer/impl/opengl_renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.i
-.PHONY : src/core/graphics/renderer/impl/opengl_renderer.cpp.i
-
-src/core/graphics/renderer/impl/opengl_renderer.s: src/core/graphics/renderer/impl/opengl_renderer.cpp.s
-.PHONY : src/core/graphics/renderer/impl/opengl_renderer.s
-
-# target to generate assembly for a file
-src/core/graphics/renderer/impl/opengl_renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.s
-.PHONY : src/core/graphics/renderer/impl/opengl_renderer.cpp.s
-
-src/core/graphics/renderer/shader.obj: src/core/graphics/renderer/shader.cpp.obj
-.PHONY : src/core/graphics/renderer/shader.obj
-
-# target to build an object file
-src/core/graphics/renderer/shader.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.obj
-.PHONY : src/core/graphics/renderer/shader.cpp.obj
-
-src/core/graphics/renderer/shader.i: src/core/graphics/renderer/shader.cpp.i
-.PHONY : src/core/graphics/renderer/shader.i
-
-# target to preprocess a source file
-src/core/graphics/renderer/shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.i
-.PHONY : src/core/graphics/renderer/shader.cpp.i
-
-src/core/graphics/renderer/shader.s: src/core/graphics/renderer/shader.cpp.s
-.PHONY : src/core/graphics/renderer/shader.s
-
-# target to generate assembly for a file
-src/core/graphics/renderer/shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/graphics/renderer/shader.cpp.s
-.PHONY : src/core/graphics/renderer/shader.cpp.s
-
-src/core/resources/resource_system.obj: src/core/resources/resource_system.cpp.obj
-.PHONY : src/core/resources/resource_system.obj
-
-# target to build an object file
-src/core/resources/resource_system.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/resources/resource_system.cpp.obj
-.PHONY : src/core/resources/resource_system.cpp.obj
-
-src/core/resources/resource_system.i: src/core/resources/resource_system.cpp.i
-.PHONY : src/core/resources/resource_system.i
-
-# target to preprocess a source file
-src/core/resources/resource_system.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/resources/resource_system.cpp.i
-.PHONY : src/core/resources/resource_system.cpp.i
-
-src/core/resources/resource_system.s: src/core/resources/resource_system.cpp.s
-.PHONY : src/core/resources/resource_system.s
-
-# target to generate assembly for a file
-src/core/resources/resource_system.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/resources/resource_system.cpp.s
-.PHONY : src/core/resources/resource_system.cpp.s
-
-src/core/utils/uuid/uuid.obj: src/core/utils/uuid/uuid.cpp.obj
-.PHONY : src/core/utils/uuid/uuid.obj
-
-# target to build an object file
-src/core/utils/uuid/uuid.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.obj
-.PHONY : src/core/utils/uuid/uuid.cpp.obj
-
-src/core/utils/uuid/uuid.i: src/core/utils/uuid/uuid.cpp.i
-.PHONY : src/core/utils/uuid/uuid.i
-
-# target to preprocess a source file
-src/core/utils/uuid/uuid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.i
-.PHONY : src/core/utils/uuid/uuid.cpp.i
-
-src/core/utils/uuid/uuid.s: src/core/utils/uuid/uuid.cpp.s
-.PHONY : src/core/utils/uuid/uuid.s
-
-# target to generate assembly for a file
-src/core/utils/uuid/uuid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/utils/uuid/uuid.cpp.s
-.PHONY : src/core/utils/uuid/uuid.cpp.s
-
-src/core/window/impl/glfw_window.obj: src/core/window/impl/glfw_window.cpp.obj
-.PHONY : src/core/window/impl/glfw_window.obj
-
-# target to build an object file
-src/core/window/impl/glfw_window.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.obj
-.PHONY : src/core/window/impl/glfw_window.cpp.obj
-
-src/core/window/impl/glfw_window.i: src/core/window/impl/glfw_window.cpp.i
-.PHONY : src/core/window/impl/glfw_window.i
-
-# target to preprocess a source file
-src/core/window/impl/glfw_window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.i
-.PHONY : src/core/window/impl/glfw_window.cpp.i
-
-src/core/window/impl/glfw_window.s: src/core/window/impl/glfw_window.cpp.s
-.PHONY : src/core/window/impl/glfw_window.s
-
-# target to generate assembly for a file
-src/core/window/impl/glfw_window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/window/impl/glfw_window.cpp.s
-.PHONY : src/core/window/impl/glfw_window.cpp.s
-
-src/core/world/scene.obj: src/core/world/scene.cpp.obj
-.PHONY : src/core/world/scene.obj
-
-# target to build an object file
-src/core/world/scene.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/world/scene.cpp.obj
-.PHONY : src/core/world/scene.cpp.obj
-
-src/core/world/scene.i: src/core/world/scene.cpp.i
-.PHONY : src/core/world/scene.i
-
-# target to preprocess a source file
-src/core/world/scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/world/scene.cpp.i
-.PHONY : src/core/world/scene.cpp.i
-
-src/core/world/scene.s: src/core/world/scene.cpp.s
-.PHONY : src/core/world/scene.s
-
-# target to generate assembly for a file
-src/core/world/scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/world/scene.cpp.s
-.PHONY : src/core/world/scene.cpp.s
-
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
-
-# target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+#=============================================================================
+# Target rules for targets named sandbox
+
+# Build rule for target.
+sandbox: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox
+.PHONY : sandbox
+
+# fast build rule for target.
+sandbox/fast:
+	$(MAKE) $(MAKESILENT) -f sandbox/CMakeFiles/sandbox.dir/build.make sandbox/CMakeFiles/sandbox.dir/build
+.PHONY : sandbox/fast
 
 # Help Target
 help:
@@ -633,52 +358,17 @@ help:
 	@echo "... uninstall"
 	@echo "... update_mappings"
 	@echo "... assimp"
+	@echo "... engine"
 	@echo "... flecs"
 	@echo "... flecs_static"
 	@echo "... glad"
 	@echo "... glfw"
 	@echo "... imgui"
-	@echo "... main"
+	@echo "... sandbox"
 	@echo "... stb_image"
 	@echo "... stb_image_write"
 	@echo "... stb_noise"
 	@echo "... zlibstatic"
-	@echo "... src/Camera.obj"
-	@echo "... src/Camera.i"
-	@echo "... src/Camera.s"
-	@echo "... src/Input.obj"
-	@echo "... src/Input.i"
-	@echo "... src/Input.s"
-	@echo "... src/common/File/File.obj"
-	@echo "... src/common/File/File.i"
-	@echo "... src/common/File/File.s"
-	@echo "... src/common/stb_image.obj"
-	@echo "... src/common/stb_image.i"
-	@echo "... src/common/stb_image.s"
-	@echo "... src/core/application/application.obj"
-	@echo "... src/core/application/application.i"
-	@echo "... src/core/application/application.s"
-	@echo "... src/core/graphics/renderer/impl/opengl_renderer.obj"
-	@echo "... src/core/graphics/renderer/impl/opengl_renderer.i"
-	@echo "... src/core/graphics/renderer/impl/opengl_renderer.s"
-	@echo "... src/core/graphics/renderer/shader.obj"
-	@echo "... src/core/graphics/renderer/shader.i"
-	@echo "... src/core/graphics/renderer/shader.s"
-	@echo "... src/core/resources/resource_system.obj"
-	@echo "... src/core/resources/resource_system.i"
-	@echo "... src/core/resources/resource_system.s"
-	@echo "... src/core/utils/uuid/uuid.obj"
-	@echo "... src/core/utils/uuid/uuid.i"
-	@echo "... src/core/utils/uuid/uuid.s"
-	@echo "... src/core/window/impl/glfw_window.obj"
-	@echo "... src/core/window/impl/glfw_window.i"
-	@echo "... src/core/window/impl/glfw_window.s"
-	@echo "... src/core/world/scene.obj"
-	@echo "... src/core/world/scene.i"
-	@echo "... src/core/world/scene.s"
-	@echo "... src/main.obj"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 .PHONY : help
 
 
