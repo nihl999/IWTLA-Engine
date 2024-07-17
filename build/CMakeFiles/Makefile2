@@ -331,13 +331,13 @@ sandbox/clean: sandbox/CMakeFiles/sandbox.dir/clean
 engine/CMakeFiles/engine.dir/all: engine/vendor/flecs/CMakeFiles/flecs_static.dir/all
 engine/CMakeFiles/engine.dir/all: engine/vendor/glfw/src/CMakeFiles/glfw.dir/all
 engine/CMakeFiles/engine.dir/all: engine/vendor/glad/CMakeFiles/glad.dir/all
+engine/CMakeFiles/engine.dir/all: engine/vendor/stb/CMakeFiles/stb_image_write.dir/all
+engine/CMakeFiles/engine.dir/all: engine/vendor/imgui/CMakeFiles/imgui.dir/all
+engine/CMakeFiles/engine.dir/all: engine/vendor/stb/CMakeFiles/stb_noise.dir/all
 engine/CMakeFiles/engine.dir/all: engine/vendor/spdlog/CMakeFiles/spdlog.dir/all
 engine/CMakeFiles/engine.dir/all: engine/vendor/stb/CMakeFiles/stb_image.dir/all
-engine/CMakeFiles/engine.dir/all: engine/vendor/stb/CMakeFiles/stb_image_write.dir/all
-engine/CMakeFiles/engine.dir/all: engine/vendor/stb/CMakeFiles/stb_noise.dir/all
-engine/CMakeFiles/engine.dir/all: engine/vendor/imgui/CMakeFiles/imgui.dir/all
-engine/CMakeFiles/engine.dir/all: engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
 engine/CMakeFiles/engine.dir/all: engine/vendor/assimp/code/CMakeFiles/assimp.dir/all
+engine/CMakeFiles/engine.dir/all: engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
 	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=50,51,52 "Built target engine"
@@ -702,17 +702,17 @@ engine/vendor/assimp/code/CMakeFiles/assimp.dir/clean:
 # Target rules for target sandbox/CMakeFiles/sandbox.dir
 
 # All Build rule for target.
-sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/flecs/CMakeFiles/flecs_static.dir/all
 sandbox/CMakeFiles/sandbox.dir/all: engine/CMakeFiles/engine.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/flecs/CMakeFiles/flecs_static.dir/all
 sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/glfw/src/CMakeFiles/glfw.dir/all
 sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/glad/CMakeFiles/glad.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/stb/CMakeFiles/stb_image_write.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/imgui/CMakeFiles/imgui.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/stb/CMakeFiles/stb_noise.dir/all
 sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/spdlog/CMakeFiles/spdlog.dir/all
 sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/stb/CMakeFiles/stb_image.dir/all
-sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/stb/CMakeFiles/stb_image_write.dir/all
-sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/stb/CMakeFiles/stb_noise.dir/all
-sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/imgui/CMakeFiles/imgui.dir/all
-sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
 sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/assimp/code/CMakeFiles/assimp.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
 	$(MAKE) $(MAKESILENT) -f sandbox/CMakeFiles/sandbox.dir/build.make sandbox/CMakeFiles/sandbox.dir/depend
 	$(MAKE) $(MAKESILENT) -f sandbox/CMakeFiles/sandbox.dir/build.make sandbox/CMakeFiles/sandbox.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=93 "Built target sandbox"

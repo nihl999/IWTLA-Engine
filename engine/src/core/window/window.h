@@ -9,7 +9,6 @@ public:
     float aspectRatio;
 
   public:
-    Window();
     Window(int _width, int _height);
     void NewFrame();
     bool ShouldClose();

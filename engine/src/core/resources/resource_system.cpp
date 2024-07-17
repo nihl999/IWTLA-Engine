@@ -2,8 +2,6 @@
 #include <assimp/Importer.hpp>
 #include <assimp/postprocess.h>
 #include <assimp/scene.h>
-#include <common/File/File.h>
-#include <common/stb_image.h>
 #include <core/assert.h>
 #include <core/graphics/model.h>
 #include <core/graphics/renderer/renderer.h>
@@ -12,6 +10,7 @@
 #include <core/utils/uuid/uuid.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include <stb/image.h>
 namespace ResourceSystem {
 // NOTE: based on https://github.com/ekardnam/Newtonic/
 std::unordered_map<std::string, Handle> m_nameHandleMap = {};
@@ -49,6 +48,45 @@ std::string GetFileFolderPath(std::string file) {
   }
   return file;
 };
+
+char *ReadFile(const char *filename) {
+  FILE *file;
+  long int fileSize = 0;
+  char *filepath = (char *)calloc(1, 128 * sizeof(char));
+  strcat(filepath, GetResourceFolderPath().c_str());
+  OUROTRACE("file: {}", filename);
+  strcat(filepath, filename);
+  file = fopen(filepath, "rb");
+  if (file == NULL) {
+    OUROERROR("file: {} on {} don't exist!", filename, filepath);
+    exit(1);
+  }
+  fseek(file, 0, SEEK_END);
+  fileSize = ftell(file);
+  rewind(file);
+  char *fileContent = (char *)calloc(1, (fileSize * sizeof(char)) + 1);
+  if (fileContent == NULL) {
+    OUROERROR("memory allocation for file failed");
+    exit(1);
+  }
+  int freadResult = fread(fileContent, fileSize, 1, file);
+  if (freadResult != 1) {
+    if (ferror(file)) {
+      int error = ferror(file);
+      OUROERROR("error id: {:d}, error: {}", error, strerror(errno));
+    }
+    if (feof(file)) {
+      int error = feof(file);
+      OUROERROR("eof: {:d}", error);
+    }
+    fclose(file);
+    free(fileContent);
+    OUROFATAL("failed reading file content");
+    exit(1);
+  }
+  fclose(file);
+  return fileContent;
+}
 
 Handle currentHandle = 0;
 
@@ -130,8 +168,8 @@ void LoadShadersFromFile(ResourceDescriptor descriptor, Handle h) {
   fragmentShaderFile.append("_frag.fs");
 
   // todo Make good resource system file reading
-  char *vertexShader = FileUtils::readFile(vertexShaderFile.c_str());
-  char *fragmentShader = FileUtils::readFile(fragmentShaderFile.c_str());
+  char *vertexShader = ReadFile(vertexShaderFile.c_str());
+  char *fragmentShader = ReadFile(fragmentShaderFile.c_str());
 
   Renderer::GetInstance().CreateShaderProgram(vertexShader, fragmentShader,
                                               *shaderProgram);

@@ -1,9 +1,10 @@
 #pragma once
+#include "imgui_internal.h"
 #include <core/defines.h>
-#include <core/graphics/model.h>
-#include <core/graphics/texture.h>
 #include <core/graphics/material.h>
+#include <core/graphics/model.h>
 #include <core/graphics/renderer/shader.h>
+#include <core/graphics/texture.h>
 #include <glm/glm.hpp>
 
 // todo organize and padronize - really, read the GEA book
@@ -30,7 +31,10 @@ public:
 
     bool UniformMaterial(Material &material);
 
-private:
+    // todo temp test
+    ImGuiContext *ReturnIMGUIContext();
+
+  private:
     static Renderer *instance;
     ShaderProgram currentShaderProgram;
     Renderer();

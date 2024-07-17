@@ -1,4 +1,4 @@
-#include "Input.h"
+#include <core/window/input.h>
 
 bool Input::capturingMouse = false;
 bool Input::firstEntry = true;

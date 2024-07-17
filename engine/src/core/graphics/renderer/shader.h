@@ -1,12 +1,11 @@
 #pragma once
-#include <GLAD/glad.h>
-#include <string>
 #include <core/defines.h>
+#include <glad/glad.h>
 #include <glm/glm.hpp>
+#include <string>
 
 const i32 InvalidShaderId = -999;
 
-struct ShaderProgram
-{
-    i32 id = InvalidShaderId;
+struct OUROAPI ShaderProgram {
+  i32 id = InvalidShaderId;
 };

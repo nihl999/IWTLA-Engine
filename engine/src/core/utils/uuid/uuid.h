@@ -6,6 +6,6 @@ namespace Random
 {
     typedef u64 UUID;
 
-    UUID GenerateUUID();
-    std::string GenerateStringUUID();
+    UUID OUROAPI GenerateUUID();
+    std::string OUROAPI GenerateStringUUID();
 }

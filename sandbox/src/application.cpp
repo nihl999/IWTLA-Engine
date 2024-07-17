@@ -1,6 +1,3 @@
-#include "core/application/application.h"
-#include "core/resources/resource_system.h"
-#include <imgui/imgui.h>
 #include <ouroboros.h>
 #include <random>
 
@@ -34,6 +31,8 @@ void Sandbox::DrawApplicationPropertiesDebug() {
 Sandbox::Sandbox() : Ouroboros::Application() {
   ResourceSystem::Init();
   currentScene = Scene();
+  currentScene.world = flecs::world();
+  ImGui::SetCurrentContext(renderer.ReturnIMGUIContext());
   currentScene.Setup([](Scene &scene) {
     // Random seed
     std::random_device rd;

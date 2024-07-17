@@ -1,1 +1,2 @@
-Make LOGGING functions and remove printf
+FLECS DLL BUG - TAPE FIXED
+IMGUI CONTEXT DLL BUG - TAPE FIXED

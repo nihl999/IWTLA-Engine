@@ -1,3 +1,5 @@
+#include "imgui.h"
+#include "imgui_internal.h"
 #include <GLAD/glad.h>
 #include <core/graphics/material.h>
 #include <core/graphics/renderer/renderer.h>
@@ -262,4 +264,8 @@ bool Renderer::UniformMaterial(Material &material)
     UniformF1("material.shininess",
               material.shininess);
     return true;
+}
+
+ImGuiContext *Renderer::ReturnIMGUIContext() {
+  return ImGui::GetCurrentContext();
 }

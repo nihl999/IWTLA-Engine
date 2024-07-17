@@ -19,8 +19,6 @@ add_library(engine
     src/core/world/camera.cpp
     src/core/window/input.cpp
     src/core/utils/uuid/uuid.cpp
-    src/common/stb_image.cpp
-    src/common/File/File.cpp
 )
 
 set_target_properties(engine PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/engine/bin/) 

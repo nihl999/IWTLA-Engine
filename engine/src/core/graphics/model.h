@@ -4,15 +4,13 @@
 #include <glm/glm.hpp>
 #include <string>
 
-namespace Graphics
-{
-    struct Vertex
-    {
-        glm::vec3 position;
-        glm::vec3 normal;
-        glm::vec3 uv;
-        glm::vec3 color;
-    };
+namespace Graphics {
+struct OUROAPI Vertex {
+  glm::vec3 position;
+  glm::vec3 normal;
+  glm::vec3 uv;
+  glm::vec3 color;
+};
 
     // struct BatchVertex
     // {
@@ -24,17 +22,15 @@ namespace Graphics
 
     // NOTE: for now, as i haven't planned no proprietary asset filetypes, resource system will only handle Model, so meshes are stored in vector inside model.
     // so, multiple model unfortunately can have duplicated meshes
-    struct Mesh
-    {
-        std::vector<Vertex> vertices;
-        std::vector<u32> indices;
-        ResourceSystem::Handle material;
-        glm::mat4 localTransform = glm::mat4(1);
-    };
+struct OUROAPI Mesh {
+  std::vector<Vertex> vertices;
+  std::vector<u32> indices;
+  ResourceSystem::Handle material;
+  glm::mat4 localTransform = glm::mat4(1);
+};
 
-    struct Model
-    {
-        std::vector<Mesh> meshes;
-        // NOTE: OTHER PROPS
+    struct OUROAPI Model {
+      std::vector<Mesh> meshes;
+      // NOTE: OTHER PROPS
     };
-}
+    } // namespace Graphics

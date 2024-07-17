@@ -1,9 +1,7 @@
-#include "core/logger.h"
 #include <core/graphics/renderer/renderer.h>
+#include <core/logger.h>
 #include <core/world/components.h>
 #include <core/world/scene.h>
-#include <cstdio>
-#include <imgui/imgui.h>
 #include <string>
 
 // void RegisterMovementSystem(const Scene &scene);

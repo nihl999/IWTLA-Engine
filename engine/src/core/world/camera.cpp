@@ -59,6 +59,8 @@ void Camera::translate(glm::vec3 translation) {
 
 void Camera::move(glm::vec3 directions) {
   // todo try vector multiplication for this instead of add
+  if (directions.x != 0) {
+  }
   glm::vec3 newCamPos = position;
   directions = directions * moveSpeed;
   newCamPos += directions.x * glm::normalize(glm::cross(forward, cameraUp));

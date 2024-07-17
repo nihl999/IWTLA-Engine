@@ -60,482 +60,470 @@
   "output": "engine/CMakeFiles/engine.dir/src/core/utils/uuid/uuid.cpp.obj"
 },
 {
-  "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/common/stb_image.cpp.obj -c S:/dev/c++/IWTLA/engine/src/common/stb_image.cpp",
-  "file": "S:/dev/c++/IWTLA/engine/src/common/stb_image.cpp",
-  "output": "engine/CMakeFiles/engine.dir/src/common/stb_image.cpp.obj"
-},
-{
-  "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/common/File/File.cpp.obj -c S:/dev/c++/IWTLA/engine/src/common/File/File.cpp",
-  "file": "S:/dev/c++/IWTLA/engine/src/common/File/File.cpp",
-  "output": "engine/CMakeFiles/engine.dir/src/common/File/File.cpp.obj"
-},
-{
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/alerts.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/alerts.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/alerts.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/alerts.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/alerts.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/alerts.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/app.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/app.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/app.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/app.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/app.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/app.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/doc.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/doc.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/doc.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/doc.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/doc.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/doc.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/expr/deserialize.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/deserialize.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/expr/deserialize.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/deserialize.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/deserialize.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/expr/deserialize.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/expr/serialize.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/serialize.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/expr/serialize.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/serialize.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/serialize.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/expr/serialize.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/expr/utils.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/utils.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/expr/utils.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/utils.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/utils.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/expr/utils.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/expr/vars.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/vars.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/expr/vars.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/vars.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/expr/vars.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/expr/vars.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/flecs_cpp.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/flecs_cpp.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/flecs_cpp.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/flecs_cpp.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/flecs_cpp.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/flecs_cpp.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/http.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/http.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/http.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/http.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/http.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/http.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/journal.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/journal.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/journal.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/journal.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/journal.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/journal.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/deserialize.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/deserialize.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/deserialize.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/deserialize.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/deserialize.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/json/deserialize.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/json.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/json.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/json.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/json.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/json.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/json/json.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/serialize.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/serialize.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/json/serialize.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/serialize_field_info.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_field_info.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/serialize_field_info.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_field_info.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_field_info.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/json/serialize_field_info.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/serialize_iter_rows.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_iter_rows.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/serialize_iter_rows.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_iter_rows.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_iter_rows.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/json/serialize_iter_rows.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/serialize_query_info.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_query_info.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/serialize_query_info.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_query_info.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_query_info.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/json/serialize_query_info.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/serialize_type_info.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_type_info.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/json/serialize_type_info.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_type_info.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/json/serialize_type_info.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/json/serialize_type_info.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/log.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/log.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/log.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/log.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/log.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/log.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta/api.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/api.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta/api.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/api.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/api.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/meta/api.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta/cursor.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/cursor.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta/cursor.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/cursor.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/cursor.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/meta/cursor.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta/definitions.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/definitions.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta/definitions.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/definitions.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/definitions.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/meta/definitions.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta/meta.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/meta.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta/meta.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/meta.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/meta.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/meta/meta.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta/serialized.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/serialized.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta/serialized.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/serialized.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta/serialized.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/meta/serialized.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta_c.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta_c.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/meta_c.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta_c.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/meta_c.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/meta_c.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/metrics.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/metrics.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/metrics.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/metrics.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/metrics.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/metrics.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/module.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/module.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/module.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/module.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/module.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/module.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/monitor.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/monitor.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/monitor.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/monitor.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/monitor.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/monitor.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/os_api_impl/os_api_impl.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/os_api_impl/os_api_impl.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/os_api_impl/os_api_impl.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/os_api_impl/os_api_impl.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/os_api_impl/os_api_impl.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/os_api_impl/os_api_impl.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/parser.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/parser.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/parser.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/parser.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/parser.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/parser.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/pipeline/pipeline.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/pipeline/pipeline.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/pipeline/pipeline.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/pipeline/pipeline.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/pipeline/pipeline.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/pipeline/pipeline.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/pipeline/worker.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/pipeline/worker.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/pipeline/worker.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/pipeline/worker.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/pipeline/worker.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/pipeline/worker.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/plecs.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/plecs.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/plecs.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/plecs.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/plecs.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/plecs.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rest.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rest.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rest.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rest.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rest.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/rest.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/api.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/api.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/api.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/api.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/api.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/rules/api.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/compile.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/compile.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/compile.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/compile.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/compile.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/rules/compile.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/engine.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/engine.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/engine.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/engine.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/engine.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/rules/engine.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/trav_cache.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trav_cache.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/trav_cache.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trav_cache.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trav_cache.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/rules/trav_cache.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/trav_down_cache.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trav_down_cache.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/trav_down_cache.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trav_down_cache.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trav_down_cache.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/rules/trav_down_cache.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/trav_up_cache.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trav_up_cache.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/trav_up_cache.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trav_up_cache.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trav_up_cache.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/rules/trav_up_cache.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/trivial_iter.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trivial_iter.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/rules/trivial_iter.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trivial_iter.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/rules/trivial_iter.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/rules/trivial_iter.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/snapshot.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/snapshot.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/snapshot.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/snapshot.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/snapshot.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/snapshot.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/stats.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/stats.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/stats.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/stats.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/stats.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/stats.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/system/system.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/system/system.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/system/system.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/system/system.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/system/system.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/system/system.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/timer.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/timer.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/timer.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/timer.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/timer.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/timer.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/units.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/units.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/addons/units.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/units.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/addons/units.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/addons/units.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/bootstrap.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/bootstrap.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/bootstrap.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/bootstrap.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/bootstrap.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/bootstrap.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/allocator.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/allocator.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/allocator.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/allocator.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/allocator.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/allocator.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/bitset.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/bitset.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/bitset.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/bitset.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/bitset.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/bitset.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/block_allocator.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/block_allocator.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/block_allocator.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/block_allocator.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/block_allocator.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/block_allocator.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/hash.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/hash.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/hash.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/hash.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/hash.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/hash.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/hashmap.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/hashmap.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/hashmap.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/hashmap.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/hashmap.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/hashmap.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/map.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/map.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/map.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/map.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/map.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/map.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/name_index.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/name_index.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/name_index.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/name_index.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/name_index.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/name_index.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/sparse.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/sparse.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/sparse.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/sparse.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/sparse.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/sparse.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/stack_allocator.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/stack_allocator.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/stack_allocator.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/stack_allocator.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/stack_allocator.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/stack_allocator.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/strbuf.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/strbuf.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/strbuf.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/strbuf.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/strbuf.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/strbuf.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/switch_list.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/switch_list.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/switch_list.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/switch_list.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/switch_list.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/switch_list.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/vec.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/vec.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/datastructures/vec.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/vec.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/datastructures/vec.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/datastructures/vec.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/entity.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/entity.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/entity.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/entity.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/entity.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/entity.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/entity_filter.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/entity_filter.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/entity_filter.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/entity_filter.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/entity_filter.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/entity_filter.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/entity_name.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/entity_name.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/entity_name.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/entity_name.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/entity_name.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/entity_name.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/filter.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/filter.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/filter.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/filter.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/filter.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/filter.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/iter.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/iter.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/iter.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/iter.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/iter.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/iter.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/misc.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/misc.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/misc.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/misc.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/misc.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/misc.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/observable.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/observable.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/observable.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/observable.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/observable.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/observable.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/observer.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/observer.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/observer.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/observer.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/observer.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/observer.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/os_api.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/os_api.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/os_api.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/os_api.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/os_api.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/os_api.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/poly.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/poly.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/poly.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/poly.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/poly.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/poly.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/query.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/query.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/query.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/query.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/query.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/query.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/search.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/search.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/search.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/search.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/search.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/search.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/stage.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/stage.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/stage.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/stage.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/stage.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/stage.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/storage/entity_index.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/entity_index.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/storage/entity_index.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/entity_index.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/entity_index.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/storage/entity_index.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/storage/id_index.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/id_index.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/storage/id_index.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/id_index.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/id_index.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/storage/id_index.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/storage/table.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/table.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/storage/table.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/table.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/table.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/storage/table.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/storage/table_cache.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/table_cache.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/storage/table_cache.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/table_cache.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/table_cache.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/storage/table_cache.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/storage/table_graph.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/table_graph.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/storage/table_graph.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/table_graph.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/storage/table_graph.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/storage/table_graph.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/value.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/value.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/value.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/value.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/value.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/value.c.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/flecs",
-  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/world.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/world.c",
+  "command": "\"C:/Program Files/LLVM/bin/clang.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dflecs_EXPORTS -Dflecs_STATIC @CMakeFiles/flecs_static.dir/includes_C.rsp -O0 -std=gnu99 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/flecs_static.dir/src/world.c.obj -c S:/dev/c++/IWTLA/engine/vendor/flecs/src/world.c",
   "file": "S:/dev/c++/IWTLA/engine/vendor/flecs/src/world.c",
   "output": "engine/vendor/flecs/CMakeFiles/flecs_static.dir/src/world.c.obj"
 },
@@ -1141,12 +1129,6 @@
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/stb",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN  -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/stb_image.dir/image.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/stb/image.cpp",
-  "file": "S:/dev/c++/IWTLA/engine/vendor/stb/image.cpp",
-  "output": "engine/vendor/stb/CMakeFiles/stb_image.dir/image.cpp.obj"
-},
-{
-  "directory": "S:/dev/c++/IWTLA/build/engine/vendor/stb",
   "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN  -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/stb_image_write.dir/image_write.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/stb/image_write.cpp",
   "file": "S:/dev/c++/IWTLA/engine/vendor/stb/image_write.cpp",
   "output": "engine/vendor/stb/CMakeFiles/stb_image_write.dir/image_write.cpp.obj"
@@ -1156,6 +1138,12 @@
   "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN  -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/stb_noise.dir/noise.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/stb/noise.cpp",
   "file": "S:/dev/c++/IWTLA/engine/vendor/stb/noise.cpp",
   "output": "engine/vendor/stb/CMakeFiles/stb_noise.dir/noise.cpp.obj"
+},
+{
+  "directory": "S:/dev/c++/IWTLA/build/engine/vendor/stb",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN  -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/stb_image.dir/image.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/stb/image.cpp",
+  "file": "S:/dev/c++/IWTLA/engine/vendor/stb/image.cpp",
+  "output": "engine/vendor/stb/CMakeFiles/stb_image.dir/image.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/imgui",
