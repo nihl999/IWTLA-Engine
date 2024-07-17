@@ -1,3 +1,4 @@
+#include "core/logger.h"
 #include <assimp/Importer.hpp>
 #include <assimp/postprocess.h>
 #include <assimp/scene.h>
@@ -106,8 +107,8 @@ void LoadTextureFromFile(ResourceDescriptor descriptor, Handle h) {
   byte *data = stbi_load(filepath.c_str(), &texture->width, &texture->height,
                          (i32 *)&texture->nrChannels, STBI_rgb_alpha);
   if (!data) {
-    const char *failureReason = stbi_failure_reason();
-    printf("error loading texture: %s\n", failureReason);
+    std::string failureReason = stbi_failure_reason();
+    OUROERROR("error loading texture: {}", failureReason);
     exit(1);
   }
 
@@ -115,8 +116,8 @@ void LoadTextureFromFile(ResourceDescriptor descriptor, Handle h) {
 
   Renderer::GetInstance().CreateGPUTexture(*texture);
 
-  printf("texture: %s loaded successfully, id: %d\n", descriptor.path.c_str(),
-         texture->id);
+  OUROTRACE("texture: {} loaded successfully, id: {:d}\n", descriptor.path,
+            texture->id);
 
   m_resources[h] = {.data = texture};
 };
@@ -358,7 +359,7 @@ void ProcessMesh(aiMesh *mesh, glm::mat4 meshTransformation) {
     if (material->GetTexture(aiTextureType_DIFFUSE, 0, &path) ==
         aiReturn_SUCCESS) {
       std::string fullPath = modelFolder + path.data;
-      printf("diffuse path: %s\n", fullPath.c_str());
+      OUROTRACE("diffuse path: {}", fullPath);
       diffuse = ResourceSystem::PrepareResource(
           {.path = fullPath, .name = fullPath, .type = RESOURCE_TEXTURE});
     }
@@ -369,7 +370,7 @@ void ProcessMesh(aiMesh *mesh, glm::mat4 meshTransformation) {
         aiReturn_SUCCESS) {
 
       std::string fullPath = modelFolder + path.data;
-      printf("specular path: %s\n", fullPath.c_str());
+      OUROTRACE("specular path: {}", fullPath);
       specular = ResourceSystem::PrepareResource(
           {.path = fullPath, .name = fullPath, .type = RESOURCE_TEXTURE});
     }
@@ -427,8 +428,9 @@ void ProcessMesh(aiMesh *mesh, glm::mat4 meshTransformation) {
     indices.push_back(tri1);
     indices.push_back(tri2);
     indices.push_back(tri3);
-    printf("triangulo %d: | 1: %u | 2: %u | 3: %u\n", faceIndex, tri1, tri2,
-           tri3);
+    // OUROTRACE("triangulo %d: | 1: %u | 2: %u | 3: %u\n", faceIndex, tri1,
+    // tri2,
+    //  tri3);
   }
 
   Graphics::Mesh mMesh = {.vertices = vertices,
@@ -462,7 +464,7 @@ void LoadModelFromFile(ResourceDescriptor descriptor, Handle h) {
   if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE ||
       !scene->mRootNode) {
     const char *error = importer.GetErrorString();
-    printf("error loading model kaboom %s\n", error);
+    OUROERROR("error loading model kaboom {}", error);
     exit(1);
   }
 

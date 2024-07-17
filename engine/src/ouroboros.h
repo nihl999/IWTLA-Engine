@@ -7,9 +7,12 @@
 #include <core/graphics/renderer/renderer.h>
 #include <core/graphics/renderer/shader.h>
 #include <core/graphics/texture.h>
+#include <core/logger.h>
 #include <core/resources/resource_system.h>
 #include <core/window/input.h>
 #include <core/window/window.h>
 #include <core/world/camera.h>
 #include <core/world/components.h>
 #include <core/world/scene.h>
+#include <entrypoint.h>
+

@@ -2,14 +2,14 @@
 
 #include <core/defines.h>
 
-class Window
-{
+class OUROAPI Window {
 public:
     int width;
     int height;
     float aspectRatio;
 
-public:
+  public:
+    Window();
     Window(int _width, int _height);
     void NewFrame();
     bool ShouldClose();

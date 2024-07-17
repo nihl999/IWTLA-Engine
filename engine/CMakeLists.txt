@@ -9,7 +9,7 @@ add_compile_definitions(OURO_EXPORT_API OURO_PLATFORM_WIN)
 
 add_library(engine
     SHARED
-    src/entrypoint.cpp
+    src/core/logger.cpp
     src/core/application/application.cpp
     src/core/graphics/renderer/shader.cpp
     src/core/graphics/renderer/impl/opengl_renderer.cpp
@@ -24,6 +24,7 @@ add_library(engine
 )
 
 set_target_properties(engine PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/engine/bin/) 
+set_target_properties(engine PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/engine/bin/lib) 
 
 target_include_directories(engine 
     PRIVATE
@@ -36,6 +37,7 @@ add_subdirectory(vendor/glfw)
 add_subdirectory(vendor/glad)
 add_subdirectory(vendor/stb)
 add_subdirectory(vendor/imgui)
+add_subdirectory(vendor/spdlog)
 
 #assimp fuckery
 set(ASSIMP_BUILD_ZLIB ON CACHE BOOL "Build zlib" FORCE)
@@ -58,12 +60,18 @@ target_link_libraries(engine
     assimp
     imgui
     nlohmann_json
+    spdlog::spdlog
     -lWs2_32
     -luser32 
     -lgdi32 
     -lopengl32
 )
 
+add_custom_command(TARGET engine
+    POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:engine> "${CMAKE_SOURCE_DIR}/sandbox/bin/"
+    COMMENT "Copy dll file to ${CMAKE_SOURCE_DIR}/sandbox/bin/ directory" VERBATIM
+)
 
 
 

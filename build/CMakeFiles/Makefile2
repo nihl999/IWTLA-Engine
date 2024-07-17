@@ -87,6 +87,7 @@ engine/all: engine/vendor/glfw/all
 engine/all: engine/vendor/glad/all
 engine/all: engine/vendor/stb/all
 engine/all: engine/vendor/imgui/all
+engine/all: engine/vendor/spdlog/all
 engine/all: engine/vendor/assimp/all
 engine/all: engine/vendor/json/all
 .PHONY : engine/all
@@ -97,6 +98,7 @@ engine/preinstall: engine/vendor/glfw/preinstall
 engine/preinstall: engine/vendor/glad/preinstall
 engine/preinstall: engine/vendor/stb/preinstall
 engine/preinstall: engine/vendor/imgui/preinstall
+engine/preinstall: engine/vendor/spdlog/preinstall
 engine/preinstall: engine/vendor/assimp/preinstall
 engine/preinstall: engine/vendor/json/preinstall
 .PHONY : engine/preinstall
@@ -108,6 +110,7 @@ engine/clean: engine/vendor/glfw/clean
 engine/clean: engine/vendor/glad/clean
 engine/clean: engine/vendor/stb/clean
 engine/clean: engine/vendor/imgui/clean
+engine/clean: engine/vendor/spdlog/clean
 engine/clean: engine/vendor/assimp/clean
 engine/clean: engine/vendor/json/clean
 .PHONY : engine/clean
@@ -273,6 +276,21 @@ engine/vendor/json/clean:
 .PHONY : engine/vendor/json/clean
 
 #=============================================================================
+# Directory level rules for directory engine/vendor/spdlog
+
+# Recursive "all" directory target.
+engine/vendor/spdlog/all: engine/vendor/spdlog/CMakeFiles/spdlog.dir/all
+.PHONY : engine/vendor/spdlog/all
+
+# Recursive "preinstall" directory target.
+engine/vendor/spdlog/preinstall:
+.PHONY : engine/vendor/spdlog/preinstall
+
+# Recursive "clean" directory target.
+engine/vendor/spdlog/clean: engine/vendor/spdlog/CMakeFiles/spdlog.dir/clean
+.PHONY : engine/vendor/spdlog/clean
+
+#=============================================================================
 # Directory level rules for directory engine/vendor/stb
 
 # Recursive "all" directory target.
@@ -311,17 +329,18 @@ sandbox/clean: sandbox/CMakeFiles/sandbox.dir/clean
 
 # All Build rule for target.
 engine/CMakeFiles/engine.dir/all: engine/vendor/flecs/CMakeFiles/flecs_static.dir/all
-engine/CMakeFiles/engine.dir/all: engine/vendor/glad/CMakeFiles/glad.dir/all
 engine/CMakeFiles/engine.dir/all: engine/vendor/glfw/src/CMakeFiles/glfw.dir/all
-engine/CMakeFiles/engine.dir/all: engine/vendor/imgui/CMakeFiles/imgui.dir/all
-engine/CMakeFiles/engine.dir/all: engine/vendor/stb/CMakeFiles/stb_noise.dir/all
-engine/CMakeFiles/engine.dir/all: engine/vendor/stb/CMakeFiles/stb_image_write.dir/all
+engine/CMakeFiles/engine.dir/all: engine/vendor/glad/CMakeFiles/glad.dir/all
+engine/CMakeFiles/engine.dir/all: engine/vendor/spdlog/CMakeFiles/spdlog.dir/all
 engine/CMakeFiles/engine.dir/all: engine/vendor/stb/CMakeFiles/stb_image.dir/all
+engine/CMakeFiles/engine.dir/all: engine/vendor/stb/CMakeFiles/stb_image_write.dir/all
+engine/CMakeFiles/engine.dir/all: engine/vendor/stb/CMakeFiles/stb_noise.dir/all
+engine/CMakeFiles/engine.dir/all: engine/vendor/imgui/CMakeFiles/imgui.dir/all
 engine/CMakeFiles/engine.dir/all: engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
 engine/CMakeFiles/engine.dir/all: engine/vendor/assimp/code/CMakeFiles/assimp.dir/all
 	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=51,52,53 "Built target engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=50,51,52 "Built target engine"
 .PHONY : engine/CMakeFiles/engine.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,7 +366,7 @@ engine/CMakeFiles/engine.dir/clean:
 engine/vendor/flecs/CMakeFiles/flecs.dir/all:
 	$(MAKE) $(MAKESILENT) -f engine/vendor/flecs/CMakeFiles/flecs.dir/build.make engine/vendor/flecs/CMakeFiles/flecs.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/vendor/flecs/CMakeFiles/flecs.dir/build.make engine/vendor/flecs/CMakeFiles/flecs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70 "Built target flecs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69 "Built target flecs"
 .PHONY : engine/vendor/flecs/CMakeFiles/flecs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -373,7 +392,7 @@ engine/vendor/flecs/CMakeFiles/flecs.dir/clean:
 engine/vendor/flecs/CMakeFiles/flecs_static.dir/all:
 	$(MAKE) $(MAKESILENT) -f engine/vendor/flecs/CMakeFiles/flecs_static.dir/build.make engine/vendor/flecs/CMakeFiles/flecs_static.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/vendor/flecs/CMakeFiles/flecs_static.dir/build.make engine/vendor/flecs/CMakeFiles/flecs_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 "Built target flecs_static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86 "Built target flecs_static"
 .PHONY : engine/vendor/flecs/CMakeFiles/flecs_static.dir/all
 
 # Build rule for subdir invocation for target.
@@ -425,12 +444,12 @@ engine/vendor/glfw/CMakeFiles/uninstall.dir/clean:
 engine/vendor/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f engine/vendor/glfw/src/CMakeFiles/glfw.dir/build.make engine/vendor/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/vendor/glfw/src/CMakeFiles/glfw.dir/build.make engine/vendor/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=89,90,91,92 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=87,88,89,90,91 "Built target glfw"
 .PHONY : engine/vendor/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 engine/vendor/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine/vendor/glfw/src/CMakeFiles/glfw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 0
 .PHONY : engine/vendor/glfw/src/CMakeFiles/glfw.dir/rule
@@ -477,12 +496,12 @@ engine/vendor/glfw/src/CMakeFiles/update_mappings.dir/clean:
 engine/vendor/glad/CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f engine/vendor/glad/CMakeFiles/glad.dir/build.make engine/vendor/glad/CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/vendor/glad/CMakeFiles/glad.dir/build.make engine/vendor/glad/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=88 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num= "Built target glad"
 .PHONY : engine/vendor/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
 engine/vendor/glad/CMakeFiles/glad.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine/vendor/glad/CMakeFiles/glad.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 0
 .PHONY : engine/vendor/glad/CMakeFiles/glad.dir/rule
@@ -578,16 +597,16 @@ engine/vendor/stb/CMakeFiles/stb_noise.dir/clean:
 # Target rules for target engine/vendor/imgui/CMakeFiles/imgui.dir
 
 # All Build rule for target.
-engine/vendor/imgui/CMakeFiles/imgui.dir/all: engine/vendor/glad/CMakeFiles/glad.dir/all
 engine/vendor/imgui/CMakeFiles/imgui.dir/all: engine/vendor/glfw/src/CMakeFiles/glfw.dir/all
+engine/vendor/imgui/CMakeFiles/imgui.dir/all: engine/vendor/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f engine/vendor/imgui/CMakeFiles/imgui.dir/build.make engine/vendor/imgui/CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/vendor/imgui/CMakeFiles/imgui.dir/build.make engine/vendor/imgui/CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=93,94 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=92 "Built target imgui"
 .PHONY : engine/vendor/imgui/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
 engine/vendor/imgui/CMakeFiles/imgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine/vendor/imgui/CMakeFiles/imgui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 0
 .PHONY : engine/vendor/imgui/CMakeFiles/imgui.dir/rule
@@ -600,6 +619,32 @@ imgui: engine/vendor/imgui/CMakeFiles/imgui.dir/rule
 engine/vendor/imgui/CMakeFiles/imgui.dir/clean:
 	$(MAKE) $(MAKESILENT) -f engine/vendor/imgui/CMakeFiles/imgui.dir/build.make engine/vendor/imgui/CMakeFiles/imgui.dir/clean
 .PHONY : engine/vendor/imgui/CMakeFiles/imgui.dir/clean
+
+#=============================================================================
+# Target rules for target engine/vendor/spdlog/CMakeFiles/spdlog.dir
+
+# All Build rule for target.
+engine/vendor/spdlog/CMakeFiles/spdlog.dir/all:
+	$(MAKE) $(MAKESILENT) -f engine/vendor/spdlog/CMakeFiles/spdlog.dir/build.make engine/vendor/spdlog/CMakeFiles/spdlog.dir/depend
+	$(MAKE) $(MAKESILENT) -f engine/vendor/spdlog/CMakeFiles/spdlog.dir/build.make engine/vendor/spdlog/CMakeFiles/spdlog.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=94,95 "Built target spdlog"
+.PHONY : engine/vendor/spdlog/CMakeFiles/spdlog.dir/all
+
+# Build rule for subdir invocation for target.
+engine/vendor/spdlog/CMakeFiles/spdlog.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine/vendor/spdlog/CMakeFiles/spdlog.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 0
+.PHONY : engine/vendor/spdlog/CMakeFiles/spdlog.dir/rule
+
+# Convenience name for target.
+spdlog: engine/vendor/spdlog/CMakeFiles/spdlog.dir/rule
+.PHONY : spdlog
+
+# clean rule for target.
+engine/vendor/spdlog/CMakeFiles/spdlog.dir/clean:
+	$(MAKE) $(MAKESILENT) -f engine/vendor/spdlog/CMakeFiles/spdlog.dir/build.make engine/vendor/spdlog/CMakeFiles/spdlog.dir/clean
+.PHONY : engine/vendor/spdlog/CMakeFiles/spdlog.dir/clean
 
 #=============================================================================
 # Target rules for target engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir
@@ -634,12 +679,12 @@ engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/clean:
 engine/vendor/assimp/code/CMakeFiles/assimp.dir/all: engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
 	$(MAKE) $(MAKESILENT) -f engine/vendor/assimp/code/CMakeFiles/assimp.dir/build.make engine/vendor/assimp/code/CMakeFiles/assimp.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/vendor/assimp/code/CMakeFiles/assimp.dir/build.make engine/vendor/assimp/code/CMakeFiles/assimp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target assimp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49 "Built target assimp"
 .PHONY : engine/vendor/assimp/code/CMakeFiles/assimp.dir/all
 
 # Build rule for subdir invocation for target.
 engine/vendor/assimp/code/CMakeFiles/assimp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine/vendor/assimp/code/CMakeFiles/assimp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 0
 .PHONY : engine/vendor/assimp/code/CMakeFiles/assimp.dir/rule
@@ -657,15 +702,25 @@ engine/vendor/assimp/code/CMakeFiles/assimp.dir/clean:
 # Target rules for target sandbox/CMakeFiles/sandbox.dir
 
 # All Build rule for target.
-sandbox/CMakeFiles/sandbox.dir/all:
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/flecs/CMakeFiles/flecs_static.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/CMakeFiles/engine.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/glfw/src/CMakeFiles/glfw.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/glad/CMakeFiles/glad.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/spdlog/CMakeFiles/spdlog.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/stb/CMakeFiles/stb_image.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/stb/CMakeFiles/stb_image_write.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/stb/CMakeFiles/stb_noise.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/imgui/CMakeFiles/imgui.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/all
+sandbox/CMakeFiles/sandbox.dir/all: engine/vendor/assimp/code/CMakeFiles/assimp.dir/all
 	$(MAKE) $(MAKESILENT) -f sandbox/CMakeFiles/sandbox.dir/build.make sandbox/CMakeFiles/sandbox.dir/depend
 	$(MAKE) $(MAKESILENT) -f sandbox/CMakeFiles/sandbox.dir/build.make sandbox/CMakeFiles/sandbox.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=95 "Built target sandbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=S:/dev/c++/IWTLA/build/CMakeFiles --progress-num=93 "Built target sandbox"
 .PHONY : sandbox/CMakeFiles/sandbox.dir/all
 
 # Build rule for subdir invocation for target.
 sandbox/CMakeFiles/sandbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 83
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/CMakeFiles/sandbox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start S:/dev/c++/IWTLA/build/CMakeFiles 0
 .PHONY : sandbox/CMakeFiles/sandbox.dir/rule

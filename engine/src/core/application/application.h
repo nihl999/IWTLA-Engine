@@ -5,10 +5,11 @@
 #include <core/window/window.h>
 #include <core/world/scene.h>
 
+// todo this will change
 namespace Ouroboros {
 class OUROAPI Application {
-private:
-  Window window;
+protected:
+  Window window = Window(1280, 720);
   Renderer renderer;
   float lastFrameTime = 0;
   float startTime = 0;
@@ -19,13 +20,12 @@ public:
   Scene currentScene;
   Application();
 
-private:
-  void DrawApplicationPropertiesDebug();
-  void Update();
+protected:
+  virtual void Update(f64 deltaTime);
 
 public:
   void Run();
 };
 
-Application *CreateApplication();
+extern Application *CreateApplication();
 } // namespace Ouroboros

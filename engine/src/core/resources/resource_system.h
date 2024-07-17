@@ -15,24 +15,22 @@ namespace ResourceSystem
         RESOURCE_SHADER,
         RESOURCE_TYPE_COUNT
     };
-    struct ResourceDescriptor
-    {
-        std::string path;
-        std::string name;
-        ResourceType type;
+    struct OUROAPI ResourceDescriptor {
+      std::string path;
+      std::string name;
+      ResourceType type;
     };
 
-    struct Resource
-    {
-        void *data;
+    struct OUROAPI Resource {
+      void *data;
     };
 
     typedef u16 Handle;
 
-    Resource *GetResource(std::string rName);
-    Resource *GetResource(Handle rId);
+    Resource OUROAPI *GetResource(std::string rName);
+    Resource OUROAPI *GetResource(Handle rId);
 
-    Handle PrepareResource(const ResourceDescriptor resourceDescriptor);
+    Handle OUROAPI PrepareResource(const ResourceDescriptor resourceDescriptor);
 
     // Implementation and Internals
     // ------------
@@ -46,6 +44,6 @@ namespace ResourceSystem
     //  void GetTotalMeshes(aiNode *node);
     //--------------
 
-    void Init();
+    void OUROAPI Init();
     void Cleanup();
 };

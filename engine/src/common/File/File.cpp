@@ -1,8 +1,9 @@
+#include "File.h"
+#include <core/logger.h>
 #include <cstdio>
+#include <stdlib.h>
 #include <string.h>
 #include <string>
-#include <stdlib.h>
-#include "File.h"
 
 namespace FileUtils
 {
@@ -10,21 +11,20 @@ namespace FileUtils
     {
         return "../resources/";
     };
-    // todo Erro logging
+    // todo Learn Streams, can be cool
     char *readFile(const char *filename)
     {
         FILE *file;
         long int fileSize = 0;
         char *filepath = (char *)calloc(1, 128 * sizeof(char));
         strcat(filepath, FileUtils::getResourceFolderPath().c_str());
-        printf("file: %s\n", filename);
+        OUROTRACE("file: {}", filename);
         strcat(filepath, filename);
-        printf("%s\n", filepath);
         file = fopen(filepath, "rb");
         if (file == NULL)
         {
-            printf("file: %s on %s don't exist!\n", filename, filepath);
-            exit(1);
+          OUROERROR("file: {} on {} don't exist!", filename, filepath);
+          exit(1);
         }
         fseek(file, 0, SEEK_END);
         fileSize = ftell(file);
@@ -32,8 +32,8 @@ namespace FileUtils
         char *fileContent = (char *)calloc(1, (fileSize * sizeof(char)) + 1);
         if (fileContent == NULL)
         {
-            printf("memory allocation for file failed\n");
-            exit(1);
+          OUROERROR("memory allocation for file failed");
+          exit(1);
         }
         int freadResult = fread(fileContent, fileSize, 1, file);
         if (freadResult != 1)
@@ -41,16 +41,16 @@ namespace FileUtils
             if (ferror(file))
             {
                 int error = ferror(file);
-                printf("error id: %d, error: %s\n", error, strerror(errno));
+                OUROERROR("error id: {:d}, error: {}", error, strerror(errno));
             }
             if (feof(file))
             {
                 int error = feof(file);
-                printf("eof: %d\n", error);
+                OUROERROR("eof: {:d}", error);
             }
             fclose(file);
             free(fileContent);
-            printf("failed reading file content\n");
+            OUROFATAL("failed reading file content");
             exit(1);
         }
         fclose(file);

@@ -1,11 +1,12 @@
 #pragma once
 
+#include "core/defines.h"
 #include <core/world/camera.h>
 #include <flecs/flecs.h>
 #include <functional>
 #include <glm/glm.hpp>
 
-class Scene {
+class OUROAPI Scene {
 public:
   flecs::world world;
   Camera camera;

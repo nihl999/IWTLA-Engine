@@ -63,6 +63,13 @@ S:/dev/c++/IWTLA/build/engine/vendor/imgui/CMakeFiles/list_install_components.di
 S:/dev/c++/IWTLA/build/engine/vendor/imgui/CMakeFiles/install.dir
 S:/dev/c++/IWTLA/build/engine/vendor/imgui/CMakeFiles/install/local.dir
 S:/dev/c++/IWTLA/build/engine/vendor/imgui/CMakeFiles/install/strip.dir
+S:/dev/c++/IWTLA/build/engine/vendor/spdlog/CMakeFiles/spdlog.dir
+S:/dev/c++/IWTLA/build/engine/vendor/spdlog/CMakeFiles/edit_cache.dir
+S:/dev/c++/IWTLA/build/engine/vendor/spdlog/CMakeFiles/rebuild_cache.dir
+S:/dev/c++/IWTLA/build/engine/vendor/spdlog/CMakeFiles/list_install_components.dir
+S:/dev/c++/IWTLA/build/engine/vendor/spdlog/CMakeFiles/install.dir
+S:/dev/c++/IWTLA/build/engine/vendor/spdlog/CMakeFiles/install/local.dir
+S:/dev/c++/IWTLA/build/engine/vendor/spdlog/CMakeFiles/install/strip.dir
 S:/dev/c++/IWTLA/build/engine/vendor/assimp/CMakeFiles/edit_cache.dir
 S:/dev/c++/IWTLA/build/engine/vendor/assimp/CMakeFiles/rebuild_cache.dir
 S:/dev/c++/IWTLA/build/engine/vendor/assimp/CMakeFiles/list_install_components.dir

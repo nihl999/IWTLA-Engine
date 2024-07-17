@@ -7,35 +7,30 @@
 
 namespace ECSComponents
 {
-    struct Transform
-    {
-        glm::vec3 position = glm::vec3(0);
-        glm::vec3 scale = glm::vec3(1);
-        glm::vec3 rotation = glm::vec3(0);
-        glm::mat4 modelMatrix = glm::mat4(1);
-    };
-    struct Velocity
-    {
-        glm::vec3 velocity = glm::vec3(0);
+struct OUROAPI Transform {
+  glm::vec3 position = glm::vec3(0);
+  glm::vec3 scale = glm::vec3(1);
+  glm::vec3 rotation = glm::vec3(0);
+  glm::mat4 modelMatrix = glm::mat4(1);
+};
+    struct OUROAPI Velocity {
+      glm::vec3 velocity = glm::vec3(0);
     };
 
-    struct Model
-    {
-        ResourceSystem::Handle model;
+    struct OUROAPI Model {
+      ResourceSystem::Handle model;
     };
 
-    struct Renderable
-    {
-    };
+    struct OUROAPI Renderable {};
 
-    struct PointLight {
+    struct OUROAPI PointLight {
       f32 quadratic = 0.0075;
       f32 linear = 0.045;
       glm::vec3 color;
       f32 intensity;
     };
 
-    struct DirectionalLight {
+    struct OUROAPI DirectionalLight {
       glm::vec3 direction;
       glm::vec3 color;
       f32 intensity;

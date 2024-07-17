@@ -1,3 +1,4 @@
+#include "core/logger.h"
 #include <core/graphics/renderer/renderer.h>
 #include <core/world/components.h>
 #include <core/world/scene.h>
@@ -9,7 +10,7 @@
 // void RegisterTransformMatrixCalcSystem(const Scene &scene);
 // void RegisterRenderModels(Scene &scene);
 
-Scene::Scene() { camera = Camera(); };
+Scene::Scene() : camera(Camera()){};
 
 void Scene::Setup(std::function<void(Scene &)> lambda) { lambda(*this); };
 
@@ -121,8 +122,6 @@ void Scene::RegisterTransformMatrixCalcSystem() {
         rotationMatrix *=
             glm::rotate(identity, glm::radians(zAngle), glm::vec3(0, 0, 1));
         t.modelMatrix = translationMatrix * rotationMatrix * scaleMatrix;
-        //    printf("x: %f y: %f z: %f\n", t.position.x, t.position.y,
-        //    t.position.z);
       });
   move_sys.add(flecs::OnUpdate);
 }
@@ -135,26 +134,24 @@ void Scene::RegisterRenderModels() {
             ResourceSystem::Resource *modelResource =
                 ResourceSystem::GetResource(m.model);
             if (modelResource == nullptr) {
-              printf("model is nullptr, and shouldnt...\n");
+              OUROERROR("model is nullptr, and shouldnt...");
               return;
             }
             Graphics::Model *model = (Graphics::Model *)modelResource->data;
-            // printf("x: %f y: %f z: %f\n", t.position.x, t.position.y,
-            // t.position.z);
             auto light = world.filter<DirectionalLight>().first();
             const DirectionalLight *lightC = light.get<DirectionalLight>();
             for (Graphics::Mesh mesh : model->meshes) {
               ResourceSystem::Resource *materialResource =
                   ResourceSystem::GetResource(mesh.material);
               if (materialResource == nullptr) {
-                printf("shader not loaded \n");
+                OUROFATAL("material not loaded");
                 exit(1);
               }
               Material *material = (Material *)materialResource->data;
               ResourceSystem::Resource *shaderResource =
                   ResourceSystem::GetResource(material->shader);
               if (shaderResource == nullptr) {
-                printf("shader not loaded \n");
+                OUROFATAL("shader not loaded");
                 exit(1);
               }
               ShaderProgram *shader = (ShaderProgram *)shaderResource->data;

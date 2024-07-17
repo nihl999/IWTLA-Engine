@@ -305,6 +305,19 @@ imgui/fast:
 .PHONY : imgui/fast
 
 #=============================================================================
+# Target rules for targets named spdlog
+
+# Build rule for target.
+spdlog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spdlog
+.PHONY : spdlog
+
+# fast build rule for target.
+spdlog/fast:
+	$(MAKE) $(MAKESILENT) -f engine/vendor/spdlog/CMakeFiles/spdlog.dir/build.make engine/vendor/spdlog/CMakeFiles/spdlog.dir/build
+.PHONY : spdlog/fast
+
+#=============================================================================
 # Target rules for targets named zlibstatic
 
 # Build rule for target.
@@ -365,6 +378,7 @@ help:
 	@echo "... glfw"
 	@echo "... imgui"
 	@echo "... sandbox"
+	@echo "... spdlog"
 	@echo "... stb_image"
 	@echo "... stb_image_write"
 	@echo "... stb_noise"

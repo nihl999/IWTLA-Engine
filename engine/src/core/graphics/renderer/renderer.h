@@ -7,8 +7,7 @@
 #include <glm/glm.hpp>
 
 // todo organize and padronize - really, read the GEA book
-class Renderer
-{
+class OUROAPI Renderer {
 public:
     static Renderer &GetInstance();
     void NewFrame();

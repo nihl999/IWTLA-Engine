@@ -1,21 +1,19 @@
-#ifndef INPUT_CLASS
-#define INPUT_CLASS
+#pragma once
+#include <core/defines.h>
 #include <glfw/glfw3.h>
-#include <unordered_map>
 #include <string>
+#include <unordered_map>
 
-struct InputAxis
-{
-    int axisId = 0;
-    int minusKey = 0;
-    bool minusKeyPressed = false;
-    int plusKey = 0;
-    bool plusKeyPressed = false;
-    int currentAxisValue = 0;
-} typedef InputAxis;
+struct OUROAPI InputAxis {
+  int axisId = 0;
+  int minusKey = 0;
+  bool minusKeyPressed = false;
+  int plusKey = 0;
+  bool plusKeyPressed = false;
+  int currentAxisValue = 0;
+};
 
-class Input
-{
+class OUROAPI Input {
 public:
     static bool capturingMouse;
     static bool firstEntry;
@@ -35,4 +33,3 @@ public:
     static void MouseCallback(GLFWwindow *window, double xpos, double ypos);
     static void KeyCallback(GLFWwindow *window, int key, int scancode, int action, int mods);
 };
-#endif

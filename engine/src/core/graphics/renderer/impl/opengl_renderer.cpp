@@ -2,6 +2,7 @@
 #include <core/graphics/material.h>
 #include <core/graphics/renderer/renderer.h>
 #include <core/graphics/texture.h>
+#include <core/logger.h>
 #include <core/resources/resource_system.h>
 #include <imgui/backends/imgui_impl_opengl3.h>
 
@@ -18,10 +19,11 @@ i32 intern_CreateShader(const char *shaderSrc, GLenum shaderType)
     glGetShaderiv(shaderId, GL_INFO_LOG_LENGTH, &infoLogLength);
     if (infoLogLength > 0)
     {
-        char shaderErrorMessage[infoLogLength + 1];
-        glGetShaderInfoLog(shaderId, infoLogLength, NULL, &shaderErrorMessage[0]);
-        printf("%s\n", shaderErrorMessage);
-        exit(1);
+      std::string shaderErrorMessage;
+      glGetShaderInfoLog(shaderId, infoLogLength, NULL,
+                         shaderErrorMessage.data());
+      OUROERROR("{}", shaderErrorMessage);
+      exit(1);
     }
     return shaderId;
 }
@@ -114,8 +116,8 @@ void Renderer::RenderMesh(Graphics::Mesh mesh)
     ResourceSystem::Resource *materialResource = ResourceSystem::GetResource(mesh.material);
     if (materialResource == nullptr)
     {
-        printf("Material %d doesn't exist!\n", mesh.material);
-        materialResource = ResourceSystem::GetResource("defaults/material/unlit");
+      OUROERROR("Material {:d} doesn't exist!", mesh.material);
+      materialResource = ResourceSystem::GetResource("defaults/material/unlit");
     }
     Material *material = (Material *)materialResource->data;
     UniformMaterial(*material);
@@ -128,8 +130,8 @@ void Renderer::RenderMeshIndexed(Graphics::Mesh mesh)
     ResourceSystem::Resource *materialResource = ResourceSystem::GetResource(mesh.material);
     if (materialResource == nullptr)
     {
-        printf("Material %d doesn't exist!\n", mesh.material);
-        materialResource = ResourceSystem::GetResource("defaults/material/unlit");
+      OUROERROR("Material {:d} doesn't exist!", mesh.material);
+      materialResource = ResourceSystem::GetResource("defaults/material/unlit");
     }
     Material *material = (Material *)materialResource->data;
     UniformMaterial(*material);
@@ -172,13 +174,13 @@ void Renderer::CreateShaderProgram(char *vrtSrc, char *frgSrc, ShaderProgram &ou
 
     glGetProgramiv(programId, GL_LINK_STATUS, &result);
     glGetProgramiv(programId, GL_INFO_LOG_LENGTH, &infoLogLength);
-    printf("shader program link result: %d\n", result);
-    if (infoLogLength > 0)
-    {
-        char programErrorMessage[infoLogLength + 1];
-        glGetProgramInfoLog(programId, infoLogLength, NULL, &programErrorMessage[0]);
-        printf("%s\n", programErrorMessage);
-        exit(1);
+    OUROINFO("shader program link result: {:d}", result);
+    if (infoLogLength > 0) {
+      std::string errorMessage;
+      errorMessage.resize(infoLogLength + 1);
+      glGetProgramInfoLog(programId, infoLogLength, NULL, errorMessage.data());
+      OUROERROR("{}", errorMessage);
+      exit(1);
     }
 
     glDetachShader(programId, vertex);
@@ -238,13 +240,13 @@ bool Renderer::UniformMaterial(Material &material)
     ResourceSystem::Resource *diffuseResource = ResourceSystem::GetResource(material.diffuseMap);
     if (diffuseResource == nullptr)
     {
-      printf("kabooom diffuse not found %d\n", material.diffuseMap);
+      OUROERROR("kabooom diffuse not found {:d}", material.diffuseMap);
       exit(1);
     }
     ResourceSystem::Resource *specularResource = ResourceSystem::GetResource(material.specularMap);
     if (!specularResource)
     {
-      printf("kabooom specular not found %d\n", material.diffuseMap);
+      OUROERROR("kabooom specular not found {:d}", material.diffuseMap);
       exit(1);
     }
     Texture *diffuseTexture = (Texture *)diffuseResource->data;

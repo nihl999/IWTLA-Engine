@@ -4,9 +4,9 @@
             "type": "lldb",
             "request": "launch",
             "name": "Launch",
-            "program": "${workspaceFolder}/bin/engine.exe",
+            "program": "${workspaceFolder}/sandbox/bin/sandbox.exe",
             "args": [ ],
-            "cwd": "${workspaceFolder}/bin",
+            "cwd": "${workspaceFolder}/sandbox/bin",
             // "sourceMap": { "/project/src": "${workspaceFolder}" },
             "breakpointMode": "file"
         },
@@ -29,12 +29,12 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/engine.exe",
+            "program": "${workspaceFolder}/sandbox/bin/sandbox.exe",
             "args": [ ],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/bin",
+            "cwd": "${workspaceFolder}/sandbox/bin",
             "environment": [ ],
-            "externalConsole": false,
+            "console": "newExternalWindow"
         }
     ]
 }

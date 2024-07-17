@@ -1,73 +1,73 @@
 [
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/entrypoint.cpp.obj -c S:/dev/c++/IWTLA/engine/src/entrypoint.cpp",
-  "file": "S:/dev/c++/IWTLA/engine/src/entrypoint.cpp",
-  "output": "engine/CMakeFiles/engine.dir/src/entrypoint.cpp.obj"
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/logger.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/logger.cpp",
+  "file": "S:/dev/c++/IWTLA/engine/src/core/logger.cpp",
+  "output": "engine/CMakeFiles/engine.dir/src/core/logger.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/application/application.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/application/application.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/application/application.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/application/application.cpp",
   "file": "S:/dev/c++/IWTLA/engine/src/core/application/application.cpp",
   "output": "engine/CMakeFiles/engine.dir/src/core/application/application.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/graphics/renderer/shader.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/graphics/renderer/shader.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/graphics/renderer/shader.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/graphics/renderer/shader.cpp",
   "file": "S:/dev/c++/IWTLA/engine/src/core/graphics/renderer/shader.cpp",
   "output": "engine/CMakeFiles/engine.dir/src/core/graphics/renderer/shader.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/graphics/renderer/impl/opengl_renderer.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/graphics/renderer/impl/opengl_renderer.cpp",
   "file": "S:/dev/c++/IWTLA/engine/src/core/graphics/renderer/impl/opengl_renderer.cpp",
   "output": "engine/CMakeFiles/engine.dir/src/core/graphics/renderer/impl/opengl_renderer.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/resources/resource_system.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/resources/resource_system.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/resources/resource_system.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/resources/resource_system.cpp",
   "file": "S:/dev/c++/IWTLA/engine/src/core/resources/resource_system.cpp",
   "output": "engine/CMakeFiles/engine.dir/src/core/resources/resource_system.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/window/impl/glfw_window.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/window/impl/glfw_window.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/window/impl/glfw_window.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/window/impl/glfw_window.cpp",
   "file": "S:/dev/c++/IWTLA/engine/src/core/window/impl/glfw_window.cpp",
   "output": "engine/CMakeFiles/engine.dir/src/core/window/impl/glfw_window.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/world/scene.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/world/scene.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/world/scene.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/world/scene.cpp",
   "file": "S:/dev/c++/IWTLA/engine/src/core/world/scene.cpp",
   "output": "engine/CMakeFiles/engine.dir/src/core/world/scene.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/world/camera.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/world/camera.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/world/camera.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/world/camera.cpp",
   "file": "S:/dev/c++/IWTLA/engine/src/core/world/camera.cpp",
   "output": "engine/CMakeFiles/engine.dir/src/core/world/camera.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/window/input.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/window/input.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/window/input.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/window/input.cpp",
   "file": "S:/dev/c++/IWTLA/engine/src/core/window/input.cpp",
   "output": "engine/CMakeFiles/engine.dir/src/core/window/input.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/utils/uuid/uuid.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/utils/uuid/uuid.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/core/utils/uuid/uuid.cpp.obj -c S:/dev/c++/IWTLA/engine/src/core/utils/uuid/uuid.cpp",
   "file": "S:/dev/c++/IWTLA/engine/src/core/utils/uuid/uuid.cpp",
   "output": "engine/CMakeFiles/engine.dir/src/core/utils/uuid/uuid.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/common/stb_image.cpp.obj -c S:/dev/c++/IWTLA/engine/src/common/stb_image.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/common/stb_image.cpp.obj -c S:/dev/c++/IWTLA/engine/src/common/stb_image.cpp",
   "file": "S:/dev/c++/IWTLA/engine/src/common/stb_image.cpp",
   "output": "engine/CMakeFiles/engine.dir/src/common/stb_image.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/common/File/File.cpp.obj -c S:/dev/c++/IWTLA/engine/src/common/File/File.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dengine_EXPORTS -Dflecs_STATIC @CMakeFiles/engine.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/engine.dir/src/common/File/File.cpp.obj -c S:/dev/c++/IWTLA/engine/src/common/File/File.cpp",
   "file": "S:/dev/c++/IWTLA/engine/src/common/File/File.cpp",
   "output": "engine/CMakeFiles/engine.dir/src/common/File/File.cpp.obj"
 },
@@ -1141,9 +1141,9 @@
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/stb",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN  -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/stb_noise.dir/noise.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/stb/noise.cpp",
-  "file": "S:/dev/c++/IWTLA/engine/vendor/stb/noise.cpp",
-  "output": "engine/vendor/stb/CMakeFiles/stb_noise.dir/noise.cpp.obj"
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN  -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/stb_image.dir/image.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/stb/image.cpp",
+  "file": "S:/dev/c++/IWTLA/engine/vendor/stb/image.cpp",
+  "output": "engine/vendor/stb/CMakeFiles/stb_image.dir/image.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/stb",
@@ -1153,9 +1153,9 @@
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/stb",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN  -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/stb_image.dir/image.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/stb/image.cpp",
-  "file": "S:/dev/c++/IWTLA/engine/vendor/stb/image.cpp",
-  "output": "engine/vendor/stb/CMakeFiles/stb_image.dir/image.cpp.obj"
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN  -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/stb_noise.dir/noise.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/stb/noise.cpp",
+  "file": "S:/dev/c++/IWTLA/engine/vendor/stb/noise.cpp",
+  "output": "engine/vendor/stb/CMakeFiles/stb_noise.dir/noise.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/imgui",
@@ -1198,6 +1198,48 @@
   "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN @CMakeFiles/imgui.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/imgui.dir/backends/imgui_impl_opengl3.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/imgui/backends/imgui_impl_opengl3.cpp",
   "file": "S:/dev/c++/IWTLA/engine/vendor/imgui/backends/imgui_impl_opengl3.cpp",
   "output": "engine/vendor/imgui/CMakeFiles/imgui.dir/backends/imgui_impl_opengl3.cpp.obj"
+},
+{
+  "directory": "S:/dev/c++/IWTLA/build/engine/vendor/spdlog",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/spdlog.dir/src/spdlog.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/spdlog/src/spdlog.cpp",
+  "file": "S:/dev/c++/IWTLA/engine/vendor/spdlog/src/spdlog.cpp",
+  "output": "engine/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.obj"
+},
+{
+  "directory": "S:/dev/c++/IWTLA/build/engine/vendor/spdlog",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/spdlog/src/stdout_sinks.cpp",
+  "file": "S:/dev/c++/IWTLA/engine/vendor/spdlog/src/stdout_sinks.cpp",
+  "output": "engine/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.obj"
+},
+{
+  "directory": "S:/dev/c++/IWTLA/build/engine/vendor/spdlog",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/spdlog.dir/src/color_sinks.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/spdlog/src/color_sinks.cpp",
+  "file": "S:/dev/c++/IWTLA/engine/vendor/spdlog/src/color_sinks.cpp",
+  "output": "engine/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.obj"
+},
+{
+  "directory": "S:/dev/c++/IWTLA/build/engine/vendor/spdlog",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/spdlog.dir/src/file_sinks.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/spdlog/src/file_sinks.cpp",
+  "file": "S:/dev/c++/IWTLA/engine/vendor/spdlog/src/file_sinks.cpp",
+  "output": "engine/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.obj"
+},
+{
+  "directory": "S:/dev/c++/IWTLA/build/engine/vendor/spdlog",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/spdlog.dir/src/async.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/spdlog/src/async.cpp",
+  "file": "S:/dev/c++/IWTLA/engine/vendor/spdlog/src/async.cpp",
+  "output": "engine/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.obj"
+},
+{
+  "directory": "S:/dev/c++/IWTLA/build/engine/vendor/spdlog",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/spdlog.dir/src/cfg.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/spdlog/src/cfg.cpp",
+  "file": "S:/dev/c++/IWTLA/engine/vendor/spdlog/src/cfg.cpp",
+  "output": "engine/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.obj"
+},
+{
+  "directory": "S:/dev/c++/IWTLA/build/engine/vendor/spdlog",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_EXPORT_API -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.obj -c S:/dev/c++/IWTLA/engine/vendor/spdlog/src/bundled_fmtlib_format.cpp",
+  "file": "S:/dev/c++/IWTLA/engine/vendor/spdlog/src/bundled_fmtlib_format.cpp",
+  "output": "engine/vendor/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.obj"
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/engine/vendor/assimp/contrib/zlib",
@@ -2683,7 +2725,7 @@
 },
 {
   "directory": "S:/dev/c++/IWTLA/build/sandbox",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_PLATFORM_WIN @CMakeFiles/sandbox.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/sandbox.dir/src/application.cpp.obj -c S:/dev/c++/IWTLA/sandbox/src/application.cpp",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\" -DOURO_PLATFORM_WIN -DSPDLOG_COMPILED_LIB -Dflecs_STATIC @CMakeFiles/sandbox.dir/includes_CXX.rsp -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/sandbox.dir/src/application.cpp.obj -c S:/dev/c++/IWTLA/sandbox/src/application.cpp",
   "file": "S:/dev/c++/IWTLA/sandbox/src/application.cpp",
   "output": "sandbox/CMakeFiles/sandbox.dir/src/application.cpp.obj"
 }

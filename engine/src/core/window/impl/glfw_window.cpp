@@ -1,3 +1,4 @@
+#include "core/logger.h"
 #define GLFW_INCLUDE_NONE
 #include <GLAD/glad.h>
 #include <GLFW/glfw3.h>
@@ -22,14 +23,14 @@ Window::Window(int _width, int _height)
     : width(_width), height(_height),
       aspectRatio((float)_width / (float)height) {
   if (!glfwInit()) {
-    printf("Error initializing GLFW library!");
+    OUROFATAL("Error initializing GLFW library!");
     exit(1);
   }
 
   window = glfwCreateWindow(width, height, "Nurget", NULL, NULL);
   if (!window) {
     glfwTerminate();
-    printf("Error initializing window with GLFW!");
+    OUROFATAL("Error initializing window with GLFW!");
     exit(1);
   }
 
