@@ -37,18 +37,40 @@ STATIC_ASSERT(sizeof(i64) == 8, "i64 should be 8 bytes");
 STATIC_ASSERT(sizeof(f32) == 4, "f32 should be 4 byte");
 STATIC_ASSERT(sizeof(f64) == 8, "f64 should be 8 bytes");
 
-#ifdef OURO_EXPORT_API
-#ifdef OURO_PLATFORM_WIN
-#define OUROAPI __declspec(dllexport)
-#endif
-#ifdef OURO_PLATFORM_LINUX
-#define OUROAPI __attribute__((visibility("default")))
-#endif
+#ifdef _DEBUG
+#define OURO_DEBUG
 #else
-#ifdef OURO_PLATFORM_WIN
+#define OURO_RELEASE
+#endif
+
+// Platform detection - KOHI Engine
+#if defined(WIN32) || defined(_WIN32) || defined(__WIN32__)
+#define OURO_PLATFORM_WINDOWS 1
+#ifndef _WIN64
+#error "Only 64-Bit Windows supported"
+#endif
+#elif defined(__linux__) || defined(__gnu_linux__)
+#define OURO_PLATFORM_LINUX 1
+#if defined(__ANDROID__)
+#define OURO_PLATFORM_ANDROID 1
+#endif
+#elif defined(__unix_)
+#endif
+// TODO: More platforms in detection - Unix, MacOS, iOS, Posix
+// I currently won't support Linux, only detect it.
+
+#ifdef OURO_PLATFORM_WINDOWS
+#ifdef OURO_EXPORT
+#define OUROAPI __declspec(dllexport)
+#else
 #define OUROAPI __declspec(dllimport)
 #endif
+#endif
+
 #ifdef OURO_PLATFORM_LINUX
+#ifdef OURO_EXPORT
+#define OUROAPI __attribute__((visibility("default")))
+#else
 #define OUROAPI
 #endif
 #endif

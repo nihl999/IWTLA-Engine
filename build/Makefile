@@ -343,19 +343,6 @@ assimp/fast:
 	$(MAKE) $(MAKESILENT) -f engine/vendor/assimp/code/CMakeFiles/assimp.dir/build.make engine/vendor/assimp/code/CMakeFiles/assimp.dir/build
 .PHONY : assimp/fast
 
-#=============================================================================
-# Target rules for targets named sandbox
-
-# Build rule for target.
-sandbox: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox
-.PHONY : sandbox
-
-# fast build rule for target.
-sandbox/fast:
-	$(MAKE) $(MAKESILENT) -f sandbox/CMakeFiles/sandbox.dir/build.make sandbox/CMakeFiles/sandbox.dir/build
-.PHONY : sandbox/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -377,7 +364,6 @@ help:
 	@echo "... glad"
 	@echo "... glfw"
 	@echo "... imgui"
-	@echo "... sandbox"
 	@echo "... spdlog"
 	@echo "... stb_image"
 	@echo "... stb_image_write"

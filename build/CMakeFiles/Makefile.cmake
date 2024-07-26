@@ -80,7 +80,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "S:/dev/c++/IWTLA/engine/vendor/spdlog/cmake/ide.cmake"
   "S:/dev/c++/IWTLA/engine/vendor/spdlog/cmake/utils.cmake"
   "S:/dev/c++/IWTLA/engine/vendor/stb/CMakeLists.txt"
-  "S:/dev/c++/IWTLA/sandbox/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -119,7 +118,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "engine/vendor/json/nlohmann_jsonConfigVersion.cmake"
   "engine/vendor/json/nlohmann_jsonConfig.cmake"
   "engine/vendor/json/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "sandbox/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -138,5 +136,4 @@ set(CMAKE_DEPEND_INFO_FILES
   "engine/vendor/spdlog/CMakeFiles/spdlog.dir/DependInfo.cmake"
   "engine/vendor/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/DependInfo.cmake"
   "engine/vendor/assimp/code/CMakeFiles/assimp.dir/DependInfo.cmake"
-  "sandbox/CMakeFiles/sandbox.dir/DependInfo.cmake"
   )

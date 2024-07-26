@@ -5,7 +5,7 @@ project(ouroboros_engine)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED YES)
-add_compile_definitions(OURO_EXPORT_API OURO_PLATFORM_WIN)
+add_compile_definitions(OURO_EXPORT)
 
 add_library(engine
     SHARED
@@ -19,6 +19,8 @@ add_library(engine
     src/core/world/camera.cpp
     src/core/window/input.cpp
     src/core/utils/uuid/uuid.cpp
+    
+    src/platform/platform_windows.cpp
 )
 
 set_target_properties(engine PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/engine/bin/) 
